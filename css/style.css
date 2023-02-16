@@ -102,9 +102,9 @@ body {
         .heading .nav__btn {
           font-size: 1.3rem;
           padding: 1.5rem 2.5rem; } }
-      @media only screen and (max-width: 920px) {
+      @media only screen and (max-width: 600px) {
         .heading .nav__btn {
-          display: none; } }
+          outline: 0.34rem solid #132880; } }
 
 .content {
   display: grid;

@@ -150,8 +150,8 @@ body {
         padding: 1.5rem 2.5rem;
       }
 
-      @media only screen and (max-width: 920px) {
-        display: none;
+      @media only screen and (max-width: 600px) {
+        outline: 0.34rem solid $primary-dark;
       }
     }
   }
