@@ -848,6 +848,9 @@ body {
     .background {
       height: 25rem;
       top: 32%; } }
+  @media only screen and (max-width: 430px) {
+    .background {
+      top: 41%; } }
 
 .contentPrices {
   display: flex;
@@ -890,6 +893,9 @@ body {
       width: 47%;
       border-radius: 50px;
       flex-wrap: nowrap; } }
+  @media only screen and (max-width: 430px) {
+    .categories {
+      width: 52%; } }
   .categories__category {
     display: flex;
     justify-content: center;
@@ -939,6 +945,9 @@ body {
       @media only screen and (max-width: 1200px) {
         .categories__category img {
           width: 30%; } }
+      @media only screen and (max-width: 430px) {
+        .categories__category img {
+          width: 40%; } }
 
 .prices {
   background: rgba(255, 244, 244, 0.5);

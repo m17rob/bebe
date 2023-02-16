@@ -1137,6 +1137,9 @@ body {
     height: 25rem;
     top: 32%;
   }
+  @media only screen and (max-width: 430px) {
+    top: 41%;
+  }
 }
 .contentPrices {
   display: flex;
@@ -1186,6 +1189,10 @@ body {
     width: 47%;
     border-radius: 50px;
     flex-wrap: nowrap;
+  }
+
+  @media only screen and (max-width: 430px) {
+    width: 52%;
   }
 
   &__category {
@@ -1260,6 +1267,9 @@ body {
 
       @media only screen and (max-width: 1200px) {
         width: 30%;
+      }
+      @media only screen and (max-width: 430px) {
+        width: 40%;
       }
     }
   }
