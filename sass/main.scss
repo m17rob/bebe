@@ -1302,6 +1302,10 @@ body {
     width: 65%;
   }
 
+  @media only screen and (max-width: 430px) {
+    padding: 0;
+  }
+
   & .card {
     display: flex;
     flex-direction: column;
