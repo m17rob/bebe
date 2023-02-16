@@ -1257,6 +1257,9 @@ body {
       position: absolute;
       top: -17%;
       right: -10%; }
+      @media only screen and (max-width: 1420px) {
+        .contentTeam .left__steto--icon {
+          border-radius: 50px; } }
       .contentTeam .left__steto--icon img {
         width: 6.5rem;
         height: 6.5rem; }
@@ -1315,6 +1318,9 @@ body {
         position: absolute;
         top: -17%;
         right: -10%; }
+        @media only screen and (max-width: 1420px) {
+          .contentTeam .left__hug--icon {
+            border-radius: 50px; } }
         .contentTeam .left__hug--icon img {
           width: 6.5rem;
           height: 6.5rem; }
@@ -1331,7 +1337,7 @@ body {
     justify-content: center;
     align-items: center; }
     .contentTeam .center .echipaImg {
-      z-index: -2; }
+      z-index: 10; }
       @media only screen and (max-width: 1500px) {
         .contentTeam .center .echipaImg {
           width: 82%; } }
@@ -1352,7 +1358,8 @@ body {
       width: max-content;
       bottom: -3%;
       left: 50%;
-      transform: translate(-50%, 3%); }
+      transform: translate(-50%, 3%);
+      z-index: 11; }
       @media only screen and (max-width: 1500px) {
         .contentTeam .center__text img {
           width: 12%; } }
@@ -1428,6 +1435,9 @@ body {
       position: absolute;
       top: -17%;
       left: -10%; }
+      @media only screen and (max-width: 1420px) {
+        .contentTeam .right__heart--icon {
+          border-radius: 50px; } }
       @media only screen and (max-width: 630px) {
         .contentTeam .right__heart--icon {
           top: -23%;
@@ -1490,6 +1500,9 @@ body {
         position: absolute;
         top: -17%;
         left: -10%; }
+        @media only screen and (max-width: 1420px) {
+          .contentTeam .right__medal--icon {
+            border-radius: 50px; } }
         @media only screen and (max-width: 630px) {
           .contentTeam .right__medal--icon {
             top: -22%;

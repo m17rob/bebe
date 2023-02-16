@@ -1674,6 +1674,10 @@ body {
         top: -17%;
         right: -10%;
 
+        @media only screen and (max-width: 1420px) {
+          border-radius: 50px;
+        }
+
         & img {
           width: 6.5rem;
           height: 6.5rem;
@@ -1683,6 +1687,7 @@ body {
             width: 5rem;
             height: 5rem;
           }
+
           @media only screen and (max-width: 1200px) {
             width: 3.5rem;
             height: 3.5rem;
@@ -1746,6 +1751,10 @@ body {
         top: -17%;
         right: -10%;
 
+        @media only screen and (max-width: 1420px) {
+          border-radius: 50px;
+        }
+
         & img {
           width: 6.5rem;
           height: 6.5rem;
@@ -1773,7 +1782,7 @@ body {
 
     .echipaImg {
       // height: 70%;
-      z-index: -2;
+      z-index: 10;
 
       @media only screen and (max-width: 1500px) {
         width: 82%;
@@ -1799,7 +1808,7 @@ body {
       bottom: -3%;
       left: 50%;
       transform: translate(-50%, 3%);
-
+      z-index: 11;
       img {
         @media only screen and (max-width: 1500px) {
           width: 12%;
@@ -1901,6 +1910,10 @@ body {
         top: -17%;
         left: -10%;
 
+        @media only screen and (max-width: 1420px) {
+          border-radius: 50px;
+        }
+
         @media only screen and (max-width: 630px) {
           top: -23%;
           left: -13%;
@@ -1980,6 +1993,10 @@ body {
         position: absolute;
         top: -17%;
         left: -10%;
+
+        @media only screen and (max-width: 1420px) {
+          border-radius: 50px;
+        }
 
         @media only screen and (max-width: 630px) {
           top: -22%;
