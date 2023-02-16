@@ -117,6 +117,9 @@ body {
     .content {
       display: flex;
       flex-direction: column; } }
+  @media only screen and (max-width: 500px) {
+    .content {
+      padding: 4rem 0; } }
   .content__txt {
     grid-area: txt; }
     @media only screen and (max-width: 920px) {
@@ -173,6 +176,9 @@ body {
         .content__txt--p {
           font-size: 1rem;
           line-height: 2rem; } }
+      @media only screen and (max-width: 500px) {
+        .content__txt--p {
+          width: 100%; } }
     .content__txt--btn {
       background: #132880;
       color: #e6e6e6;
@@ -217,6 +223,9 @@ body {
     @media only screen and (max-width: 920px) {
       .content__img .heroImg {
         width: 30%; } }
+    @media only screen and (max-width: 500px) {
+      .content__img .heroImg {
+        width: 35%; } }
     .content__img .vectors img {
       height: 90%;
       position: absolute;
@@ -231,6 +240,9 @@ body {
       @media only screen and (max-width: 1200px) {
         .content__img .vectors img {
           width: 62%; } }
+      @media only screen and (max-width: 500px) {
+        .content__img .vectors img {
+          width: 70%; } }
     .content__img .name {
       position: absolute;
       bottom: 0;
@@ -253,6 +265,11 @@ body {
           font-size: 1.3rem;
           padding: 1rem 3rem;
           left: 55%; } }
+      @media only screen and (max-width: 500px) {
+        .content__img .name {
+          font-size: 1.2rem;
+          padding: 1rem 2.4rem;
+          left: 53%; } }
       .content__img .name__dr {
         display: flex;
         justify-content: center;
@@ -267,6 +284,9 @@ body {
         @media only screen and (max-width: 1200px) {
           .content__img .name__dr {
             font-size: 2.6rem; } }
+        @media only screen and (max-width: 500px) {
+          .content__img .name__dr {
+            font-size: 2.2rem; } }
       .content__img .name__nume {
         text-align: start;
         margin-left: 2.7rem;
@@ -732,6 +752,9 @@ body {
   padding: 10rem 5rem;
   padding-bottom: 20rem;
   position: relative; }
+  @media only screen and (max-width: 500px) {
+    .products {
+      padding: 7rem 5rem; } }
   .products h2 {
     text-shadow: 0px 39px 16px rgba(19, 40, 128, 0.03), 0px 22px 13px rgba(19, 40, 128, 0.1), 0px 10px 10px rgba(19, 40, 128, 0.17), 0px 2px 5px rgba(19, 40, 128, 0.2), 0px 0px 0px rgba(19, 40, 128, 0.2);
     color: #fff;
@@ -820,6 +843,11 @@ body {
   @media only screen and (max-width: 630px) {
     .categories {
       width: 50%; } }
+  @media only screen and (max-width: 700px) {
+    .categories {
+      width: 47%;
+      border-radius: 50px;
+      flex-wrap: nowrap; } }
   .categories__category {
     display: flex;
     justify-content: center;
@@ -851,6 +879,12 @@ body {
     @media only screen and (max-width: 780px) {
       .categories__category:nth-child(2) {
         margin-left: 3rem; } }
+    @media only screen and (max-width: 700px) {
+      .categories__category:nth-child(3) {
+        display: none; } }
+    @media only screen and (max-width: 700px) {
+      .categories__category:nth-child(4) {
+        display: none; } }
     .categories__category:first-child {
       background: #e6e6e6;
       border-radius: 50px;
@@ -981,6 +1015,9 @@ body {
   padding-bottom: 20rem;
   position: relative;
   height: 100%; }
+  @media only screen and (max-width: 500px) {
+    .team {
+      padding: 7rem 5rem; } }
   .team h2 {
     text-shadow: 0px 39px 16px rgba(19, 40, 128, 0.03), 0px 22px 13px rgba(19, 40, 128, 0.1), 0px 10px 10px rgba(19, 40, 128, 0.17), 0px 2px 5px rgba(19, 40, 128, 0.2), 0px 0px 0px rgba(19, 40, 128, 0.2);
     color: #fff;
@@ -1401,6 +1438,10 @@ body {
         .contact .left__bg {
           width: 50rem;
           height: 41rem; } }
+      @media only screen and (max-width: 500px) {
+        .contact .left__bg {
+          width: 39rem;
+          height: 30rem; } }
       .contact .left__bg img {
         position: absolute;
         bottom: -14%;
@@ -1433,6 +1474,9 @@ body {
           .contact .left__bg .adresa {
             font-size: 1.4rem;
             width: 245px; } }
+        @media only screen and (max-width: 500px) {
+          .contact .left__bg .adresa {
+            bottom: -20%; } }
       .contact .left__bg--locale {
         background: #ffffff;
         border-radius: 20px;
@@ -1442,6 +1486,10 @@ body {
           .contact .left__bg--locale {
             width: 43rem;
             height: 35rem; } }
+        @media only screen and (max-width: 500px) {
+          .contact .left__bg--locale {
+            width: 34rem;
+            height: 25rem; } }
     .contact .left__icon {
       background: #d9d9d9;
       width: 6.6rem;
@@ -1468,6 +1516,9 @@ body {
           width: 4.5rem;
           height: 4.5rem;
           top: -9%; } }
+      @media only screen and (max-width: 500px) {
+        .contact .left__icon {
+          top: -13%; } }
       .contact .left__icon--img {
         width: 100%; }
     .contact .left__address {
