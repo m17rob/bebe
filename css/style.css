@@ -53,6 +53,13 @@ body {
       @media only screen and (max-width: 630px) {
         .heading .nav__logo img {
           width: 45%; } }
+      @media only screen and (max-width: 350px) {
+        .heading .nav__logo img {
+          position: absolute;
+          width: 27%;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%); } }
     .heading .nav__links {
       display: flex;
       background-color: #fff;
@@ -105,6 +112,23 @@ body {
       @media only screen and (max-width: 600px) {
         .heading .nav__btn {
           outline: 0.34rem solid #132880; } }
+      @media only screen and (max-width: 400px) {
+        .heading .nav__btn {
+          outline: 0.26rem solid #132880;
+          font-size: 1.1rem; } }
+      @media only screen and (max-width: 370px) {
+        .heading .nav__btn {
+          outline: 0.26rem solid #132880;
+          font-size: 1.1rem;
+          padding: 1.5rem 1.5rem; } }
+      @media only screen and (max-width: 350px) {
+        .heading .nav__btn {
+          outline: 0.26rem solid #132880;
+          font-size: 0.9rem;
+          padding: 1.5rem 1.5rem; } }
+      @media only screen and (max-width: 330px) {
+        .heading .nav__btn {
+          display: none; } }
 
 .content {
   display: grid;
