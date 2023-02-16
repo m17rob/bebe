@@ -226,6 +226,9 @@ body {
     @media only screen and (max-width: 500px) {
       .content__img .heroImg {
         width: 35%; } }
+    @media only screen and (max-width: 430px) {
+      .content__img .heroImg {
+        width: 45%; } }
     .content__img .vectors img {
       height: 90%;
       position: absolute;
@@ -243,6 +246,9 @@ body {
       @media only screen and (max-width: 500px) {
         .content__img .vectors img {
           width: 70%; } }
+      @media only screen and (max-width: 430px) {
+        .content__img .vectors img {
+          width: 77%; } }
     .content__img .name {
       position: absolute;
       bottom: 0;
@@ -450,6 +456,9 @@ body {
       .services__cards--cosmetica {
         height: 10rem;
         width: 28rem; } }
+    @media only screen and (max-width: 430px) {
+      .services__cards--cosmetica {
+        width: 25rem; } }
     .services__cards--cosmetica h4 {
       font-size: 2.8rem;
       text-transform: uppercase;
@@ -477,6 +486,9 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.8rem; } }
+      @media only screen and (max-width: 430px) {
+        .services__cards--cosmetica p {
+          padding-top: 0.7rem; } }
     .services__cards--cosmetica img {
       position: absolute;
       top: 0;
@@ -505,6 +517,9 @@ body {
       .services__cards--chirurgie {
         height: 10rem;
         width: 28rem; } }
+    @media only screen and (max-width: 430px) {
+      .services__cards--chirurgie {
+        width: 25rem; } }
     .services__cards--chirurgie h4 {
       font-size: 2.8rem;
       text-transform: uppercase;
@@ -531,6 +546,9 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.4rem; } }
+      @media only screen and (max-width: 430px) {
+        .services__cards--chirurgie p {
+          padding-top: 0.7rem; } }
     .services__cards--chirurgie img {
       position: absolute;
       top: 0;
@@ -556,6 +574,9 @@ body {
       .services__cards--vaccinare {
         height: 10rem;
         width: 28rem; } }
+    @media only screen and (max-width: 430px) {
+      .services__cards--vaccinare {
+        width: 25rem; } }
     .services__cards--vaccinare h4 {
       font-size: 2.8rem;
       text-transform: uppercase;
@@ -582,6 +603,9 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.8rem; } }
+      @media only screen and (max-width: 430px) {
+        .services__cards--vaccinare p {
+          padding-top: 0.7rem; } }
     .services__cards--vaccinare img {
       position: absolute;
       top: 2rem;
@@ -606,6 +630,9 @@ body {
       .services__cards--imagistica {
         height: 10rem;
         width: 28rem; } }
+    @media only screen and (max-width: 430px) {
+      .services__cards--imagistica {
+        width: 25rem; } }
     .services__cards--imagistica h4 {
       font-size: 2.8rem;
       text-transform: uppercase;
@@ -632,6 +659,9 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.8rem; } }
+      @media only screen and (max-width: 430px) {
+        .services__cards--imagistica p {
+          padding-top: 0.7rem; } }
     .services__cards--imagistica img {
       position: absolute;
       top: 0;
@@ -657,6 +687,9 @@ body {
       .services__cards--consultatii {
         height: 10rem;
         width: 28rem; } }
+    @media only screen and (max-width: 430px) {
+      .services__cards--consultatii {
+        width: 25rem; } }
     .services__cards--consultatii h4 {
       font-size: 2.8rem;
       text-transform: uppercase;
@@ -683,6 +716,9 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.8rem; } }
+      @media only screen and (max-width: 430px) {
+        .services__cards--consultatii p {
+          padding-top: 0.7rem; } }
     .services__cards--consultatii img {
       position: absolute;
       top: 0rem;
@@ -708,6 +744,9 @@ body {
       .services__cards--tratamente {
         height: 10rem;
         width: 28rem; } }
+    @media only screen and (max-width: 430px) {
+      .services__cards--tratamente {
+        width: 25rem; } }
     .services__cards--tratamente h4 {
       font-size: 2.8rem;
       text-transform: uppercase;
@@ -734,6 +773,9 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.8rem; } }
+      @media only screen and (max-width: 430px) {
+        .services__cards--tratamente p {
+          padding-top: 0.7rem; } }
     .services__cards--tratamente img {
       position: absolute;
       top: 0;
@@ -921,6 +963,9 @@ body {
   @media only screen and (max-width: 630px) {
     .prices {
       width: 50%; } }
+  @media only screen and (max-width: 500px) {
+    .prices {
+      width: 65%; } }
   .prices .card {
     display: flex;
     flex-direction: column;

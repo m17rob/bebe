@@ -323,6 +323,10 @@ body {
       @media only screen and (max-width: 500px) {
         width: 35%;
       }
+
+      @media only screen and (max-width: 430px) {
+        width: 45%;
+      }
     }
 
     & .vectors {
@@ -344,6 +348,10 @@ body {
 
         @media only screen and (max-width: 500px) {
           width: 70%;
+        }
+
+        @media only screen and (max-width: 430px) {
+          width: 77%;
         }
       }
     }
@@ -630,6 +638,10 @@ body {
         width: 28rem;
       }
 
+      @media only screen and (max-width: 430px) {
+        width: 25rem;
+      }
+
       h4 {
         font-size: 2.8rem;
         text-transform: uppercase;
@@ -662,6 +674,9 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.8rem;
+        }
+        @media only screen and (max-width: 430px) {
+          padding-top: 0.7rem;
         }
       }
 
@@ -701,6 +716,10 @@ body {
         width: 28rem;
       }
 
+      @media only screen and (max-width: 430px) {
+        width: 25rem;
+      }
+
       h4 {
         font-size: 2.8rem;
         text-transform: uppercase;
@@ -731,6 +750,9 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.4rem;
+        }
+        @media only screen and (max-width: 430px) {
+          padding-top: 0.7rem;
         }
       }
 
@@ -765,6 +787,9 @@ body {
         height: 10rem;
         width: 28rem;
       }
+      @media only screen and (max-width: 430px) {
+        width: 25rem;
+      }
 
       h4 {
         font-size: 2.8rem;
@@ -795,6 +820,9 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.8rem;
+        }
+        @media only screen and (max-width: 430px) {
+          padding-top: 0.7rem;
         }
       }
 
@@ -830,6 +858,10 @@ body {
         width: 28rem;
       }
 
+      @media only screen and (max-width: 430px) {
+        width: 25rem;
+      }
+
       h4 {
         font-size: 2.8rem;
         text-transform: uppercase;
@@ -858,6 +890,9 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.8rem;
+        }
+        @media only screen and (max-width: 430px) {
+          padding-top: 0.7rem;
         }
       }
 
@@ -893,6 +928,10 @@ body {
         width: 28rem;
       }
 
+      @media only screen and (max-width: 430px) {
+        width: 25rem;
+      }
+
       h4 {
         font-size: 2.8rem;
         text-transform: uppercase;
@@ -921,6 +960,9 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.8rem;
+        }
+        @media only screen and (max-width: 430px) {
+          padding-top: 0.7rem;
         }
       }
 
@@ -956,6 +998,10 @@ body {
         width: 28rem;
       }
 
+      @media only screen and (max-width: 430px) {
+        width: 25rem;
+      }
+
       h4 {
         font-size: 2.8rem;
         text-transform: uppercase;
@@ -984,6 +1030,10 @@ body {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.8rem;
+        }
+
+        @media only screen and (max-width: 430px) {
+          padding-top: 0.7rem;
         }
       }
 
@@ -1246,6 +1296,10 @@ body {
   }
   @media only screen and (max-width: 630px) {
     width: 50%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 65%;
   }
 
   & .card {
