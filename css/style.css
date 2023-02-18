@@ -30,21 +30,27 @@ body {
 
 #nav-icon {
   display: none;
-  width: 8rem;
-  height: 8rem;
+  width: 5rem;
+  height: 5rem;
   padding: 1.5rem;
   background-color: #132980b9;
   border-radius: 50%;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
   right: 10rem; }
+  @media only screen and (max-width: 1000px) {
+    #nav-icon {
+      top: 2vw;
+      right: 2vw;
+      width: 3rem;
+      height: 3rem; } }
   #nav-icon > span {
     display: block;
     position: absolute;
-    height: .8rem;
+    height: .5rem;
     width: 50%;
     background: #fff;
     border-radius: 9px;
@@ -59,12 +65,18 @@ body {
     #nav-icon > span:nth-child(3) {
       top: 67%; }
   #nav-icon.open span:nth-child(1) {
-    transform: rotate(45deg) translate(1.5rem, 1.5rem); }
+    transform: rotate(45deg) translate(30%, 210%); }
+    @media only screen and (max-width: 1000px) {
+      #nav-icon.open span:nth-child(1) {
+        transform: rotate(45deg) translate(30%, 150%); } }
   #nav-icon.open span:nth-child(2) {
     width: 0%;
     left: 50%; }
   #nav-icon.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(1.5rem, -1.5rem); }
+    transform: rotate(-45deg) translate(30%, -210%); }
+    @media only screen and (max-width: 1000px) {
+      #nav-icon.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(30%, -150%); } }
 
 #menu {
   display: none;
@@ -268,7 +280,8 @@ body {
           font-size: 1.8rem; } }
       @media only screen and (max-width: 1200px) {
         .content__txt--p {
-          font-size: 1.3rem; } }
+          font-size: 1.5rem;
+          line-height: 2.5rem; } }
       @media only screen and (max-width: 920px) {
         .content__txt--p {
           width: 79%; } }
@@ -509,13 +522,12 @@ body {
 .service {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
-  /* Note: backdrop-filter has minimal browser support */
   max-width: 192rem;
   margin: 0 auto 0 auto;
   padding: 10rem 5rem; }
   @media only screen and (max-width: 630px) {
     .service {
-      padding: 5rem 5rem; } }
+      padding: 5rem; } }
   .service h2 {
     text-shadow: 0px 39px 16px rgba(19, 40, 128, 0.03), 0px 22px 13px rgba(19, 40, 128, 0.1), 0px 10px 10px rgba(19, 40, 128, 0.17), 0px 2px 5px rgba(19, 40, 128, 0.2), 0px 0px 0px rgba(19, 40, 128, 0.2);
     color: #fff;
@@ -543,7 +555,7 @@ body {
   flex-wrap: wrap;
   gap: 8rem;
   justify-content: center; }
-  .services__cards--cosmetica {
+  .services__cards--card {
     grid-area: cosmetica;
     background: rgba(255, 244, 244, 0.5);
     box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01), 0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04), 0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
@@ -553,34 +565,34 @@ body {
     height: 15rem;
     width: 35rem; }
     @media only screen and (max-width: 1200px) {
-      .services__cards--cosmetica {
+      .services__cards--card {
         height: 12rem; } }
     @media only screen and (max-width: 630px) {
-      .services__cards--cosmetica {
+      .services__cards--card {
         height: 10rem;
         width: 28rem; } }
     @media only screen and (max-width: 430px) {
-      .services__cards--cosmetica {
+      .services__cards--card {
         width: 25rem; } }
     @media only screen and (max-width: 400px) {
-      .services__cards--cosmetica {
+      .services__cards--card {
         width: 22rem;
         height: 8rem; } }
-    .services__cards--cosmetica h4 {
+    .services__cards--card h4 {
       font-size: 2.8rem;
       text-transform: uppercase;
       color: #132880;
       font-weight: 700; }
       @media only screen and (max-width: 1200px) {
-        .services__cards--cosmetica h4 {
+        .services__cards--card h4 {
           font-size: 2.2rem; } }
       @media only screen and (max-width: 630px) {
-        .services__cards--cosmetica h4 {
+        .services__cards--card h4 {
           font-size: 1.6rem; } }
       @media only screen and (max-width: 400px) {
-        .services__cards--cosmetica h4 {
+        .services__cards--card h4 {
           font-size: 1.4rem; } }
-    .services__cards--cosmetica p {
+    .services__cards--card p {
       color: rgba(35, 61, 77, 0.65);
       font-size: 1.3rem;
       width: 80%;
@@ -588,390 +600,34 @@ body {
       font-weight: 700;
       line-height: 18px; }
       @media only screen and (max-width: 1200px) {
-        .services__cards--cosmetica p {
+        .services__cards--card p {
           font-size: 1.2rem;
           width: 75%; } }
       @media only screen and (max-width: 630px) {
-        .services__cards--cosmetica p {
+        .services__cards--card p {
           font-size: 1rem;
           line-height: 15px;
           padding-top: 1.8rem; } }
       @media only screen and (max-width: 430px) {
-        .services__cards--cosmetica p {
+        .services__cards--card p {
           padding-top: 0.7rem; } }
       @media only screen and (max-width: 400px) {
-        .services__cards--cosmetica p {
+        .services__cards--card p {
           font-size: 0.9rem; } }
-    .services__cards--cosmetica img {
+    .services__cards--card img {
       position: absolute;
       top: 0;
       right: -15px;
       width: 34%; }
       @media only screen and (max-width: 1200px) {
-        .services__cards--cosmetica img {
+        .services__cards--card img {
           width: 30%; } }
       @media only screen and (max-width: 630px) {
-        .services__cards--cosmetica img {
+        .services__cards--card img {
           width: 30%; } }
       @media only screen and (max-width: 400px) {
-        .services__cards--cosmetica img {
+        .services__cards--card img {
           width: 27%;
-          right: -10px; } }
-  .services__cards--chirurgie {
-    grid-area: chirurgie;
-    justify-self: center;
-    background: rgba(255, 244, 244, 0.5);
-    box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01), 0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04), 0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-    padding: 2rem;
-    border-radius: 10px;
-    position: relative;
-    height: 15rem;
-    width: 35rem; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--chirurgie {
-        height: 12rem; } }
-    @media only screen and (max-width: 630px) {
-      .services__cards--chirurgie {
-        height: 10rem;
-        width: 28rem; } }
-    @media only screen and (max-width: 430px) {
-      .services__cards--chirurgie {
-        width: 25rem; } }
-    @media only screen and (max-width: 400px) {
-      .services__cards--chirurgie {
-        width: 22rem;
-        height: 10rem; } }
-    .services__cards--chirurgie h4 {
-      font-size: 2.8rem;
-      text-transform: uppercase;
-      color: #132880;
-      font-weight: 700; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--chirurgie h4 {
-          font-size: 2.2rem; } }
-      @media only screen and (max-width: 630px) {
-        .services__cards--chirurgie h4 {
-          font-size: 1.6rem; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--chirurgie h4 {
-          font-size: 1.4rem; } }
-    .services__cards--chirurgie p {
-      color: rgba(35, 61, 77, 0.65);
-      font-size: 1.3rem;
-      width: 74%;
-      padding-top: 2.4rem;
-      font-weight: 700;
-      line-height: 18px; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--chirurgie p {
-          font-size: 1.2rem; } }
-      @media only screen and (max-width: 630px) {
-        .services__cards--chirurgie p {
-          font-size: 1rem;
-          line-height: 15px;
-          padding-top: 1.4rem; } }
-      @media only screen and (max-width: 430px) {
-        .services__cards--chirurgie p {
-          padding-top: 0.7rem; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--chirurgie p {
-          font-size: 0.9rem; } }
-    .services__cards--chirurgie img {
-      position: absolute;
-      top: 0;
-      right: -15px;
-      width: 34%; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--chirurgie img {
-          width: 30%; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--chirurgie img {
-          width: 27%;
-          right: -10px;
-          top: 2rem; } }
-  .services__cards--vaccinare {
-    grid-area: vaccinare;
-    justify-self: center;
-    background: rgba(255, 244, 244, 0.5);
-    box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01), 0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04), 0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-    padding: 2rem;
-    border-radius: 10px;
-    position: relative;
-    height: 15rem;
-    width: 35rem; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--vaccinare {
-        height: 12rem; } }
-    @media only screen and (max-width: 630px) {
-      .services__cards--vaccinare {
-        height: 10rem;
-        width: 28rem; } }
-    @media only screen and (max-width: 430px) {
-      .services__cards--vaccinare {
-        width: 25rem; } }
-    @media only screen and (max-width: 400px) {
-      .services__cards--vaccinare {
-        width: 22rem;
-        height: 10rem; } }
-    .services__cards--vaccinare h4 {
-      font-size: 2.8rem;
-      text-transform: uppercase;
-      color: #132880;
-      font-weight: 700; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--vaccinare h4 {
-          font-size: 2.2rem; } }
-      @media only screen and (max-width: 630px) {
-        .services__cards--vaccinare h4 {
-          font-size: 1.6rem; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--vaccinare h4 {
-          font-size: 1.4rem; } }
-    .services__cards--vaccinare p {
-      color: rgba(35, 61, 77, 0.65);
-      font-size: 1.3rem;
-      width: 74%;
-      padding-top: 2.4rem;
-      font-weight: 700;
-      line-height: 18px; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--vaccinare p {
-          font-size: 1.2rem; } }
-      @media only screen and (max-width: 630px) {
-        .services__cards--vaccinare p {
-          font-size: 1rem;
-          line-height: 15px;
-          padding-top: 1.8rem; } }
-      @media only screen and (max-width: 430px) {
-        .services__cards--vaccinare p {
-          padding-top: 0.7rem; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--vaccinare p {
-          font-size: 0.9rem; } }
-    .services__cards--vaccinare img {
-      position: absolute;
-      top: 2rem;
-      right: -45px;
-      width: 42%; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--vaccinare img {
-          width: 35%; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--vaccinare img {
-          right: -20px;
-          top: 3rem; } }
-  .services__cards--imagistica {
-    grid-area: imagistica;
-    background: rgba(255, 244, 244, 0.5);
-    box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01), 0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04), 0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-    padding: 2rem;
-    border-radius: 10px;
-    position: relative;
-    height: 15rem;
-    width: 35rem; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--imagistica {
-        height: 12rem; } }
-    @media only screen and (max-width: 630px) {
-      .services__cards--imagistica {
-        height: 10rem;
-        width: 28rem; } }
-    @media only screen and (max-width: 430px) {
-      .services__cards--imagistica {
-        width: 25rem; } }
-    @media only screen and (max-width: 400px) {
-      .services__cards--imagistica {
-        width: 22rem;
-        height: 9rem; } }
-    .services__cards--imagistica h4 {
-      font-size: 2.8rem;
-      text-transform: uppercase;
-      color: #132880;
-      font-weight: 700; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--imagistica h4 {
-          font-size: 2.2rem; } }
-      @media only screen and (max-width: 630px) {
-        .services__cards--imagistica h4 {
-          font-size: 1.6rem; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--imagistica h4 {
-          font-size: 1.4rem; } }
-    .services__cards--imagistica p {
-      color: rgba(35, 61, 77, 0.65);
-      font-size: 1.3rem;
-      width: 74%;
-      padding-top: 2.4rem;
-      font-weight: 700;
-      line-height: 18px; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--imagistica p {
-          font-size: 1.2rem; } }
-      @media only screen and (max-width: 630px) {
-        .services__cards--imagistica p {
-          font-size: 1rem;
-          line-height: 15px;
-          padding-top: 1.8rem; } }
-      @media only screen and (max-width: 430px) {
-        .services__cards--imagistica p {
-          padding-top: 0.7rem; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--imagistica p {
-          font-size: 0.9rem; } }
-    .services__cards--imagistica img {
-      position: absolute;
-      top: 0;
-      right: -15px;
-      width: 34%; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--imagistica img {
-          width: 30%; } }
-  .services__cards--consultatii {
-    grid-area: consultatii;
-    justify-self: center;
-    background: rgba(255, 244, 244, 0.5);
-    box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01), 0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04), 0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-    padding: 2rem;
-    border-radius: 10px;
-    position: relative;
-    height: 15rem;
-    width: 35rem; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--consultatii {
-        height: 12rem; } }
-    @media only screen and (max-width: 630px) {
-      .services__cards--consultatii {
-        height: 10rem;
-        width: 28rem; } }
-    @media only screen and (max-width: 430px) {
-      .services__cards--consultatii {
-        width: 25rem; } }
-    @media only screen and (max-width: 400px) {
-      .services__cards--consultatii {
-        width: 22rem;
-        height: 10rem; } }
-    .services__cards--consultatii h4 {
-      font-size: 2.8rem;
-      text-transform: uppercase;
-      color: #132880;
-      font-weight: 700; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--consultatii h4 {
-          font-size: 2.2rem; } }
-      @media only screen and (max-width: 630px) {
-        .services__cards--consultatii h4 {
-          font-size: 1.6rem; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--consultatii h4 {
-          font-size: 1.4rem; } }
-    .services__cards--consultatii p {
-      color: rgba(35, 61, 77, 0.65);
-      font-size: 1.3rem;
-      width: 65%;
-      padding-top: 2.4rem;
-      font-weight: 700;
-      line-height: 18px; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--consultatii p {
-          font-size: 1.2rem; } }
-      @media only screen and (max-width: 630px) {
-        .services__cards--consultatii p {
-          font-size: 1rem;
-          line-height: 15px;
-          padding-top: 1.8rem; } }
-      @media only screen and (max-width: 430px) {
-        .services__cards--consultatii p {
-          padding-top: 0.7rem; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--consultatii p {
-          font-size: 0.9rem;
-          width: 72%; } }
-    .services__cards--consultatii img {
-      position: absolute;
-      top: 0rem;
-      right: -30px;
-      width: 47%; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--consultatii img {
-          width: 39%; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--consultatii img {
-          width: 38%;
-          top: 20px;
-          right: -22px; } }
-  .services__cards--tratamente {
-    grid-area: tratamente;
-    justify-self: center;
-    background: rgba(255, 244, 244, 0.5);
-    box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01), 0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04), 0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-    padding: 2rem;
-    border-radius: 10px;
-    position: relative;
-    height: 15rem;
-    width: 35rem; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--tratamente {
-        height: 12rem; } }
-    @media only screen and (max-width: 630px) {
-      .services__cards--tratamente {
-        height: 10rem;
-        width: 28rem; } }
-    @media only screen and (max-width: 430px) {
-      .services__cards--tratamente {
-        width: 25rem; } }
-    @media only screen and (max-width: 400px) {
-      .services__cards--tratamente {
-        width: 22rem;
-        height: 10rem; } }
-    .services__cards--tratamente h4 {
-      font-size: 2.8rem;
-      text-transform: uppercase;
-      color: #132880;
-      font-weight: 700; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--tratamente h4 {
-          font-size: 2.2rem; } }
-      @media only screen and (max-width: 630px) {
-        .services__cards--tratamente h4 {
-          font-size: 1.6rem; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--tratamente h4 {
-          font-size: 1.4rem; } }
-    .services__cards--tratamente p {
-      color: rgba(35, 61, 77, 0.65);
-      font-size: 1.3rem;
-      width: 74%;
-      padding-top: 2.4rem;
-      font-weight: 700;
-      line-height: 18px; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--tratamente p {
-          font-size: 1.2rem; } }
-      @media only screen and (max-width: 630px) {
-        .services__cards--tratamente p {
-          font-size: 1rem;
-          line-height: 15px;
-          padding-top: 1.8rem; } }
-      @media only screen and (max-width: 430px) {
-        .services__cards--tratamente p {
-          padding-top: 0.7rem; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--tratamente p {
-          font-size: 0.9rem; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--tratamente p {
-          width: 72%; } }
-    .services__cards--tratamente img {
-      position: absolute;
-      top: 0;
-      right: -15px;
-      width: 34%; }
-      @media only screen and (max-width: 1200px) {
-        .services__cards--tratamente img {
-          width: 30%; } }
-      @media only screen and (max-width: 400px) {
-        .services__cards--tratamente img {
-          width: 30%;
           right: -10px; } }
 
 .products {

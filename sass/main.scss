@@ -49,22 +49,30 @@ body {
 // //////////////////////////////////////////////////////
 #nav-icon {
   display: none;
-  width: 8rem;
-  height: 8rem;
+  width: 5rem;
+  height: 5rem; 
   padding: 1.5rem;
   background-color: #132980b9;
   border-radius: 50%;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
   right: 10rem;
 
+  @media only screen and (max-width: 1000px) {
+    top: 2vw;
+    right: 2vw;
+
+    width: 3rem;
+    height: 3rem; 
+  }
+
   & > span {
     display: block;
     position: absolute;
-    height: .8rem;
+    height: .5rem;
     width: 50%;
     background: $white;
     border-radius: 9px;
@@ -86,7 +94,12 @@ body {
     }
   }
   &.open span:nth-child(1) {
-    transform: rotate(45deg) translate(1.5rem, 1.5rem);    
+    transform: rotate(45deg) translate(30%, 210%);  
+
+    @media only screen and (max-width: 1000px) {
+      transform: rotate(45deg) translate(30%, 150%);  
+    }
+      
   }
   
   &.open span:nth-child(2) {
@@ -95,7 +108,11 @@ body {
   }
   
   &.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(1.5rem, -1.5rem);
+    transform: rotate(-45deg) translate(30%, -210%);
+
+    @media only screen and (max-width: 1000px) {
+      transform: rotate(-45deg) translate(30%, -150%);  
+    }
   }
   
 }
@@ -377,7 +394,9 @@ body {
         font-size: 1.8rem;
       }
       @media only screen and (max-width: 1200px) {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+
       }
 
       @media only screen and (max-width: 920px) {
@@ -699,20 +718,12 @@ body {
 .service {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
-  /* Note: backdrop-filter has minimal browser support */
-
-  // border-radius: 20px 20px 0px 0px;
-  // height: 97vh;
   max-width: 192rem;
-  // height: 20rem;
-  // margin: 0 auto;
-  // margin-top: 3vh;
   margin: 0 auto 0 auto;
   padding: 10rem 5rem;
-  // height: 100%;
 
   @media only screen and (max-width: 630px) {
-    padding: 5rem 5rem;
+    padding: 5rem;
   }
 
   h2 {
@@ -753,7 +764,8 @@ body {
     flex-wrap: wrap;
     gap: 8rem;
     justify-content: center;
-    &--cosmetica {
+
+    &--card {
       grid-area: cosmetica;
       background: rgba(255, 244, 244, 0.5);
       box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01),
@@ -848,428 +860,12 @@ body {
         }
       }
     }
+    }
+
+    &--cosmetica {
+    }   
     &--chirurgie {
-      grid-area: chirurgie;
-      justify-self: center;
-      background: rgba(255, 244, 244, 0.5);
-      box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01),
-        0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04),
-        0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-      padding: 2rem;
-      border-radius: 10px;
-      position: relative;
-      height: 15rem;
-      width: 35rem;
-
-      @media only screen and (max-width: 1200px) {
-        height: 12rem;
-      }
-      @media only screen and (max-width: 630px) {
-        height: 10rem;
-        width: 28rem;
-      }
-
-      @media only screen and (max-width: 430px) {
-        width: 25rem;
-      }
-      @media only screen and (max-width: 400px) {
-        width: 22rem;
-        height: 10rem;
-      }
-      h4 {
-        font-size: 2.8rem;
-        text-transform: uppercase;
-        color: $primary-dark;
-        font-weight: 700;
-
-        @media only screen and (max-width: 1200px) {
-          font-size: 2.2rem;
-        }
-
-        @media only screen and (max-width: 630px) {
-          font-size: 1.6rem;
-        }
-        @media only screen and (max-width: 400px) {
-          font-size: 1.4rem;
-        }
-      }
-
-      p {
-        color: rgba(35, 61, 77, 0.65);
-        font-size: 1.3rem;
-        width: 74%;
-        padding-top: 2.4rem;
-        font-weight: 700;
-        line-height: 18px;
-
-        @media only screen and (max-width: 1200px) {
-          font-size: 1.2rem;
-        }
-        @media only screen and (max-width: 630px) {
-          font-size: 1rem;
-          line-height: 15px;
-          padding-top: 1.4rem;
-        }
-        @media only screen and (max-width: 430px) {
-          padding-top: 0.7rem;
-        }
-        @media only screen and (max-width: 400px) {
-          font-size: 0.9rem;
-        }
-      }
-
-      img {
-        position: absolute;
-        top: 0;
-        right: -15px;
-        width: 34%;
-
-        @media only screen and (max-width: 1200px) {
-          width: 30%;
-        }
-        @media only screen and (max-width: 400px) {
-          width: 27%;
-          right: -10px;
-          top: 2rem;
-        }
-      }
     }
-    &--vaccinare {
-      grid-area: vaccinare;
-      justify-self: center;
-      background: rgba(255, 244, 244, 0.5);
-      box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01),
-        0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04),
-        0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-      padding: 2rem;
-      border-radius: 10px;
-      position: relative;
-      height: 15rem;
-      width: 35rem;
-
-      @media only screen and (max-width: 1200px) {
-        height: 12rem;
-      }
-      @media only screen and (max-width: 630px) {
-        height: 10rem;
-        width: 28rem;
-      }
-      @media only screen and (max-width: 430px) {
-        width: 25rem;
-      }
-      @media only screen and (max-width: 400px) {
-        width: 22rem;
-        height: 10rem;
-      }
-      h4 {
-        font-size: 2.8rem;
-        text-transform: uppercase;
-        color: $primary-dark;
-        font-weight: 700;
-
-        @media only screen and (max-width: 1200px) {
-          font-size: 2.2rem;
-        }
-        @media only screen and (max-width: 630px) {
-          font-size: 1.6rem;
-        }
-        @media only screen and (max-width: 400px) {
-          font-size: 1.4rem;
-        }
-      }
-
-      p {
-        color: rgba(35, 61, 77, 0.65);
-        font-size: 1.3rem;
-        width: 74%;
-        padding-top: 2.4rem;
-        font-weight: 700;
-        line-height: 18px;
-
-        @media only screen and (max-width: 1200px) {
-          font-size: 1.2rem;
-        }
-        @media only screen and (max-width: 630px) {
-          font-size: 1rem;
-          line-height: 15px;
-          padding-top: 1.8rem;
-        }
-        @media only screen and (max-width: 430px) {
-          padding-top: 0.7rem;
-        }
-        @media only screen and (max-width: 400px) {
-          font-size: 0.9rem;
-        }
-      }
-
-      img {
-        position: absolute;
-        top: 2rem;
-        right: -45px;
-        width: 42%;
-
-        @media only screen and (max-width: 1200px) {
-          width: 35%;
-        }
-        @media only screen and (max-width: 400px) {
-          right: -20px;
-          top: 3rem;
-        }
-      }
-    }
-    &--imagistica {
-      grid-area: imagistica;
-
-      background: rgba(255, 244, 244, 0.5);
-      box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01),
-        0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04),
-        0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-      padding: 2rem;
-      border-radius: 10px;
-      position: relative;
-      height: 15rem;
-      width: 35rem;
-
-      @media only screen and (max-width: 1200px) {
-        height: 12rem;
-      }
-      @media only screen and (max-width: 630px) {
-        height: 10rem;
-        width: 28rem;
-      }
-
-      @media only screen and (max-width: 430px) {
-        width: 25rem;
-      }
-      @media only screen and (max-width: 400px) {
-        width: 22rem;
-        height: 9rem;
-      }
-      h4 {
-        font-size: 2.8rem;
-        text-transform: uppercase;
-        color: $primary-dark;
-        font-weight: 700;
-        @media only screen and (max-width: 1200px) {
-          font-size: 2.2rem;
-        }
-        @media only screen and (max-width: 630px) {
-          font-size: 1.6rem;
-        }
-        @media only screen and (max-width: 400px) {
-          font-size: 1.4rem;
-        }
-      }
-
-      p {
-        color: rgba(35, 61, 77, 0.65);
-        font-size: 1.3rem;
-        width: 74%;
-        padding-top: 2.4rem;
-        font-weight: 700;
-        line-height: 18px;
-
-        @media only screen and (max-width: 1200px) {
-          font-size: 1.2rem;
-        }
-        @media only screen and (max-width: 630px) {
-          font-size: 1rem;
-          line-height: 15px;
-          padding-top: 1.8rem;
-        }
-        @media only screen and (max-width: 430px) {
-          padding-top: 0.7rem;
-        }
-        @media only screen and (max-width: 400px) {
-          font-size: 0.9rem;
-        }
-      }
-
-      img {
-        position: absolute;
-        top: 0;
-        right: -15px;
-        width: 34%;
-
-        @media only screen and (max-width: 1200px) {
-          width: 30%;
-        }
-      }
-    }
-    &--consultatii {
-      grid-area: consultatii;
-      justify-self: center;
-      background: rgba(255, 244, 244, 0.5);
-      box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01),
-        0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04),
-        0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-      padding: 2rem;
-      border-radius: 10px;
-      position: relative;
-      height: 15rem;
-      width: 35rem;
-
-      @media only screen and (max-width: 1200px) {
-        height: 12rem;
-      }
-      @media only screen and (max-width: 630px) {
-        height: 10rem;
-        width: 28rem;
-      }
-
-      @media only screen and (max-width: 430px) {
-        width: 25rem;
-      }
-      @media only screen and (max-width: 400px) {
-        width: 22rem;
-        height: 10rem;
-      }
-      h4 {
-        font-size: 2.8rem;
-        text-transform: uppercase;
-        color: $primary-dark;
-        font-weight: 700;
-        @media only screen and (max-width: 1200px) {
-          font-size: 2.2rem;
-        }
-        @media only screen and (max-width: 630px) {
-          font-size: 1.6rem;
-        }
-        @media only screen and (max-width: 400px) {
-          font-size: 1.4rem;
-        }
-      }
-
-      p {
-        color: rgba(35, 61, 77, 0.65);
-        font-size: 1.3rem;
-        width: 65%;
-        padding-top: 2.4rem;
-        font-weight: 700;
-        line-height: 18px;
-
-        @media only screen and (max-width: 1200px) {
-          font-size: 1.2rem;
-        }
-        @media only screen and (max-width: 630px) {
-          font-size: 1rem;
-          line-height: 15px;
-          padding-top: 1.8rem;
-        }
-        @media only screen and (max-width: 430px) {
-          padding-top: 0.7rem;
-        }
-        @media only screen and (max-width: 400px) {
-          font-size: 0.9rem;
-          width: 72%;
-        }
-      }
-
-      img {
-        position: absolute;
-        top: 0rem;
-        right: -30px;
-        width: 47%;
-
-        @media only screen and (max-width: 1200px) {
-          width: 39%;
-        }
-
-        @media only screen and (max-width: 400px) {
-          width: 38%;
-          top: 20px;
-          right: -22px;
-        }
-      }
-    }
-    &--tratamente {
-      grid-area: tratamente;
-      justify-self: center;
-      background: rgba(255, 244, 244, 0.5);
-      box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01),
-        0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04),
-        0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-      padding: 2rem;
-      border-radius: 10px;
-      position: relative;
-      height: 15rem;
-      width: 35rem;
-
-      @media only screen and (max-width: 1200px) {
-        height: 12rem;
-      }
-      @media only screen and (max-width: 630px) {
-        height: 10rem;
-        width: 28rem;
-      }
-
-      @media only screen and (max-width: 430px) {
-        width: 25rem;
-      }
-      @media only screen and (max-width: 400px) {
-        width: 22rem;
-        height: 10rem;
-      }
-      h4 {
-        font-size: 2.8rem;
-        text-transform: uppercase;
-        color: $primary-dark;
-        font-weight: 700;
-        @media only screen and (max-width: 1200px) {
-          font-size: 2.2rem;
-        }
-        @media only screen and (max-width: 630px) {
-          font-size: 1.6rem;
-        }
-        @media only screen and (max-width: 400px) {
-          font-size: 1.4rem;
-        }
-      }
-
-      p {
-        color: rgba(35, 61, 77, 0.65);
-        font-size: 1.3rem;
-        width: 74%;
-        padding-top: 2.4rem;
-        font-weight: 700;
-        line-height: 18px;
-
-        @media only screen and (max-width: 1200px) {
-          font-size: 1.2rem;
-        }
-        @media only screen and (max-width: 630px) {
-          font-size: 1rem;
-          line-height: 15px;
-          padding-top: 1.8rem;
-        }
-
-        @media only screen and (max-width: 430px) {
-          padding-top: 0.7rem;
-        }
-        @media only screen and (max-width: 400px) {
-          font-size: 0.9rem;
-        }
-        @media only screen and (max-width: 400px) {
-          width: 72%;
-        }
-      }
-
-      img {
-        position: absolute;
-        top: 0;
-        right: -15px;
-        width: 34%;
-        @media only screen and (max-width: 1200px) {
-          width: 30%;
-        }
-
-        @media only screen and (max-width: 400px) {
-          width: 30%;
-          right: -10px;
-        }
-      }
-    }
-  }
 }
 
 .products {
