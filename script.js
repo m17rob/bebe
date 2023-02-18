@@ -29,3 +29,17 @@ sections.forEach(section => {
 
 // ////////////////////////////////////////
 // HAMBURGER
+const menu = document.querySelector("#menu");
+const button = document.querySelector('#nav-icon');
+
+button.addEventListener('click', function(){
+    console.log('clicked');
+    console.log(this);
+    this.classList.toggle('open');
+    if(this.classList.contains('open')){
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+});
+
