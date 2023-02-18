@@ -24,42 +24,6 @@ body {
     body {
       margin: 0; } }
 
-.mobileNav {
-  display: flex;
-  align-items: end;
-  background: #ffffff;
-  border-radius: 20px 20px 0px 0px;
-  position: fixed;
-  z-index: 100;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  padding: 2rem 3rem 0.6rem 3rem;
-  letter-spacing: 0.02em;
-  color: #5a5a5a; }
-  .mobileNav :not(:last-child) {
-    margin-right: 1.4rem; }
-  .mobileNav .active {
-    background: #e9e9e9;
-    color: #224e69; }
-  @media only screen and (min-width: 921px) {
-    .mobileNav {
-      display: none; } }
-  @media only screen and (max-width: 630px) {
-    .mobileNav {
-      font-size: 1.6rem; } }
-  .mobileNav__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    color: #838383; }
-
 .heading {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
