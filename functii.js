@@ -44,5 +44,5 @@ const countUpAnimale = setInterval(() => {
 
 const cainiBtn = document.querySelector('#cainibtn');
 cainiBtn.addEventListener('click', function () {
-  alert('muie');
+alert('click')  
 });
