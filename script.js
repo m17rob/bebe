@@ -70,5 +70,3 @@ if(vw > 930){
 } else {
     button.style.display= "block"  
 }
-
-console.log(vw);
