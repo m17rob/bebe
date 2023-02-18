@@ -46,8 +46,10 @@ body {
 
 .mobileNav {
   display: flex;
+  // justify-content: center;
+  align-items: end;
   background: #ffffff;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   position: fixed;
   z-index: 100;
   bottom: 0;
@@ -58,14 +60,19 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
-  padding: 1.4rem 4rem;
+  padding: 2rem 3rem 0.6rem 3rem;
 
   letter-spacing: 0.02em;
 
   color: #5a5a5a;
 
   :not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 1.4rem;
+  }
+
+  .active {
+    background: #e9e9e9;
+    color: #224e69;
   }
   @media only screen and (min-width: 921px) {
     display: none;
@@ -73,6 +80,15 @@ body {
 
   @media only screen and (max-width: 630px) {
     font-size: 1.6rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #838383;
   }
 }
 
