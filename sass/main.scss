@@ -2920,13 +2920,13 @@ body {
   --animate-duration: 2s;
 }
 
-// .animate__animated.animate__bounceInLeft {
-//   --animate-duration: 1.5s;
-// }
+.animate__animated.animate__bounceInLeft {
+  --animate-duration: 5s;
+}
 
-// .animate__animated.animate__bounceInRight {
-//   --animate-duration: 1.5s;
-// }
+.animate__animated.animate__bounceInRight {
+  --animate-duration: 5s;
+}
 
 .animate__animated.animate__zoomIn {
   --animate-duration: 0.5s;
