@@ -38,7 +38,7 @@ body {
   position: fixed;
   z-index: 20;
   transform: rotate(0deg);
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
   right: 2rem; }
   @media only screen and (max-width: 1000px) {
@@ -54,14 +54,14 @@ body {
   #nav-icon > span {
     display: block;
     position: absolute;
-    height: .5rem;
+    height: 0.5rem;
     width: 50%;
     background: #fff;
     border-radius: 9px;
     opacity: 1;
     left: 25%;
     transform: rotate(0deg);
-    transition: .25s ease-in-out; }
+    transition: 0.25s ease-in-out; }
     #nav-icon > span:nth-child(1) {
       top: 27%; }
     #nav-icon > span:nth-child(2) {
@@ -106,7 +106,7 @@ body {
     margin-bottom: 4rem;
     position: relative; }
     .menu__container--link:not(:last-child)::after {
-      content: "";
+      content: '';
       display: block;
       width: 200%;
       height: 1px;
@@ -227,8 +227,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content max-content;
   gap: 0px 0px;
-  grid-template-areas: 'txt img'
- 'numbs numbs';
+  grid-template-areas: 'txt img' 'numbs numbs';
   padding: 7rem 0rem; }
   @media only screen and (max-width: 920px) {
     .content {
@@ -634,100 +633,100 @@ body {
           width: 27%;
           right: -10px; } }
 
-          .services__cards--chirurgie {
-            grid-area: chirurgie;
-            justify-self: center; }
-            .services__cards--chirurgie p {
-              width: 74%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--chirurgie p {
-                  width: 78%; } }
-              @media only screen and (max-width: 630px) {
-                .services__cards--chirurgie p {
-                  padding-top: 1.4rem; } }
-            .services__cards--chirurgie img {
-              position: absolute;
-              top: 0;
-              right: -15px;
-              width: 34%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--chirurgie img {
-                  width: 30%; } }
-              @media only screen and (max-width: 400px) {
-                .services__cards--chirurgie img {
-                  width: 27%;
-                  right: -10px;
-                  top: 2rem; } }
-          
-          .services__cards--vaccinare {
-            grid-area: vaccinare;
-            justify-self: center; }
-            .services__cards--vaccinare img {
-              position: absolute;
-              top: 2rem;
-              right: -45px;
-              width: 42%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--vaccinare img {
-                  width: 35%; } }
-              @media only screen and (max-width: 400px) {
-                .services__cards--vaccinare img {
-                  right: -20px;
-                  top: 3rem; } }
-          
-          .services__cards--imagistica {
-            grid-area: imagistica; }
-            .services__cards--imagistica img {
-              position: absolute;
-              top: 0;
-              right: -15px;
-              width: 34%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--imagistica img {
-                  width: 30%; } }
-          
-          .services__cards--consultatii {
-            grid-area: consultatii;
-            justify-self: center; }
-            .services__cards--consultatii p {
-              width: 60%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--consultatii p {
-                  width: 70%; } }
-            .services__cards--consultatii img {
-              position: absolute;
-              top: 1rem;
-              right: -30px;
-              width: 47%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--consultatii img {
-                  width: 39%; } }
-              @media only screen and (max-width: 400px) {
-                .services__cards--consultatii img {
-                  width: 38%;
-                  top: 20px;
-                  right: -22px; } }
-          
-          .services__cards--tratamente {
-            grid-area: tratamente;
-            justify-self: center; }
-            .services__cards--tratamente p {
-              width: 70%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--tratamente p {
-                  width: 75%; } }
-            .services__cards--tratamente img {
-              position: absolute;
-              top: 0;
-              right: -15px;
-              width: 34%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--tratamente img {
-                  width: 30%; } }
-              @media only screen and (max-width: 400px) {
-                .services__cards--tratamente img {
-                  width: 30%;
-                  right: -10px; } }
+.services__cards--chirurgie {
+  grid-area: chirurgie;
+  justify-self: center; }
+  .services__cards--chirurgie p {
+    width: 74%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--chirurgie p {
+        width: 78%; } }
+    @media only screen and (max-width: 630px) {
+      .services__cards--chirurgie p {
+        padding-top: 1.4rem; } }
+  .services__cards--chirurgie img {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 34%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--chirurgie img {
+        width: 30%; } }
+    @media only screen and (max-width: 400px) {
+      .services__cards--chirurgie img {
+        width: 27%;
+        right: -10px;
+        top: 2rem; } }
+
+.services__cards--vaccinare {
+  grid-area: vaccinare;
+  justify-self: center; }
+  .services__cards--vaccinare img {
+    position: absolute;
+    top: 2rem;
+    right: -45px;
+    width: 42%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--vaccinare img {
+        width: 35%; } }
+    @media only screen and (max-width: 400px) {
+      .services__cards--vaccinare img {
+        right: -20px;
+        top: 3rem; } }
+
+.services__cards--imagistica {
+  grid-area: imagistica; }
+  .services__cards--imagistica img {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 34%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--imagistica img {
+        width: 30%; } }
+
+.services__cards--consultatii {
+  grid-area: consultatii;
+  justify-self: center; }
+  .services__cards--consultatii p {
+    width: 60%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--consultatii p {
+        width: 70%; } }
+  .services__cards--consultatii img {
+    position: absolute;
+    top: 1rem;
+    right: -30px;
+    width: 47%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--consultatii img {
+        width: 39%; } }
+    @media only screen and (max-width: 400px) {
+      .services__cards--consultatii img {
+        width: 38%;
+        top: 20px;
+        right: -22px; } }
+
+.services__cards--tratamente {
+  grid-area: tratamente;
+  justify-self: center; }
+  .services__cards--tratamente p {
+    width: 70%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--tratamente p {
+        width: 75%; } }
+  .services__cards--tratamente img {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 34%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--tratamente img {
+        width: 30%; } }
+    @media only screen and (max-width: 400px) {
+      .services__cards--tratamente img {
+        width: 30%;
+        right: -10px; } }
 
 .products {
   background: rgba(255, 255, 255, 0.3);
@@ -879,10 +878,6 @@ body {
     @media only screen and (max-width: 700px) {
       .categories__category:nth-child(4) {
         display: none; } }
-    .categories__category:first-child {
-      background: #e6e6e6;
-      border-radius: 50px;
-      color: #224e69; }
     .categories__category img {
       margin-right: 1rem; }
       @media only screen and (max-width: 1500px) {
