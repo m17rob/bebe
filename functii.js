@@ -39,3 +39,18 @@ const countUpAnimale = setInterval(() => {
   countAnimale = countAnimale + Math.floor(boxCountAnimale / 210);
   if (countAnimale > boxCountAnimale) countAnimale = boxCountAnimale;
 }, 40);
+
+// produse
+
+const btnCaini = document.getElementById('cainibtn');
+const boxCaini = document.getElementById('caini');
+
+// btnClick.addEventListener('click', function handleClick(event) {
+//   event.boxCaini.classList.add('bg-yellow');
+// });
+
+function remAdd() {
+  const btnCaini = document.getElementById('cainibtn');
+  const boxCaini = document.getElementById('caini');
+  boxCaini.classList.add('productsNone');
+}
