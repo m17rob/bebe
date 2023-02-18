@@ -49,3 +49,17 @@ menuLinks.forEach(link => {
 
     })
 })
+
+// /////////////////SCROLL//////////////////
+window.addEventListener('scroll', ()=> {
+    const currentScroll = window.scrollY;
+
+    if(currentScroll <= 150){
+        button.style.display= "none"
+        menu.style.display = "none";
+        button.classList.remove('open');
+    } else {
+        button.style.display= "block"
+       
+    }
+})
