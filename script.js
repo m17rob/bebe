@@ -26,3 +26,6 @@ const sectionWatcher = new IntersectionObserver(sectionWatcherCallback, sectionW
 sections.forEach(section => {
     sectionWatcher.observe(section);
 })
+
+// ////////////////////////////////////////
+// HAMBURGER
