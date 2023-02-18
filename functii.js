@@ -42,15 +42,7 @@ const countUpAnimale = setInterval(() => {
 
 // produse
 
-const btnCaini = document.getElementById('cainibtn');
-const boxCaini = document.getElementById('caini');
-
-// btnClick.addEventListener('click', function handleClick(event) {
-//   event.boxCaini.classList.add('bg-yellow');
-// });
-
-function remAdd() {
-  const btnCaini = document.getElementById('cainibtn');
-  const boxCaini = document.getElementById('caini');
-  boxCaini.classList.add('productsNone');
-}
+const cainiBtn = document.querySelector('#cainibtn');
+cainiBtn.addEventListener('click', function () {
+  alert('muie');
+});
