@@ -1488,12 +1488,6 @@ body {
   }
 }
 
-.active {
-  background: #e6e6e6;
-  border-radius: 50px;
-  color: #224e69;
-}
-
 .prices {
   background: rgba(255, 244, 244, 0.5);
   box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01),
@@ -2926,10 +2920,52 @@ body {
   --animate-duration: 2s;
 }
 
-.animate__animated.animate__bounceInLeft {
-  --animate-duration: 1.5s;
+// .animate__animated.animate__bounceInLeft {
+//   --animate-duration: 1.5s;
+// }
+
+// .animate__animated.animate__bounceInRight {
+//   --animate-duration: 1.5s;
+// }
+
+.animate__animated.animate__zoomIn {
+  --animate-duration: 0.5s;
 }
 
-.animate__animated.animate__bounceInRight {
-  --animate-duration: 1.5s;
+.active {
+  background: #e6e6e6;
+  border-radius: 50px;
+  color: #224e69;
+}
+
+.innAnimation {
+  animation-name: innAnima;
+  animation-duration: 0.7s;
+}
+
+.activeAnimation {
+  animation-name: activeAnima;
+  animation-duration: 0.7s;
+}
+
+@keyframes innAnima {
+  from {
+    background: rgba(230, 230, 230, 0);
+    border-radius: 50px;
+  }
+  to {
+    background: rgba(230, 230, 230, 0);
+    border-radius: 50px;
+  }
+}
+
+@keyframes activeAnima {
+  from {
+    background: rgba(230, 230, 230, 0);
+    border-radius: 50px;
+  }
+  to {
+    background: #e6e6e6;
+    border-radius: 50px;
+  }
 }
