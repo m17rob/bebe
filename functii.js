@@ -8,9 +8,9 @@ const countUp = setInterval(() => {
   let boxCount = box.dataset.count;
   if (count == boxCount) clearInterval(countUp);
   box.innerHTML = count + box.dataset.unit;
-  count = count + Math.floor(boxCount / 23);
+  count = count + Math.floor(boxCount / 210);
   if (count > boxCount) count = boxCount;
-}, 150);
+}, 50);
 
 // Count-up-Ani
 
@@ -42,7 +42,55 @@ const countUpAnimale = setInterval(() => {
 
 // produse
 
+const pisiciBtn = document.querySelector('#pisicibtn');
 const cainiBtn = document.querySelector('#cainibtn');
+const deratizareBtn = document.querySelector('#deratizarebtn');
+const pasariBtn = document.querySelector('#pasaribtn');
+const cainiBox = document.querySelector('#caini');
+const pisiciBox = document.querySelector('#pisici');
+const deratizareBox = document.querySelector('#deratizare');
+const pasariBox = document.querySelector('#pasari');
+
+pisiciBtn.addEventListener('click', function () {
+  caini.classList.add('productsNone');
+  pisici.classList.remove('productsNone');
+  deratizare.classList.add('productsNone');
+  pasari.classList.add('productsNone');
+  cainiBtn.classList.remove('active');
+  pisiciBtn.classList.add('active');
+  deratizareBtn.classList.remove('active');
+  pasariBtn.classList.remove('active');
+});
+
 cainiBtn.addEventListener('click', function () {
-  alert('muie');
+  pisici.classList.add('productsNone');
+  caini.classList.remove('productsNone');
+  deratizare.classList.add('productsNone');
+  pasari.classList.add('productsNone');
+  pisiciBtn.classList.remove('active');
+  cainiBtn.classList.add('active');
+  deratizareBtn.classList.remove('active');
+  pasariBtn.classList.remove('active');
+});
+
+deratizareBtn.addEventListener('click', function () {
+  deratizare.classList.remove('productsNone');
+  caini.classList.add('productsNone');
+  pisici.classList.add('productsNone');
+  pasari.classList.add('productsNone');
+  pisiciBtn.classList.remove('active');
+  cainiBtn.classList.remove('active');
+  deratizareBtn.classList.add('active');
+  pasariBtn.classList.remove('active');
+});
+
+pasariBtn.addEventListener('click', function () {
+  pasari.classList.remove('productsNone');
+  caini.classList.add('productsNone');
+  pisici.classList.add('productsNone');
+  deratizare.classList.add('productsNone');
+  pisiciBtn.classList.remove('active');
+  cainiBtn.classList.remove('active');
+  pasariBtn.classList.add('active');
+  deratizareBtn.classList.remove('active');
 });

@@ -1189,7 +1189,7 @@ body {
   padding-bottom: 20rem;
   position: relative;
   // height: 100%;
-  z-index: -2;
+  // z-index: 8;
 
   @media only screen and (max-width: 500px) {
     padding: 7rem 5rem;
@@ -1381,11 +1381,6 @@ body {
         display: none;
       }
     }
-    &:first-child {
-      background: #e6e6e6;
-      border-radius: 50px;
-      color: #224e69;
-    }
 
     & img {
       margin-right: 1rem;
@@ -1402,6 +1397,12 @@ body {
       }
     }
   }
+}
+
+.active {
+  background: #e6e6e6;
+  border-radius: 50px;
+  color: #224e69;
 }
 
 .prices {
@@ -2829,4 +2830,17 @@ body {
 
 .productsNone {
   display: none;
+}
+
+// animatii
+.animate__animated.animate__bounceInDown {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__bounceInLeft {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__bounceInRight {
+  --animate-duration: 1.5s;
 }
