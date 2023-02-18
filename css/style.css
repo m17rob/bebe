@@ -227,7 +227,8 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content max-content;
   gap: 0px 0px;
-  grid-template-areas: 'txt img' 'numbs numbs';
+  grid-template-areas: 'txt img'
+ 'numbs numbs';
   padding: 7rem 0rem; }
   @media only screen and (max-width: 920px) {
     .content {
@@ -633,100 +634,100 @@ body {
           width: 27%;
           right: -10px; } }
 
-.services__cards--chirurgie {
-  grid-area: chirurgie;
-  justify-self: center; }
-  .services__cards--chirurgie p {
-    width: 74%; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--chirurgie p {
-        width: 78%; } }
-    @media only screen and (max-width: 630px) {
-      .services__cards--chirurgie p {
-        padding-top: 1.4rem; } }
-  .services__cards--chirurgie img {
-    position: absolute;
-    top: 0;
-    right: -15px;
-    width: 34%; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--chirurgie img {
-        width: 30%; } }
-    @media only screen and (max-width: 400px) {
-      .services__cards--chirurgie img {
-        width: 27%;
-        right: -10px;
-        top: 2rem; } }
-
-.services__cards--vaccinare {
-  grid-area: vaccinare;
-  justify-self: center; }
-  .services__cards--vaccinare img {
-    position: absolute;
-    top: 2rem;
-    right: -45px;
-    width: 42%; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--vaccinare img {
-        width: 35%; } }
-    @media only screen and (max-width: 400px) {
-      .services__cards--vaccinare img {
-        right: -20px;
-        top: 3rem; } }
-
-.services__cards--imagistica {
-  grid-area: imagistica; }
-  .services__cards--imagistica img {
-    position: absolute;
-    top: 0;
-    right: -15px;
-    width: 34%; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--imagistica img {
-        width: 30%; } }
-
-.services__cards--consultatii {
-  grid-area: consultatii;
-  justify-self: center; }
-  .services__cards--consultatii p {
-    width: 60%; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--consultatii p {
-        width: 70%; } }
-  .services__cards--consultatii img {
-    position: absolute;
-    top: 1rem;
-    right: -30px;
-    width: 47%; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--consultatii img {
-        width: 39%; } }
-    @media only screen and (max-width: 400px) {
-      .services__cards--consultatii img {
-        width: 38%;
-        top: 20px;
-        right: -22px; } }
-
-.services__cards--tratamente {
-  grid-area: tratamente;
-  justify-self: center; }
-  .services__cards--tratamente p {
-    width: 70%; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--tratamente p {
-        width: 75%; } }
-  .services__cards--tratamente img {
-    position: absolute;
-    top: 0;
-    right: -15px;
-    width: 34%; }
-    @media only screen and (max-width: 1200px) {
-      .services__cards--tratamente img {
-        width: 30%; } }
-    @media only screen and (max-width: 400px) {
-      .services__cards--tratamente img {
-        width: 30%;
-        right: -10px; } }
+          .services__cards--chirurgie {
+            grid-area: chirurgie;
+            justify-self: center; }
+            .services__cards--chirurgie p {
+              width: 74%; }
+              @media only screen and (max-width: 1200px) {
+                .services__cards--chirurgie p {
+                  width: 78%; } }
+              @media only screen and (max-width: 630px) {
+                .services__cards--chirurgie p {
+                  padding-top: 1.4rem; } }
+            .services__cards--chirurgie img {
+              position: absolute;
+              top: 0;
+              right: -15px;
+              width: 34%; }
+              @media only screen and (max-width: 1200px) {
+                .services__cards--chirurgie img {
+                  width: 30%; } }
+              @media only screen and (max-width: 400px) {
+                .services__cards--chirurgie img {
+                  width: 27%;
+                  right: -10px;
+                  top: 2rem; } }
+          
+          .services__cards--vaccinare {
+            grid-area: vaccinare;
+            justify-self: center; }
+            .services__cards--vaccinare img {
+              position: absolute;
+              top: 2rem;
+              right: -45px;
+              width: 42%; }
+              @media only screen and (max-width: 1200px) {
+                .services__cards--vaccinare img {
+                  width: 35%; } }
+              @media only screen and (max-width: 400px) {
+                .services__cards--vaccinare img {
+                  right: -20px;
+                  top: 3rem; } }
+          
+          .services__cards--imagistica {
+            grid-area: imagistica; }
+            .services__cards--imagistica img {
+              position: absolute;
+              top: 0;
+              right: -15px;
+              width: 34%; }
+              @media only screen and (max-width: 1200px) {
+                .services__cards--imagistica img {
+                  width: 30%; } }
+          
+          .services__cards--consultatii {
+            grid-area: consultatii;
+            justify-self: center; }
+            .services__cards--consultatii p {
+              width: 60%; }
+              @media only screen and (max-width: 1200px) {
+                .services__cards--consultatii p {
+                  width: 70%; } }
+            .services__cards--consultatii img {
+              position: absolute;
+              top: 1rem;
+              right: -30px;
+              width: 47%; }
+              @media only screen and (max-width: 1200px) {
+                .services__cards--consultatii img {
+                  width: 39%; } }
+              @media only screen and (max-width: 400px) {
+                .services__cards--consultatii img {
+                  width: 38%;
+                  top: 20px;
+                  right: -22px; } }
+          
+          .services__cards--tratamente {
+            grid-area: tratamente;
+            justify-self: center; }
+            .services__cards--tratamente p {
+              width: 70%; }
+              @media only screen and (max-width: 1200px) {
+                .services__cards--tratamente p {
+                  width: 75%; } }
+            .services__cards--tratamente img {
+              position: absolute;
+              top: 0;
+              right: -15px;
+              width: 34%; }
+              @media only screen and (max-width: 1200px) {
+                .services__cards--tratamente img {
+                  width: 30%; } }
+              @media only screen and (max-width: 400px) {
+                .services__cards--tratamente img {
+                  width: 30%;
+                  right: -10px; } }
 
 .products {
   background: rgba(255, 255, 255, 0.3);
@@ -1931,3 +1932,44 @@ body {
 
 .productsNone {
   display: none; }
+
+.animate__animated.animate__bounceInDown {
+  --animate-duration: 2s; }
+
+.animate__animated.animate__bounceInLeft {
+  --animate-duration: 3s; }
+
+.animate__animated.animate__bounceInRight {
+  --animate-duration: 3s; }
+
+.animate__animated.animate__zoomIn {
+  --animate-duration: 0.5s; }
+
+.active {
+  background: #e6e6e6;
+  border-radius: 50px;
+  color: #224e69; }
+
+.innAnimation {
+  animation-name: innAnima;
+  animation-duration: 0.7s; }
+
+.activeAnimation {
+  animation-name: activeAnima;
+  animation-duration: 0.7s; }
+
+@keyframes innAnima {
+  from {
+    background: rgba(230, 230, 230, 0);
+    border-radius: 50px; }
+  to {
+    background: rgba(230, 230, 230, 0);
+    border-radius: 50px; } }
+
+@keyframes activeAnima {
+  from {
+    background: rgba(230, 230, 230, 0);
+    border-radius: 50px; }
+  to {
+    background: #e6e6e6;
+    border-radius: 50px; } }
