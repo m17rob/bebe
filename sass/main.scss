@@ -45,38 +45,6 @@ body {
   }
 }
 
-.mobileNav {
-  display: flex;
-  background: #ffffff;
-  border-radius: 50px 50px 0px 0px;
-  position: fixed;
-  z-index: 100;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  // font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  padding: 1.4rem 4rem;
-
-  letter-spacing: 0.02em;
-
-  color: #5a5a5a;
-
-  :not(:last-child) {
-    margin-right: 2rem;
-  }
-  @media only screen and (min-width: 921px) {
-    display: none;
-  }
-
-  @media only screen and (max-width: 630px) {
-    font-size: 1.6rem;
-  }
-}
-
 .heading {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
