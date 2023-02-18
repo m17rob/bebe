@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farmacie Veterinara</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
 
@@ -48,13 +52,13 @@
         <div class="content__txt">
           <div class="content__txt--title">
             <div class="content__txt--title__t1">
-              <h1>Farmacie</h1>
+              <h1 class="animate__animated  animate__bounceInLeft">Farmacie</h1>
             </div>
             <div class="content__txt--title__t2">
-              <h1>Veterinara</h1>
+              <h1 class="animate__animated  animate__bounceInRight">Veterinara</h1>
             </div>
           </div>
-          <div class="content__txt--p">
+          <div class="content__txt--p animate__animated  animate__bounceInDown">
             Farmacia noastra veterinara din Strehaia ofera medicamente, produse
             si servicii medicale pentru animalele dumneavoastra de companie.
             Personalul nostru este format din veterinari cu experienta care va
@@ -78,7 +82,12 @@
         <div class="content__numbs">
           <div class="date">
             <div class="date__clienti">
-              <div class="date__clienti--nr">23k+</div>
+              <div
+                id="count-up"
+                class="date__clienti--nr"
+                data-count="23"
+                data-unit="+"
+              ></div>
               <div class="date__clienti--txt">
                 Clienti <br />
                 multumiti
@@ -108,7 +117,7 @@
       <h2>servicii</h2>
       <div class="services">
         <div class="services__cards">
-          <div class="services__cards--cosmetica services__cards--card">
+          <div class="services__cards--cosmetica services__cards--card animate__animated  animate__bounceInLeft">
             <h4>cosmetica</h4>
             <p>
               Oferim ingrijire pentru animalele de companie, cum ar fi tunsori,
@@ -125,7 +134,7 @@
             </p>
             <img src="/img/chirurgie.png" alt="" />
           </div>
-          <div class="services__cards--vaccinare services__cards--card">
+          <div class="services__cards--vaccinare services__cards--card animate__animated  animate__bounceInRight">
             <h4>vaccinare</h4>
             <p>
               Oferim vaccinari pentru protejarea animalelor de diverse boli.
@@ -134,7 +143,7 @@
             </p>
             <img src="img/vaccinare.png" alt="" />
           </div>
-          <div class="services__cards--imagistica services__cards--card">
+          <div class="services__cards--imagistica animate__animated  animate__bounceInLeft services__cards--card">
             <h4>imagistica</h4>
             <p>
               Serviciul de imagistică medicală oferă radiografii si ecografii ce
@@ -152,7 +161,7 @@
             </p>
             <img src="/img/consultatii.png" alt="" />
           </div>
-          <div class="services__cards--tratamente services__cards--card">
+          <div class="services__cards--tratamente animate__animated  animate__bounceInRight services__cards--card">
             <h4>tratamente</h4>
             <p>
               Tratamentul este prescris dupa ce medicul veterinar a evaluat
@@ -169,19 +178,20 @@
       <div class="background"></div>
       <div class="contentPrices">
         <div class="categories">
-          <div id="cainibtn" class="categories__category">
+          <div id="cainibtn" class="categories__category
+          active">
             <img src="img/caine.png" alt="" />
             <h4>Caini</h4>
           </div>
-          <div class="categories__category">
+          <div id="pisicibtn" class="categories__category">
             <img src="/img/pisica.png" alt="" />
             <h4>Pisici</h4>
           </div>
-          <div class="categories__category">
+          <div id="deratizarebtn" class="categories__category">
             <img src="/img/gandac.png" alt="" />
             <h4>Deratizare</h4>
           </div>
-          <div class="categories__category">
+          <div id="pasaribtn" class="categories__category">
             <img src="/img/pasare.png" alt="" />
             <h4>Pasari</h4>
           </div>
@@ -191,10 +201,10 @@
             <div class="card__img">
               <img src="img/mancarecaini.webp" alt="" />
             </div>
-            <div class="card__nume">barking heads</div>
-            <div class="card__tag1">senior</div>
-            <div class="card__tag2">300g</div>
-            <div class="card__price">15 ron</div>
+            <div id="cainiCardNume" class="card__nume">barking heads</div>
+            <div id="cainiCardTag1" class="card__tag1">senior</div>
+            <div id="cainiCardTag2" class="card__tag2">300g</div>
+            <div id="cainiCardPret" class="card__price">15 ron</div>
           </div>
           <div class="card">
             <div class="card__img">
@@ -208,6 +218,123 @@
           <div class="card">
             <div class="card__img">
               <img src="img/mancarecaini3.png" alt="" />
+            </div>
+            <div class="card__nume">barking heads</div>
+            <div class="card__tag1">senior</div>
+            <div class="card__tag2">300g</div>
+            <div class="card__price">15 ron</div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini4.png" alt="" />
+            </div>
+            <div class="card__nume">barking heads</div>
+            <div class="card__tag1">senior</div>
+            <div class="card__tag2">300g</div>
+            <div class="card__price">15 ron</div>
+          </div>
+        </div>
+
+        <div id="pisici" class="prices productsNone">
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini2.png" alt="" />
+            </div>
+            <div id="cainiCardNume" class="card__nume">barking heads</div>
+            <div id="cainiCardTag1" class="card__tag1">senior</div>
+            <div id="cainiCardTag2" class="card__tag2">300g</div>
+            <div id="cainiCardPret" class="card__price">15 ron</div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini2.png" alt="" />
+            </div>
+            <div class="card__nume">barking heads</div>
+            <div class="card__tag1">senior</div>
+            <div class="card__tag2">300g</div>
+            <div class="card__price">15 ron</div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini4.png" alt="" />
+            </div>
+            <div class="card__nume">barking heads</div>
+            <div class="card__tag1">senior</div>
+            <div class="card__tag2">300g</div>
+            <div class="card__price">15 ron</div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini3.png" alt="" />
+            </div>
+            <div class="card__nume">barking heads</div>
+            <div class="card__tag1">senior</div>
+            <div class="card__tag2">300g</div>
+            <div class="card__price">15 ron</div>
+          </div>
+        </div>
+
+        <div id="deratizare" class="prices productsNone">
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini3.png" alt="" />
+            </div>
+            <div id="cainiCardNume" class="card__nume">barking heads</div>
+            <div id="cainiCardTag1" class="card__tag1">senior</div>
+            <div id="cainiCardTag2" class="card__tag2">300g</div>
+            <div id="cainiCardPret" class="card__price">15 ron</div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini3.png" alt="" />
+            </div>
+            <div class="card__nume">barking heads</div>
+            <div class="card__tag1">senior</div>
+            <div class="card__tag2">300g</div>
+            <div class="card__price">15 ron</div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini3.png" alt="" />
+            </div>
+            <div class="card__nume">barking heads</div>
+            <div class="card__tag1">senior</div>
+            <div class="card__tag2">300g</div>
+            <div class="card__price">15 ron</div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini3.png" alt="" />
+            </div>
+            <div class="card__nume">barking heads</div>
+            <div class="card__tag1">senior</div>
+            <div class="card__tag2">300g</div>
+            <div class="card__price">15 ron</div>
+          </div>
+        </div>
+
+        <div id="pasari" class="prices productsNone">
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini4.png" alt="" />
+            </div>
+            <div id="cainiCardNume" class="card__nume">barking heads</div>
+            <div id="cainiCardTag1" class="card__tag1">senior</div>
+            <div id="cainiCardTag2" class="card__tag2">300g</div>
+            <div id="cainiCardPret" class="card__price">15 ron</div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini4.png" alt="" />
+            </div>
+            <div class="card__nume">barking heads</div>
+            <div class="card__tag1">senior</div>
+            <div class="card__tag2">300g</div>
+            <div class="card__price">15 ron</div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="img/mancarecaini4.png" alt="" />
             </div>
             <div class="card__nume">barking heads</div>
             <div class="card__tag1">senior</div>
