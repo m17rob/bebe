@@ -39,3 +39,10 @@ const countUpAnimale = setInterval(() => {
   countAnimale = countAnimale + Math.floor(boxCountAnimale / 210);
   if (countAnimale > boxCountAnimale) countAnimale = boxCountAnimale;
 }, 40);
+
+// produse
+
+const cainiBtn = document.querySelector('#cainibtn');
+cainiBtn.addEventListener('click', function () {
+  alert('muie');
+});

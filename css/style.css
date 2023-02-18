@@ -2151,3 +2151,6 @@ body {
     .footer__copyright span {
       color: #3b5e73;
       font-weight: 600; }
+
+.productsNone {
+  display: none; }

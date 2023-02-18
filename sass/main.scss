@@ -185,7 +185,7 @@ body {
         font-weight: 700;
         color: $grey-dark;
         cursor: pointer;
-        text-decoration: none; 
+        text-decoration: none;
 
         @media only screen and (max-width: 1500px) {
           font-size: 1.8rem;
@@ -2893,3 +2893,7 @@ body {
 }
 
 // jssss
+
+.productsNone {
+  display: none;
+}
