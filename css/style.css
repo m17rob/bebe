@@ -732,7 +732,7 @@ body {
         right: -10px; } }
 
 .hide {
-  display: none; }
+  visibility: hidden; }
 
 .products {
   background: rgba(255, 255, 255, 0.3);
