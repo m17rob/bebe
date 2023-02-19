@@ -924,7 +924,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    place-items: center; }
     @media only screen and (max-width: 1420px) {
       .prices .card:nth-child(1) {
         margin-bottom: 2.4rem; } }
@@ -960,7 +961,8 @@ body {
       background: rgba(35, 61, 77, 0.15);
       border-radius: 20px;
       padding: 0.2rem 0.9rem;
-      margin-top: 1.6rem; }
+      margin-top: 1.6rem;
+      width: max-content; }
       @media only screen and (max-width: 630px) {
         .prices .card__tag1 {
           font-size: 1rem; } }
@@ -1968,3 +1970,63 @@ body {
   to {
     background: #e6e6e6;
     border-radius: 50px; } }
+
+.btnLeft {
+  width: 20px;
+  height: 20px;
+  background: #000; }
+
+.btnRight {
+  width: 20px;
+  height: 20px;
+  background: #000; }
+
+.next,
+.prev {
+  grid-row: 1;
+  /* to force everything on the same row */
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 2; }
+
+.prev {
+  position: absolute;
+  z-index: 10;
+  top: 60%;
+  left: 12%;
+  transform: translateY(-60%); }
+
+.next {
+  position: absolute;
+  z-index: 10;
+  top: 60%;
+  right: 12%;
+  transform: translateY(-60%); }
+
+.next2,
+.prev2 {
+  grid-row: 1;
+  /* to force everything on the same row */
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 2; }
+
+.prev2 {
+  position: absolute;
+  z-index: 10;
+  top: 60%;
+  left: 12%;
+  transform: translateY(-60%); }
+
+.next2 {
+  position: absolute;
+  z-index: 10;
+  top: 60%;
+  right: 12%;
+  transform: translateY(-60%); }
