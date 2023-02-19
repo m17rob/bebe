@@ -4,9 +4,6 @@ const animationCardsRight = document.querySelectorAll('.animateEl--right');
 const animationCards = [...animationCardsLeft, ...animationCardsRight];
 const triggerEl = document.querySelector(".animation__trigger");
 
-animationCardsLeft.forEach(el => {
-    console.log(el.classList);
-})
 
 const observer = new IntersectionObserver((entries) => {
 
@@ -17,9 +14,12 @@ const observer = new IntersectionObserver((entries) => {
             });
             animationCardsRight.forEach(el => {
                 el.classList.add('animate__bounceInRight')
-            });		
+            });	
+            animationCards.forEach(card => {
+                card.classList.remove('hide')
+            })	
         } else {
-            return
+            return;
         }
 	})
 }, {
