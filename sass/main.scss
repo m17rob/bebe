@@ -1135,7 +1135,7 @@ body {
     width: 50%;
   }
 
-  @media only screen and (max-width: 547px) {
+  @media only screen and (max-width: 550px) {
     width: 58%;
   }
 
@@ -1152,17 +1152,17 @@ body {
     // margin: 0;
   }
 
-  @media only screen and (max-width: 398px) {
+  @media only screen and (max-width: 399px) {
     width: 83%;
     // margin: 0;
   }
 
-  @media only screen and (max-width: 369px) {
+  @media only screen and (max-width: 371px) {
     width: 90%;
     // margin: 0;
   }
 
-  @media only screen and (max-width: 348px) {
+  @media only screen and (max-width: 349px) {
     width: 100%;
     // margin: 0 auto;
   }
@@ -1217,23 +1217,25 @@ body {
 
     & img {
       margin-right: 1rem;
-      height: 3.5rem;
+      height: 35px;
+      width: 35px;
 
       @media only screen and (max-width: 1500px) {
-        width: 36%;
+        width: 30px;
+        height: 30px;
       }
 
       @media only screen and (max-width: 1200px) {
-        width: 34%;
-        height: 3.2rem;
+        // width: 34%;
+        // height: 3.2rem;
       }
 
       @media only screen and (max-width: 630px) {
-        width: 30%;
-        height: 2.2rem;
+        width: 25px;
+        height: 25px;
       }
       @media only screen and (max-width: 430px) {
-        width: 40%;
+        // width: 40%;
       }
     }
   }
