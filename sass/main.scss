@@ -55,7 +55,7 @@ body {
   background-color: #132980b9;
   border-radius: 50%;
   position: fixed;
-  z-index: 20;
+  z-index: 100;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
@@ -130,7 +130,7 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(12, 19, 49, 0.801);
-  z-index: 2;
+  z-index: 50;
 }
 
 
@@ -189,7 +189,11 @@ body {
       align-items: center;
     }
 
-    &__logo img {
+    &__logo{
+      @media only screen and (max-width: 630px) {
+        width: 7rem;
+      }
+      img {
       width: 80%;
 
       @media only screen and (max-width: 1500px) {
@@ -201,7 +205,7 @@ body {
       }
 
       @media only screen and (max-width: 630px) {
-        width: 45%;
+        width: 100%;
       }
 
       @media only screen and (max-width: 350px) {
@@ -211,7 +215,7 @@ body {
         left: 50%;
         transform: translateX(-50%);
       }
-    }
+    }}
 
     &__links {
       display: flex;
@@ -230,7 +234,7 @@ body {
         padding: 1.5rem 3.6rem;
       }
 
-      @media only screen and (max-width: 920px) {
+      @media only screen and (max-width: 950px) {
         display: none;
       }
 
@@ -245,7 +249,7 @@ body {
           font-size: 1.8rem;
         }
         @media only screen and (max-width: 1200px) {
-          font-size: 1.3rem;
+          font-size: 1.5rem;
         }
         &:not(:last-child) {
           margin-right: 2rem;
@@ -268,8 +272,8 @@ body {
       padding: 2rem 3.5rem;
       font-size: 2.4rem;
       outline: 0.5rem solid $primary-dark;
-      outline-offset: -0.5rem;
-      font-weight: 700;
+      outline-offset: -0.7rem;
+      font-weight: 800;
       color: $primary-dark;
       cursor: pointer;
 
@@ -278,32 +282,26 @@ body {
       }
 
       @media only screen and (max-width: 1200px) {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         padding: 1.5rem 2.5rem;
       }
 
       @media only screen and (max-width: 600px) {
-        outline: 0.34rem solid $primary-dark;
+        outline: 0.5rem solid $primary-dark;
       }
 
       @media only screen and (max-width: 400px) {
         outline: 0.26rem solid $primary-dark;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
 
       @media only screen and (max-width: 370px) {
         outline: 0.26rem solid $primary-dark;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         padding: 1.5rem 1.5rem;
       }
 
       @media only screen and (max-width: 350px) {
-        outline: 0.26rem solid $primary-dark;
-        font-size: 0.9rem;
-        padding: 1.5rem 1.5rem;
-      }
-
-      @media only screen and (max-width: 330px) {
         display: none;
       }
     }
@@ -426,13 +424,14 @@ body {
       border-radius: 50px;
       padding: 2rem 3.5rem;
       cursor: pointer;
+      font-weight: 800;
       margin-top: 8rem;
 
       @media only screen and (max-width: 1500px) {
         font-size: 1.8rem;
       }
       @media only screen and (max-width: 1200px) {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         padding: 1.5rem 2.5rem;
       }
 
@@ -443,7 +442,7 @@ body {
 
       @media only screen and (max-width: 630px) {
         margin-top: 4rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -718,6 +717,10 @@ body {
       }
     }
   }
+}
+
+.hidden {
+  display:none;
 }
 
 .service {
@@ -1000,7 +1003,7 @@ body {
   position: relative;
   // height: 100%;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 1100px) {
     padding: 7rem 5rem;
   }
 
@@ -1099,7 +1102,6 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 11;
-  padding: 1rem 1rem;
   box-shadow: 0px 71px 29px rgba(19, 40, 128, 0.03),
     0px 40px 24px rgba(19, 40, 128, 0.1), 0px 18px 18px rgba(19, 40, 128, 0.17),
     0px 4px 10px rgba(19, 40, 128, 0.2), 0px 0px 0px rgba(19, 40, 128, 0.2);
@@ -1138,7 +1140,8 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    padding: 1rem 3rem;
+    padding: 2rem;
+    margin: .5rem 0;
     cursor: pointer;
     color: rgba(35, 61, 77, 0.7);
 
@@ -1167,7 +1170,7 @@ body {
     // }
 
     &:not(:last-child) {
-      margin-right: 3rem;
+      margin-right: .5rem;
 
       @media only screen and (max-width: 780px) {
         margin: 0;
@@ -1198,6 +1201,7 @@ body {
 
     & img {
       margin-right: 1rem;
+      height: 3.5rem;
 
       @media only screen and (max-width: 1500px) {
         width: 36%;
@@ -1394,7 +1398,7 @@ body {
   position: relative;
   height: 100%;
   z-index: -2;
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 1100px) {
     padding: 7rem 5rem;
   }
   h2 {
@@ -1927,10 +1931,14 @@ body {
   backdrop-filter: blur(10px);
   max-width: 192rem;
   margin: 0 auto 0 auto;
-  padding: 10rem 5rem;
+  padding: 10rem 5rem 20rem 5rem;
   padding-bottom: 20rem;
   position: relative;
   height: 100%;
+
+  @media only screen and (max-width: 1140px) {
+    padding: 10rem 5rem;
+  }
 
   .contactCtn {
     display: flex;
@@ -1966,6 +1974,7 @@ body {
     }
 
     @media only screen and (max-width: 1200px) {
+      
       font-size: 2.4rem;
     }
 
@@ -2480,29 +2489,30 @@ body {
   backdrop-filter: blur(10px);
   max-width: 192rem;
   margin: 0 auto 0 auto;
-  padding: 5rem 5rem;
+  padding: 5rem;
   // padding-bottom: 20rem;
   position: relative;
   height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: end;
+  justify-content: space-between; 
+  align-items: center;
 
   @media only screen and (max-width: 960px) {
     justify-content: center;
-    // align-items: center;
+    // align-items: center;   
   }
 
   @media only screen and (max-width: 400px) {
-    display: flex;
+    padding: 0 0 2rem 0;  
     flex-direction: column;
-    align-items: center;
+    gap: 1rem;
+    height: 10rem;
   }
 
   &__nav {
     display: flex;
 
-    @media only screen and (max-width: 920px) {
+    @media only screen and (max-width: 970px) {
       display: none;
     }
 
@@ -2530,7 +2540,7 @@ body {
       }
     }
   }
-
+ 
   &__logo {
     position: absolute;
     top: 50%;
@@ -2608,6 +2618,7 @@ body {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 30px;
+    
     /* identical to box height */
 
     letter-spacing: 0.02em;
@@ -2617,15 +2628,12 @@ body {
       font-size: 1.6rem;
     }
 
-    @media only screen and (max-width: 960px) {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    @media only screen and (max-width: 630px) {
+      font-size: 1.4rem;
     }
 
-    @media only screen and (max-width: 630px) {
-      font-size: 1.2rem;
+    @media only screen and (max-width: 400px) {
+      width: fit-content;
     }
     span {
       color: #3b5e73;

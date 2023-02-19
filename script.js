@@ -1,30 +1,33 @@
 /////////////////////////////////////////////////
-// const sections = document.querySelectorAll('section');
-// const navLinks = document.querySelectorAll('nav__links');
-// const activeHandler = (currentSectionId) => {
-//     navLinks.forEach(link => {
-//         console.log(link);
-//        if(link.dataset.section === currentSectionId){
-//         link.classList.add('active');
-//        }
-//     })
-// }
+const animationCardsLeft = document.querySelectorAll('.animateEl--left');
+const animationCardsRight = document.querySelectorAll('.animateEl--right');
+const animationCards = [...animationCardsLeft, ...animationCardsRight];
+const triggerEl = document.querySelector(".animation__trigger");
 
-// const sectionWatcherCallback = (section, sectionWatcher)=>{
-//     section.forEach(section => {
-//         if(!section.isIntersecting){return};
-//     })
-// }
+animationCardsLeft.forEach(el => {
+    console.log(el.classList);
+})
 
-// const sectionWatcherOptions = {
-//     threshold: .6
-// }
+const observer = new IntersectionObserver((entries) => {
 
-// const sectionWatcher = new IntersectionObserver(sectionWatcherCallback, sectionWatcherOptions)
+    entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			animationCardsLeft.forEach(el => {
+                el.classList.add('animate__bounceInLeft')
+            });
+            animationCardsRight.forEach(el => {
+                el.classList.add('animate__bounceInRight')
+            });		
+        } else {
+            return
+        }
+	})
+}, {
+	threshold: 0.3
+});
 
-// sections.forEach(section => {
-//     sectionWatcher.observe(section);
-// })
+observer.observe(triggerEl);
+
 
 // ////////////////////////////////////////
 
@@ -50,7 +53,7 @@ menuLinks.forEach(link => {
     })
 })
 
-// /////////////////SCROLL//////////////////
+// /////////////////TRIGGER MENU SCROLL//////////////////
 
 
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)

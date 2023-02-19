@@ -36,7 +36,7 @@ body {
   background-color: #132980b9;
   border-radius: 50%;
   position: fixed;
-  z-index: 20;
+  z-index: 100;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
@@ -90,7 +90,7 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(12, 19, 49, 0.801);
-  z-index: 2; }
+  z-index: 50; }
 
 .menu__container {
   height: 100%;
@@ -133,6 +133,9 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+    @media only screen and (max-width: 630px) {
+      .heading .nav__logo {
+        width: 7rem; } }
     .heading .nav__logo img {
       width: 80%; }
       @media only screen and (max-width: 1500px) {
@@ -143,7 +146,7 @@ body {
           width: 52%; } }
       @media only screen and (max-width: 630px) {
         .heading .nav__logo img {
-          width: 45%; } }
+          width: 100%; } }
       @media only screen and (max-width: 350px) {
         .heading .nav__logo img {
           position: absolute;
@@ -164,7 +167,7 @@ body {
       @media only screen and (max-width: 1200px) {
         .heading .nav__links {
           padding: 1.5rem 3.6rem; } }
-      @media only screen and (max-width: 920px) {
+      @media only screen and (max-width: 950px) {
         .heading .nav__links {
           display: none; } }
       .heading .nav__links--link {
@@ -178,7 +181,7 @@ body {
             font-size: 1.8rem; } }
         @media only screen and (max-width: 1200px) {
           .heading .nav__links--link {
-            font-size: 1.3rem; } }
+            font-size: 1.5rem; } }
         .heading .nav__links--link:not(:last-child) {
           margin-right: 2rem; }
         .heading .nav__links--link:nth-child(1) {
@@ -190,8 +193,8 @@ body {
       padding: 2rem 3.5rem;
       font-size: 2.4rem;
       outline: 0.5rem solid #132880;
-      outline-offset: -0.5rem;
-      font-weight: 700;
+      outline-offset: -0.7rem;
+      font-weight: 800;
       color: #132880;
       cursor: pointer; }
       @media only screen and (max-width: 1500px) {
@@ -199,26 +202,21 @@ body {
           font-size: 1.8rem; } }
       @media only screen and (max-width: 1200px) {
         .heading .nav__btn {
-          font-size: 1.3rem;
+          font-size: 1.5rem;
           padding: 1.5rem 2.5rem; } }
       @media only screen and (max-width: 600px) {
         .heading .nav__btn {
-          outline: 0.34rem solid #132880; } }
+          outline: 0.5rem solid #132880; } }
       @media only screen and (max-width: 400px) {
         .heading .nav__btn {
           outline: 0.26rem solid #132880;
-          font-size: 1.1rem; } }
+          font-size: 1.2rem; } }
       @media only screen and (max-width: 370px) {
         .heading .nav__btn {
           outline: 0.26rem solid #132880;
-          font-size: 1.1rem;
+          font-size: 1.2rem;
           padding: 1.5rem 1.5rem; } }
       @media only screen and (max-width: 350px) {
-        .heading .nav__btn {
-          outline: 0.26rem solid #132880;
-          font-size: 0.9rem;
-          padding: 1.5rem 1.5rem; } }
-      @media only screen and (max-width: 330px) {
         .heading .nav__btn {
           display: none; } }
 
@@ -227,8 +225,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content max-content;
   gap: 0px 0px;
-  grid-template-areas: 'txt img'
- 'numbs numbs';
+  grid-template-areas: 'txt img' 'numbs numbs';
   padding: 7rem 0rem; }
   @media only screen and (max-width: 920px) {
     .content {
@@ -305,13 +302,14 @@ body {
       border-radius: 50px;
       padding: 2rem 3.5rem;
       cursor: pointer;
+      font-weight: 800;
       margin-top: 8rem; }
       @media only screen and (max-width: 1500px) {
         .content__txt--btn {
           font-size: 1.8rem; } }
       @media only screen and (max-width: 1200px) {
         .content__txt--btn {
-          font-size: 1.3rem;
+          font-size: 1.5rem;
           padding: 1.5rem 2.5rem; } }
       @media only screen and (max-width: 920px) {
         .content__txt--btn {
@@ -320,7 +318,7 @@ body {
       @media only screen and (max-width: 630px) {
         .content__txt--btn {
           margin-top: 4rem;
-          font-size: 1rem; } }
+          font-size: 1.2rem; } }
   .content__img {
     grid-area: img;
     height: max-content;
@@ -524,6 +522,9 @@ body {
             .content__numbs .date__animale--txt {
               font-size: 1rem; } }
 
+.hidden {
+  display: none; }
+
 .service {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -634,100 +635,100 @@ body {
           width: 27%;
           right: -10px; } }
 
-          .services__cards--chirurgie {
-            grid-area: chirurgie;
-            justify-self: center; }
-            .services__cards--chirurgie p {
-              width: 74%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--chirurgie p {
-                  width: 78%; } }
-              @media only screen and (max-width: 630px) {
-                .services__cards--chirurgie p {
-                  padding-top: 1.4rem; } }
-            .services__cards--chirurgie img {
-              position: absolute;
-              top: 0;
-              right: -15px;
-              width: 34%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--chirurgie img {
-                  width: 30%; } }
-              @media only screen and (max-width: 400px) {
-                .services__cards--chirurgie img {
-                  width: 27%;
-                  right: -10px;
-                  top: 2rem; } }
-          
-          .services__cards--vaccinare {
-            grid-area: vaccinare;
-            justify-self: center; }
-            .services__cards--vaccinare img {
-              position: absolute;
-              top: 2rem;
-              right: -45px;
-              width: 42%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--vaccinare img {
-                  width: 35%; } }
-              @media only screen and (max-width: 400px) {
-                .services__cards--vaccinare img {
-                  right: -20px;
-                  top: 3rem; } }
-          
-          .services__cards--imagistica {
-            grid-area: imagistica; }
-            .services__cards--imagistica img {
-              position: absolute;
-              top: 0;
-              right: -15px;
-              width: 34%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--imagistica img {
-                  width: 30%; } }
-          
-          .services__cards--consultatii {
-            grid-area: consultatii;
-            justify-self: center; }
-            .services__cards--consultatii p {
-              width: 60%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--consultatii p {
-                  width: 70%; } }
-            .services__cards--consultatii img {
-              position: absolute;
-              top: 1rem;
-              right: -30px;
-              width: 47%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--consultatii img {
-                  width: 39%; } }
-              @media only screen and (max-width: 400px) {
-                .services__cards--consultatii img {
-                  width: 38%;
-                  top: 20px;
-                  right: -22px; } }
-          
-          .services__cards--tratamente {
-            grid-area: tratamente;
-            justify-self: center; }
-            .services__cards--tratamente p {
-              width: 70%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--tratamente p {
-                  width: 75%; } }
-            .services__cards--tratamente img {
-              position: absolute;
-              top: 0;
-              right: -15px;
-              width: 34%; }
-              @media only screen and (max-width: 1200px) {
-                .services__cards--tratamente img {
-                  width: 30%; } }
-              @media only screen and (max-width: 400px) {
-                .services__cards--tratamente img {
-                  width: 30%;
-                  right: -10px; } }
+.services__cards--chirurgie {
+  grid-area: chirurgie;
+  justify-self: center; }
+  .services__cards--chirurgie p {
+    width: 74%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--chirurgie p {
+        width: 78%; } }
+    @media only screen and (max-width: 630px) {
+      .services__cards--chirurgie p {
+        padding-top: 1.4rem; } }
+  .services__cards--chirurgie img {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 34%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--chirurgie img {
+        width: 30%; } }
+    @media only screen and (max-width: 400px) {
+      .services__cards--chirurgie img {
+        width: 27%;
+        right: -10px;
+        top: 2rem; } }
+
+.services__cards--vaccinare {
+  grid-area: vaccinare;
+  justify-self: center; }
+  .services__cards--vaccinare img {
+    position: absolute;
+    top: 2rem;
+    right: -45px;
+    width: 42%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--vaccinare img {
+        width: 35%; } }
+    @media only screen and (max-width: 400px) {
+      .services__cards--vaccinare img {
+        right: -20px;
+        top: 3rem; } }
+
+.services__cards--imagistica {
+  grid-area: imagistica; }
+  .services__cards--imagistica img {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 34%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--imagistica img {
+        width: 30%; } }
+
+.services__cards--consultatii {
+  grid-area: consultatii;
+  justify-self: center; }
+  .services__cards--consultatii p {
+    width: 60%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--consultatii p {
+        width: 70%; } }
+  .services__cards--consultatii img {
+    position: absolute;
+    top: 1rem;
+    right: -30px;
+    width: 47%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--consultatii img {
+        width: 39%; } }
+    @media only screen and (max-width: 400px) {
+      .services__cards--consultatii img {
+        width: 38%;
+        top: 20px;
+        right: -22px; } }
+
+.services__cards--tratamente {
+  grid-area: tratamente;
+  justify-self: center; }
+  .services__cards--tratamente p {
+    width: 70%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--tratamente p {
+        width: 75%; } }
+  .services__cards--tratamente img {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 34%; }
+    @media only screen and (max-width: 1200px) {
+      .services__cards--tratamente img {
+        width: 30%; } }
+    @media only screen and (max-width: 400px) {
+      .services__cards--tratamente img {
+        width: 30%;
+        right: -10px; } }
 
 .products {
   background: rgba(255, 255, 255, 0.3);
@@ -737,7 +738,7 @@ body {
   padding: 10rem 5rem;
   padding-bottom: 20rem;
   position: relative; }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 1100px) {
     .products {
       padding: 7rem 5rem; } }
   .products h2 {
@@ -817,7 +818,6 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 11;
-  padding: 1rem 1rem;
   box-shadow: 0px 71px 29px rgba(19, 40, 128, 0.03), 0px 40px 24px rgba(19, 40, 128, 0.1), 0px 18px 18px rgba(19, 40, 128, 0.17), 0px 4px 10px rgba(19, 40, 128, 0.2), 0px 0px 0px rgba(19, 40, 128, 0.2);
   border-radius: 50px; }
   @media only screen and (max-width: 1500px) {
@@ -847,7 +847,8 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    padding: 1rem 3rem;
+    padding: 2rem;
+    margin: .5rem 0;
     cursor: pointer;
     color: rgba(35, 61, 77, 0.7); }
     @media only screen and (max-width: 1500px) {
@@ -866,7 +867,7 @@ body {
       .categories__category {
         font-size: 1rem; } }
     .categories__category:not(:last-child) {
-      margin-right: 3rem; }
+      margin-right: .5rem; }
       @media only screen and (max-width: 780px) {
         .categories__category:not(:last-child) {
           margin: 0; } }
@@ -884,7 +885,8 @@ body {
       border-radius: 50px;
       color: #224e69; }
     .categories__category img {
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      height: 3.5rem; }
       @media only screen and (max-width: 1500px) {
         .categories__category img {
           width: 36%; } }
@@ -1020,7 +1022,7 @@ body {
   position: relative;
   height: 100%;
   z-index: -2; }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 1100px) {
     .team {
       padding: 7rem 5rem; } }
   .team h2 {
@@ -1422,10 +1424,13 @@ body {
   backdrop-filter: blur(10px);
   max-width: 192rem;
   margin: 0 auto 0 auto;
-  padding: 10rem 5rem;
+  padding: 10rem 5rem 20rem 5rem;
   padding-bottom: 20rem;
   position: relative;
   height: 100%; }
+  @media only screen and (max-width: 1140px) {
+    .contact {
+      padding: 10rem 5rem; } }
   .contact .contactCtn {
     display: flex;
     flex-wrap: wrap;
@@ -1823,23 +1828,24 @@ body {
   backdrop-filter: blur(10px);
   max-width: 192rem;
   margin: 0 auto 0 auto;
-  padding: 5rem 5rem;
+  padding: 5rem;
   position: relative;
   height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: end; }
+  align-items: center; }
   @media only screen and (max-width: 960px) {
     .footer {
       justify-content: center; } }
   @media only screen and (max-width: 400px) {
     .footer {
-      display: flex;
+      padding: 0 0 2rem 0;
       flex-direction: column;
-      align-items: center; } }
+      gap: 1rem;
+      height: 10rem; } }
   .footer__nav {
     display: flex; }
-    @media only screen and (max-width: 920px) {
+    @media only screen and (max-width: 970px) {
       .footer__nav {
         display: none; } }
     .footer__nav--a {
@@ -1917,15 +1923,12 @@ body {
     @media only screen and (max-width: 1500px) {
       .footer__copyright {
         font-size: 1.6rem; } }
-    @media only screen and (max-width: 960px) {
-      .footer__copyright {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, -50%); } }
     @media only screen and (max-width: 630px) {
       .footer__copyright {
-        font-size: 1.2rem; } }
+        font-size: 1.4rem; } }
+    @media only screen and (max-width: 400px) {
+      .footer__copyright {
+        width: fit-content; } }
     .footer__copyright span {
       color: #3b5e73;
       font-weight: 600; }
