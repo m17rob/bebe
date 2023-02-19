@@ -2070,3 +2070,53 @@ body {
   top: 60%;
   right: 12%;
   transform: translateY(-60%); }
+
+.next3,
+.prev3 {
+  grid-row: 1;
+  /* to force everything on the same row */
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 2; }
+
+.prev3 {
+  position: absolute;
+  z-index: 10;
+  top: 60%;
+  left: 12%;
+  transform: translateY(-60%); }
+
+.next3 {
+  position: absolute;
+  z-index: 10;
+  top: 60%;
+  right: 12%;
+  transform: translateY(-60%); }
+
+.next4,
+.prev4 {
+  grid-row: 1;
+  /* to force everything on the same row */
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 2; }
+
+.prev4 {
+  position: absolute;
+  z-index: 10;
+  top: 60%;
+  left: 12%;
+  transform: translateY(-60%); }
+
+.next4 {
+  position: absolute;
+  z-index: 10;
+  top: 60%;
+  right: 12%;
+  transform: translateY(-60%); }

@@ -57,6 +57,12 @@ const cainiNext = document.querySelector('.next');
 const pisiciPrev = document.querySelector('.prev2');
 const pisiciNext = document.querySelector('.next2');
 
+const deratizarePrev = document.querySelector('.prev3');
+const deratizareNext = document.querySelector('.next3');
+
+const pasariPrev = document.querySelector('.prev4');
+const pasariNext = document.querySelector('.next4');
+
 pisiciBtn.addEventListener('click', function () {
   caini.classList.add('productsNone');
   pisici.classList.remove('productsNone');
@@ -79,10 +85,14 @@ pisiciBtn.addEventListener('click', function () {
   deratizareBtn.classList.remove('active');
   deratizareBtn.classList.remove('activeAnimation');
   deratizareBtn.classList.add('innAnimation');
+  deratizarePrev.classList.add('productsNone');
+  deratizareNext.classList.add('productsNone');
 
   pasariBtn.classList.remove('active');
   pasariBtn.classList.remove('activeAnimation');
   pasariBtn.classList.add('innAnimation');
+  pasariPrev.classList.add('productsNone');
+  pasariNext.classList.add('productsNone');
 });
 
 cainiBtn.addEventListener('click', function () {
@@ -107,10 +117,14 @@ cainiBtn.addEventListener('click', function () {
   deratizareBtn.classList.remove('active');
   deratizareBtn.classList.add('innAnimation');
   deratizareBtn.classList.remove('activeAnimation');
+  deratizarePrev.classList.add('productsNone');
+  deratizareNext.classList.add('productsNone');
 
   pasariBtn.classList.remove('active');
   pasariBtn.classList.add('innAnimation');
   pasariBtn.classList.remove('activeAnimation');
+  pasariPrev.classList.add('productsNone');
+  pasariNext.classList.add('productsNone');
 });
 
 deratizareBtn.addEventListener('click', function () {
@@ -122,16 +136,27 @@ deratizareBtn.addEventListener('click', function () {
   pisiciBtn.classList.remove('active');
   pisiciBtn.classList.add('innAnimation');
   pisiciBtn.classList.remove('activeAnimation');
+  pisiciPrev.classList.add('productsNone');
+  pisiciNext.classList.add('productsNone');
+
   cainiBtn.classList.remove('active');
   cainiBtn.classList.add('innAnimation');
   cainiBtn.classList.remove('activeAnimation');
+  cainiPrev.classList.add('productsNone');
+  cainiNext.classList.add('productsNone');
+
   deratizareBtn.classList.add('active');
   deratizareBtn.classList.add('activeAnimation');
   deratizareBtn.classList.remove('innAnimation');
   deratizareBox.classList.add('animate__animated', 'animate__zoomIn');
+  deratizarePrev.classList.remove('productsNone');
+  deratizareNext.classList.remove('productsNone');
+
   pasariBtn.classList.remove('active');
   pasariBtn.classList.add('innAnimation');
   pasariBtn.classList.remove('activeAnimation');
+  pasariPrev.classList.add('productsNone');
+  pasariNext.classList.add('productsNone');
 });
 
 pasariBtn.addEventListener('click', function () {
@@ -143,30 +168,46 @@ pasariBtn.addEventListener('click', function () {
   pisiciBtn.classList.remove('active');
   pisiciBtn.classList.add('innAnimation');
   pisiciBtn.classList.remove('activeAnimation');
+  pisiciPrev.classList.add('productsNone');
+  pisiciNext.classList.add('productsNone');
 
   cainiBtn.classList.remove('active');
   cainiBtn.classList.add('innAnimation');
   cainiBtn.classList.remove('activeAnimation');
+  cainiPrev.classList.add('productsNone');
+  cainiNext.classList.add('productsNone');
 
   pasariBtn.classList.add('active');
   pasariBtn.classList.remove('innAnimation');
   pasariBtn.classList.add('activeAnimation');
   pasariBox.classList.add('animate__animated', 'animate__zoomIn');
+  pasariPrev.classList.remove('productsNone');
+  pasariNext.classList.remove('productsNone');
 
   deratizareBtn.classList.remove('active');
   deratizareBtn.classList.add('innAnimation');
   deratizareBtn.classList.remove('activeAnimation');
+  deratizarePrev.classList.add('productsNone');
+  deratizareNext.classList.add('productsNone');
 });
 
 //  slide produse
 let slideIndex = 1;
 let slide2Index = 1;
+let slide3Index = 1;
+let slide4Index = 1;
 let numSlides = document.getElementsByClassName('slide').length;
 let numSlides2 = document.getElementsByClassName('slide2').length;
+let numSlides3 = document.getElementsByClassName('slide3').length;
+let numSlides4 = document.getElementsByClassName('slide3').length;
 let translateValue = (numSlides - 1) * -100;
 let translateValue2 = (numSlides2 - 1) * -100;
+let translateValue3 = (numSlides3 - 1) * -100;
+let translateValue4 = (numSlides3 - 1) * -100;
 showSlides(slideIndex);
 showSlides2(slide2Index);
+showSlides3(slide3Index);
+showSlides4(slide4Index);
 
 // Next/previous controls
 function changeSlide(n) {
@@ -174,6 +215,12 @@ function changeSlide(n) {
 }
 function changeSlide2(n) {
   showSlides2((slide2Index += n));
+}
+function changeSlide3(n) {
+  showSlides3((slide3Index += n));
+}
+function changeSlide4(n) {
+  showSlides4((slide4Index += n));
 }
 
 function showSlides(n) {
@@ -214,6 +261,52 @@ function showSlides2(n) {
 
   slides2[slide2Index - 1].style.display = 'grid';
   slides2[slide2Index - 1].classList.add(
+    'animate__animated',
+    'animate__fadeIn'
+  );
+}
+
+function showSlides3(n) {
+  let i;
+  let slides3 = document.getElementsByClassName('slide3');
+  if (n > slides3.length) {
+    slide3Index = 1;
+  }
+  if (n < 1) {
+    slide3Index = slides3.length;
+  }
+
+  for (i = 0; i < slides3.length; i++) {
+    slides3[i].style.display = 'none';
+  }
+
+  translateValue = (slide3Index - 1) * -100;
+
+  slides3[slide3Index - 1].style.display = 'grid';
+  slides3[slide3Index - 1].classList.add(
+    'animate__animated',
+    'animate__fadeIn'
+  );
+}
+
+function showSlides4(n) {
+  let i;
+  let slides4 = document.getElementsByClassName('slide4');
+  if (n > slides4.length) {
+    slide4Index = 1;
+  }
+  if (n < 1) {
+    slide4Index = slides4.length;
+  }
+
+  for (i = 0; i < slides4.length; i++) {
+    slides4[i].style.display = 'none';
+  }
+
+  translateValue = (slide4Index - 1) * -100;
+
+  slides4[slide4Index - 1].style.display = 'grid';
+  slides4[slide4Index - 1].classList.add(
     'animate__animated',
     'animate__fadeIn'
   );
