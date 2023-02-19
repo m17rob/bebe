@@ -951,6 +951,9 @@ body {
     align-items: center;
     justify-content: center;
     place-items: center; }
+    @media only screen and (max-width: 733px) {
+      .prices .card {
+        margin-bottom: 2.4rem; } }
     @media only screen and (max-width: 1420px) {
       .prices .card:nth-child(1) {
         margin-bottom: 2.4rem; } }
