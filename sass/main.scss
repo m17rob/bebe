@@ -1177,7 +1177,9 @@ body {
     cursor: pointer;
     color: rgba(35, 61, 77, 0.7);
 
-    :active {
+    &:active,
+    :hover,
+    :focus {
       background: rgba(0, 0, 0, 0);
     }
 
