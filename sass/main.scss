@@ -1296,6 +1296,9 @@ body {
     justify-content: center;
     place-items: center;
 
+    @media only screen and (max-width: 733px) {
+      margin-bottom: 2.4rem;
+
     &:nth-child(1) {
       @media only screen and (max-width: 1420px) {
         margin-bottom: 2.4rem;
