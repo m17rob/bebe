@@ -1176,6 +1176,7 @@ body {
     margin: 0.5rem 0;
     cursor: pointer;
     color: rgba(35, 61, 77, 0.7);
+    pointer-events: none;
 
     @media only screen and (max-width: 1500px) {
       padding: 1rem 1.8rem;
