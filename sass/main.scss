@@ -1966,6 +1966,45 @@ body {
       display: none;
     }
   }
+
+  .tagName1-mobile{
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: -10%;
+    z-index: 20;
+
+    @media only screen and (max-width: 920px) {
+      display: block;
+    }
+    @media only screen and (max-width: 500px) {
+      height: 15%;
+    }
+    @media only screen and (max-width: 400px) {
+      height: 20%;
+      top: 65%;
+    }
+  }
+
+  .tagName2-mobile{
+    display: none;
+    position: absolute;
+    top: 75%;
+    right: -10%;
+    z-index: 20;
+
+    @media only screen and (max-width: 920px) {
+      display: block;
+    }
+
+    @media only screen and (max-width: 500px) {
+      height: 15%;
+    }
+    @media only screen and (max-width: 400px) {
+      height: 20%;
+      top: 65%;
+    }
+  }
 }
 
 .contact {

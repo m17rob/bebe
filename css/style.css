@@ -1445,6 +1445,38 @@ body {
     @media only screen and (max-width: 920px) {
       .centerCnt .tagName1 {
         display: none; } }
+  .centerCnt .tagName1-mobile {
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: -10%;
+    z-index: 20; }
+    @media only screen and (max-width: 920px) {
+      .centerCnt .tagName1-mobile {
+        display: block; } }
+    @media only screen and (max-width: 500px) {
+      .centerCnt .tagName1-mobile {
+        height: 15%; } }
+    @media only screen and (max-width: 400px) {
+      .centerCnt .tagName1-mobile {
+        height: 20%;
+        top: 65%; } }
+  .centerCnt .tagName2-mobile {
+    display: none;
+    position: absolute;
+    top: 75%;
+    right: -10%;
+    z-index: 20; }
+    @media only screen and (max-width: 920px) {
+      .centerCnt .tagName2-mobile {
+        display: block; } }
+    @media only screen and (max-width: 500px) {
+      .centerCnt .tagName2-mobile {
+        height: 15%; } }
+    @media only screen and (max-width: 400px) {
+      .centerCnt .tagName2-mobile {
+        height: 20%;
+        top: 65%; } }
 
 .contact {
   background: rgba(255, 255, 255, 0.3);
