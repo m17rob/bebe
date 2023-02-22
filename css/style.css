@@ -119,20 +119,6 @@ body {
       top: 180%;
       background-color: #fff; }
 
-.headingbg {
-  max-width: max-content;
-  position: relative;
-  margin: 3rem auto 0 auto;
-  overflow: hidden; }
-  .headingbg .laba1 {
-    position: absolute;
-    left: -15rem;
-    top: 22rem; }
-  .headingbg .laba2 {
-    position: absolute;
-    right: -20rem;
-    top: 3rem; }
-
 .heading {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -533,20 +519,6 @@ body {
 .hidden {
   display: none; }
 
-.servicebg {
-  max-width: max-content;
-  position: relative;
-  margin: 0 auto 0 auto;
-  overflow: hidden; }
-  .servicebg .laba3 {
-    position: absolute;
-    left: -13rem;
-    top: -7rem; }
-  .servicebg .laba4 {
-    position: absolute;
-    right: 15rem;
-    top: 1rem; }
-
 .service {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -755,24 +727,6 @@ body {
 
 .hide {
   visibility: hidden; }
-
-.productsbg {
-  max-width: 202rem;
-  position: relative;
-  margin: 0 auto 0 auto;
-  overflow: hidden; }
-  .productsbg .laba5 {
-    position: absolute;
-    left: 25rem;
-    top: -1rem; }
-  .productsbg .laba6 {
-    position: absolute;
-    right: -20rem;
-    top: 1rem; }
-  .productsbg .laba7 {
-    position: absolute;
-    left: -18rem;
-    bottom: -6rem; }
 
 .products {
   background: rgba(255, 255, 255, 0.3);
@@ -1088,23 +1042,6 @@ body {
           height: 15rem; } }
       .prices .card__img img {
         height: 100%; }
-
-.teambg {
-  max-width: 202rem;
-  position: relative;
-  margin: 0 auto 0 auto;
-  z-index: -10;
-  overflow: hidden; }
-  .teambg .laba8 {
-    position: absolute;
-    left: 115rem;
-    top: -7rem;
-    z-index: -10; }
-  .teambg .laba9 {
-    position: absolute;
-    right: -15rem;
-    bottom: 40rem;
-    z-index: -10; }
 
 .team {
   background: rgba(255, 255, 255, 0.3);
@@ -1546,33 +1483,6 @@ body {
       .centerCnt .tagName2-mobile {
         height: 20%;
         top: 65%; } }
-
-.contactbg {
-  max-width: 202rem;
-  position: relative;
-  margin: 0 auto 0 auto;
-  z-index: -10;
-  overflow: hidden; }
-  .contactbg .laba10 {
-    position: absolute;
-    left: 5rem;
-    top: -7rem;
-    z-index: -10; }
-  .contactbg .laba11 {
-    position: absolute;
-    right: -19rem;
-    top: 4rem;
-    z-index: -10; }
-  .contactbg .laba12 {
-    position: absolute;
-    left: -19rem;
-    bottom: -10rem;
-    z-index: -10; }
-  .contactbg .laba13 {
-    position: absolute;
-    right: -19rem;
-    bottom: -20rem;
-    z-index: -10; }
 
 .contact {
   background: rgba(255, 255, 255, 0.3);

@@ -168,28 +168,6 @@ body {
 // //////////////////////////////////////////////////////
 // //////////////////////////////////////////////////////
 
-.headingbg {
-  // background: red;
-  max-width: max-content;
-  position: relative;
-  margin: 3rem auto 0 auto;
-  overflow: hidden;
-
-  // padding-left: 10rem;
-
-  .laba1 {
-    position: absolute;
-    left: -15rem;
-    top: 22rem;
-  }
-
-  .laba2 {
-    position: absolute;
-    right: -20rem;
-    top: 3rem;
-  }
-}
-
 .heading {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -737,27 +715,6 @@ body {
   display: none;
 }
 
-.servicebg {
-  // background: red;
-  max-width: max-content;
-  position: relative;
-  // margin: 3rem auto 0 auto;
-  margin: 0 auto 0 auto;
-  overflow: hidden;
-
-  .laba3 {
-    position: absolute;
-    left: -13rem;
-    top: -7rem;
-  }
-
-  .laba4 {
-    position: absolute;
-    right: 15rem;
-    top: 1rem;
-  }
-}
-
 .service {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -1028,34 +985,6 @@ body {
 
 .hide {
   visibility: hidden;
-}
-
-.productsbg {
-  // background: red;
-  // max-width: max-content;
-  max-width: 202rem;
-  position: relative;
-  // margin: 3rem auto 0 auto;
-  margin: 0 auto 0 auto;
-  overflow: hidden;
-
-  .laba5 {
-    position: absolute;
-    left: 25rem;
-    top: -1rem;
-  }
-
-  .laba6 {
-    position: absolute;
-    right: -20rem;
-    top: 1rem;
-  }
-
-  .laba7 {
-    position: absolute;
-    left: -18rem;
-    bottom: -6rem;
-  }
 }
 
 .products {
@@ -1510,31 +1439,6 @@ body {
   //   width: 20rem;
   //   height: 20rem;
   // }
-}
-
-.teambg {
-  // background: red;
-  // max-width: max-content;
-  max-width: 202rem;
-  position: relative;
-  // margin: 3rem auto 0 auto;
-  margin: 0 auto 0 auto;
-  z-index: -10;
-  overflow: hidden;
-
-  .laba8 {
-    position: absolute;
-    left: 115rem;
-    top: -7rem;
-    z-index: -10;
-  }
-
-  .laba9 {
-    position: absolute;
-    right: -15rem;
-    bottom: 40rem;
-    z-index: -10;
-  }
 }
 
 .team {
@@ -2112,45 +2016,6 @@ body {
       height: 20%;
       top: 65%;
     }
-  }
-}
-
-.contactbg {
-  // background: red;
-  // max-width: max-content;
-  max-width: 202rem;
-  position: relative;
-  // margin: 3rem auto 0 auto;
-  margin: 0 auto 0 auto;
-  z-index: -10;
-  overflow: hidden;
-
-  .laba10 {
-    position: absolute;
-    left: 5rem;
-    top: -7rem;
-    z-index: -10;
-  }
-
-  .laba11 {
-    position: absolute;
-    right: -19rem;
-    top: 4rem;
-    z-index: -10;
-  }
-
-  .laba12 {
-    position: absolute;
-    left: -19rem;
-    bottom: -10rem;
-    z-index: -10;
-  }
-
-  .laba13 {
-    position: absolute;
-    right: -19rem;
-    bottom: -20rem;
-    z-index: -10;
   }
 }
 
