@@ -187,7 +187,12 @@ body {
       outline-offset: -0.7rem;
       font-weight: 800;
       color: #132880;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all .2s; }
+      .heading .nav__btn:hover {
+        background-color: #132880;
+        transform: scale(1.1);
+        color: #fff; }
       @media only screen and (max-width: 1500px) {
         .heading .nav__btn {
           font-size: 1.8rem; } }
@@ -282,7 +287,11 @@ body {
       padding: 2rem 3.5rem;
       cursor: pointer;
       font-weight: 800;
-      margin-top: 8rem; }
+      margin-top: 8rem;
+      transition: all .2s; }
+      .content__txt--btn:hover {
+        background-color: #2685f0;
+        transform: scale(1.1); }
       @media only screen and (max-width: 1500px) {
         .content__txt--btn {
           font-size: 1.8rem; } }
@@ -1227,12 +1236,14 @@ body {
       @media only screen and (max-width: 500px) {
         .contentTeam .center__text {
           padding: 1rem 0.7rem; } }
-      @media only screen and (max-width: 1500px) {
-        .contentTeam .center__text img {
-          width: 12%; } }
-      @media only screen and (max-width: 630px) {
-        .contentTeam .center__text img {
-          width: 8%; } }
+      .contentTeam .center__text img {
+        margin-right: .5rem; }
+        @media only screen and (max-width: 1500px) {
+          .contentTeam .center__text img {
+            width: 12%; } }
+        @media only screen and (max-width: 630px) {
+          .contentTeam .center__text img {
+            width: 8%; } }
       .contentTeam .center__text--txt {
         font-size: 2.4rem;
         text-transform: uppercase;
@@ -1887,13 +1898,16 @@ body {
       .footer__nav {
         display: none; } }
     .footer__nav--a {
+      text-decoration: none;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 1.8rem;
       line-height: 30px;
       /* identical to box height */
       letter-spacing: 0.02em;
       color: #5a5a5a; }
+      .footer__nav--a:hover {
+        color: #132880; }
       @media only screen and (max-width: 1500px) {
         .footer__nav--a {
           font-size: 1.6rem; } }
@@ -1941,13 +1955,20 @@ body {
           width: 100%; } }
     .footer__logo--icons {
       width: 100%;
+      height: 5rem;
       display: flex;
+      overflow: visible;
       justify-content: space-around;
       align-items: center;
       margin-top: 0.5rem; }
       @media only screen and (max-width: 630px) {
         .footer__logo--icons {
           display: none; } }
+      .footer__logo--icons a > svg {
+        overflow: visible;
+        fill: #5a5a5a; }
+      .footer__logo--icons a > svg:hover {
+        fill: #132880; }
     .footer__logo__img {
       width: 100%; }
   .footer__copyright {

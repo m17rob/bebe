@@ -201,7 +201,7 @@ body {
           width: 100%;
         }
       }
-    }
+    }  
 
     &__links {
       display: flex;
@@ -262,6 +262,13 @@ body {
       font-weight: 800;
       color: $primary-dark;
       cursor: pointer;
+      transition: all .2s;
+
+      &:hover {
+        background-color: $primary-dark;
+        transform: scale(1.1);
+        color: $white;
+      }
 
       @media only screen and (max-width: 1500px) {
         font-size: 1.8rem;
@@ -396,6 +403,12 @@ body {
       cursor: pointer;
       font-weight: 800;
       margin-top: 8rem;
+      transition: all .2s;
+
+      &:hover {
+        background-color: $primary;
+        transform: scale(1.1);
+      }
 
       @media only screen and (max-width: 1500px) {
         font-size: 1.8rem;
@@ -1678,6 +1691,7 @@ body {
         padding: 1rem 0.7rem;
       }
       img {
+        margin-right: .5rem;
         @media only screen and (max-width: 1500px) {
           width: 12%;
         }
@@ -2571,11 +2585,16 @@ body {
     }
 
     &--a {
+      text-decoration: none;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 1.8rem;
       line-height: 30px;
       /* identical to box height */
+
+      &:hover {
+        color: $primary-dark;
+      }
 
       @media only screen and (max-width: 1500px) {
         font-size: 1.6rem;
@@ -2583,7 +2602,7 @@ body {
 
       letter-spacing: 0.02em;
 
-      color: #5a5a5a;
+      color: $grey-dark;
 
       &:not(:last-child) {
         margin-right: 3rem;
@@ -2652,13 +2671,22 @@ body {
 
     &--icons {
       width: 100%;
+      height: 5rem;
       display: flex;
+      overflow: visible;
       justify-content: space-around;
-      align-items: center;
+      align-items: center; 
       margin-top: 0.5rem;
 
       @media only screen and (max-width: 630px) {
         display: none;
+      }
+      a > svg{
+        overflow: visible;
+        fill: #5a5a5a;
+      }
+      a > svg:hover{
+        fill: $primary-dark;
       }
     }
 
