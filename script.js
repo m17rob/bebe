@@ -2,10 +2,10 @@
 const animationCardsLeft = document.querySelectorAll('.animateEl--left');
 const animationCardsRight = document.querySelectorAll('.animateEl--right');
 const animationCards = [...animationCardsLeft, ...animationCardsRight];
-const triggerEl = document.querySelector(".animation__trigger");
+const triggerElService = document.querySelector(".animation__trigger");
 
 
-const observer = new IntersectionObserver((entries) => {
+const observerService = new IntersectionObserver((entries) => {
 
     entries.forEach((entry) => {
 		if (entry.isIntersecting) {
@@ -23,12 +23,35 @@ const observer = new IntersectionObserver((entries) => {
         }
 	})
 }, {
-	threshold: 0.2
+	threshold: .1
 });
 
-observer.observe(triggerEl);
+observerService.observe(triggerElService);
+
+const steto = document.querySelector('.animation-inital__steto');
+const hug = document.querySelector('.animation-inital__hug');
+const heart = document.querySelector('.animation-inital__heart');
+const medal = document.querySelector('.animation-inital__medal');
+const triggerElTeam = document.querySelector('.center');
 
 
+const observerTeam = new IntersectionObserver((entries) => {
+console.log(entries);
+    entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+                steto.style.transform = "none";
+                hug.style.transform = "none";
+                heart.style.transform = "none";
+                medal.style.transform = "none";
+        } else {
+            return;
+        }
+	})
+}, {
+	threshold: .7
+});
+
+observerTeam.observe(triggerElTeam);
 /////////////////////////////////////////////////////  
 
 const menu = document.querySelector("#menu");
