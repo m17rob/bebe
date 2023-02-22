@@ -820,14 +820,15 @@ body {
 
       p {
         color: rgba(35, 61, 77, 0.65);
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         width: 75%;
-        padding-top: 2.4rem;
+        padding-top: 2rem;
         font-weight: 700;
-        line-height: 18px;
+        line-height: 20px;
 
         @media only screen and (max-width: 1200px) {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
+          padding-top: 1.5rem;
         }
 
         @media only screen and (max-width: 630px) {
@@ -985,6 +986,11 @@ body {
     }
   }
 }
+
+.hide {
+  visibility: hidden;
+}
+
 
 .products {
   background: rgba(255, 255, 255, 0.3);
@@ -1958,6 +1964,45 @@ body {
 
     @media only screen and (max-width: 920px) {
       display: none;
+    }
+  }
+
+  .tagName1-mobile{
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: -10%;
+    z-index: 20;
+
+    @media only screen and (max-width: 920px) {
+      display: block;
+    }
+    @media only screen and (max-width: 500px) {
+      height: 15%;
+    }
+    @media only screen and (max-width: 400px) {
+      height: 20%;
+      top: 65%;
+    }
+  }
+
+  .tagName2-mobile{
+    display: none;
+    position: absolute;
+    top: 75%;
+    right: -10%;
+    z-index: 20;
+
+    @media only screen and (max-width: 920px) {
+      display: block;
+    }
+
+    @media only screen and (max-width: 500px) {
+      height: 15%;
+    }
+    @media only screen and (max-width: 400px) {
+      height: 20%;
+      top: 65%;
     }
   }
 }
