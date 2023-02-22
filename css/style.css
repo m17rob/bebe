@@ -2067,6 +2067,10 @@ body {
     .next,
     .prev {
       display: none; } }
+  @media only screen and (max-width: 430px) {
+    .next,
+    .prev {
+      font-size: 40px; } }
 
 .prev {
   position: absolute;
