@@ -61,6 +61,7 @@ body {
   cursor: pointer;
   top: 5rem;
   right: 5rem;
+  -webkit-tap-highlight-color: transparent;
 
   @media only screen and (max-width: 950px) {
     display: block;
@@ -142,6 +143,7 @@ body {
     text-decoration: none;
     margin-bottom: 4rem;
     position: relative;
+    -webkit-tap-highlight-color: transparent;
 
     &:not(:last-child)::after {
       content: '';

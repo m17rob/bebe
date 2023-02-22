@@ -41,7 +41,8 @@ body {
   transition: 0.5s ease-in-out;
   cursor: pointer;
   top: 5rem;
-  right: 5rem; }
+  right: 5rem;
+  -webkit-tap-highlight-color: transparent; }
   @media only screen and (max-width: 950px) {
     #nav-icon {
       display: block; } }
@@ -102,7 +103,8 @@ body {
     color: #fff;
     text-decoration: none;
     margin-bottom: 4rem;
-    position: relative; }
+    position: relative;
+    -webkit-tap-highlight-color: transparent; }
     .menu__container--link:not(:last-child)::after {
       content: '';
       display: block;
