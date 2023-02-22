@@ -119,6 +119,20 @@ body {
       top: 180%;
       background-color: #fff; }
 
+.headingbg {
+  max-width: max-content;
+  position: relative;
+  margin: 3rem auto 0 auto;
+  overflow: hidden; }
+  .headingbg .laba1 {
+    position: absolute;
+    left: -15rem;
+    top: 22rem; }
+  .headingbg .laba2 {
+    position: absolute;
+    right: -20rem;
+    top: 3rem; }
+
 .heading {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -194,7 +208,7 @@ body {
       font-weight: 800;
       color: #132880;
       cursor: pointer;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .heading .nav__btn:hover {
         background-color: #132880;
         transform: scale(1.1);
@@ -294,7 +308,7 @@ body {
       cursor: pointer;
       font-weight: 800;
       margin-top: 8rem;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .content__txt--btn:hover {
         background-color: #2685f0;
         transform: scale(1.1); }
@@ -519,6 +533,20 @@ body {
 .hidden {
   display: none; }
 
+.servicebg {
+  max-width: max-content;
+  position: relative;
+  margin: 0 auto 0 auto;
+  overflow: hidden; }
+  .servicebg .laba3 {
+    position: absolute;
+    left: -13rem;
+    top: -7rem; }
+  .servicebg .laba4 {
+    position: absolute;
+    right: 15rem;
+    top: 1rem; }
+
 .service {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -727,6 +755,24 @@ body {
 
 .hide {
   visibility: hidden; }
+
+.productsbg {
+  max-width: 202rem;
+  position: relative;
+  margin: 0 auto 0 auto;
+  overflow: hidden; }
+  .productsbg .laba5 {
+    position: absolute;
+    left: 25rem;
+    top: -1rem; }
+  .productsbg .laba6 {
+    position: absolute;
+    right: -20rem;
+    top: 1rem; }
+  .productsbg .laba7 {
+    position: absolute;
+    left: -18rem;
+    bottom: -6rem; }
 
 .products {
   background: rgba(255, 255, 255, 0.3);
@@ -1043,6 +1089,23 @@ body {
       .prices .card__img img {
         height: 100%; }
 
+.teambg {
+  max-width: 202rem;
+  position: relative;
+  margin: 0 auto 0 auto;
+  z-index: -10;
+  overflow: hidden; }
+  .teambg .laba8 {
+    position: absolute;
+    left: 115rem;
+    top: -7rem;
+    z-index: -10; }
+  .teambg .laba9 {
+    position: absolute;
+    right: -15rem;
+    bottom: 40rem;
+    z-index: -10; }
+
 .team {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -1253,7 +1316,7 @@ body {
         .contentTeam .center__text {
           padding: 1rem 0.7rem; } }
       .contentTeam .center__text img {
-        margin-right: .5rem; }
+        margin-right: 0.5rem; }
         @media only screen and (max-width: 1500px) {
           .contentTeam .center__text img {
             width: 12%; } }
@@ -1483,6 +1546,33 @@ body {
       .centerCnt .tagName2-mobile {
         height: 20%;
         top: 65%; } }
+
+.contactbg {
+  max-width: 202rem;
+  position: relative;
+  margin: 0 auto 0 auto;
+  z-index: -10;
+  overflow: hidden; }
+  .contactbg .laba10 {
+    position: absolute;
+    left: 5rem;
+    top: -7rem;
+    z-index: -10; }
+  .contactbg .laba11 {
+    position: absolute;
+    right: -19rem;
+    top: 4rem;
+    z-index: -10; }
+  .contactbg .laba12 {
+    position: absolute;
+    left: -19rem;
+    bottom: -10rem;
+    z-index: -10; }
+  .contactbg .laba13 {
+    position: absolute;
+    right: -19rem;
+    bottom: -20rem;
+    z-index: -10; }
 
 .contact {
   background: rgba(255, 255, 255, 0.3);
@@ -1899,13 +1989,14 @@ body {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   max-width: 192rem;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 3rem auto;
   padding: 5rem;
   position: relative;
   height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  border-radius: 0 0 20px 20px; }
   @media only screen and (max-width: 960px) {
     .footer {
       justify-content: center; } }
