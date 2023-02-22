@@ -2830,6 +2830,7 @@ body {
   border: none;
   background: none;
   z-index: 2;
+  -webkit-tap-highlight-color: transparent;
 
   @media only screen and (min-width: 734px) {
     display: none;
@@ -2864,9 +2865,14 @@ body {
   border: none;
   background: none;
   z-index: 2;
+  -webkit-tap-highlight-color: transparent;
 
   @media only screen and (min-width: 734px) {
     display: none;
+  }
+
+  @media only screen and (max-width: 430px) {
+    font-size: 40px;
   }
 }
 
@@ -2895,9 +2901,14 @@ body {
   border: none;
   background: none;
   z-index: 2;
+  -webkit-tap-highlight-color: transparent;
 
   @media only screen and (min-width: 734px) {
     display: none;
+  }
+
+  @media only screen and (max-width: 430px) {
+    font-size: 40px;
   }
 }
 
@@ -2926,9 +2937,14 @@ body {
   border: none;
   background: none;
   z-index: 2;
+  -webkit-tap-highlight-color: transparent;
 
   @media only screen and (min-width: 734px) {
     display: none;
+  }
+
+  @media only screen and (max-width: 430px) {
+    font-size: 40px;
   }
 }
 

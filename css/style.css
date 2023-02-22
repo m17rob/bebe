@@ -2062,7 +2062,8 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent; }
   @media only screen and (min-width: 734px) {
     .next,
     .prev {
@@ -2095,11 +2096,16 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent; }
   @media only screen and (min-width: 734px) {
     .next2,
     .prev2 {
       display: none; } }
+  @media only screen and (max-width: 430px) {
+    .next2,
+    .prev2 {
+      font-size: 40px; } }
 
 .prev2 {
   position: absolute;
@@ -2124,11 +2130,16 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent; }
   @media only screen and (min-width: 734px) {
     .next3,
     .prev3 {
       display: none; } }
+  @media only screen and (max-width: 430px) {
+    .next3,
+    .prev3 {
+      font-size: 40px; } }
 
 .prev3 {
   position: absolute;
@@ -2153,11 +2164,16 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent; }
   @media only screen and (min-width: 734px) {
     .next4,
     .prev4 {
       display: none; } }
+  @media only screen and (max-width: 430px) {
+    .next4,
+    .prev4 {
+      font-size: 40px; } }
 
 .prev4 {
   position: absolute;
