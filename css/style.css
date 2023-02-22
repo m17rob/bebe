@@ -199,7 +199,7 @@ body {
       font-weight: 800;
       color: #132880;
       cursor: pointer;
-      transition: all .2s; }
+      transition: all 0.2s; }
       @media only screen and (min-width: 1000px) {
         .heading .nav__btn:hover {
           background-color: #132880;
@@ -221,8 +221,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content max-content;
   gap: 0px 0px;
-  grid-template-areas: 'txt img'
- 'numbs numbs';
+  grid-template-areas: 'txt img' 'numbs numbs';
   padding: 7rem 0rem; }
   @media only screen and (max-width: 920px) {
     .content {
@@ -301,7 +300,7 @@ body {
       cursor: pointer;
       font-weight: 800;
       margin-top: 8rem;
-      transition: all .2s; }
+      transition: all 0.2s; }
       @media only screen and (min-width: 1000px) {
         .content__txt--btn:hover {
           background-color: #2685f0;
@@ -2297,11 +2296,24 @@ body {
       background: #000;
       transform: rotate(-50deg); }
 
-.back_to_top:hover {
-  background: #e9ebec; }
-
-.back_to_top-show {
+.back-to-top-show {
   display: block; }
   @media only screen and (max-width: 950px) {
-    .back_to_top-show {
+    .back-to-top-show {
       display: none; } }
+
+.back-to-top {
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  z-index: 100;
+  height: 7rem;
+  width: 7rem;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%; }
+  .back-to-top svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }

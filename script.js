@@ -36,7 +36,6 @@ const triggerElTeam = document.querySelector('.center');
 
 
 const observerTeam = new IntersectionObserver((entries) => {
-console.log(entries);
     entries.forEach((entry) => {
 		if (entry.isIntersecting) {
                 steto.style.transform = "none";

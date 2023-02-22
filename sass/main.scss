@@ -2820,11 +2820,10 @@ body {
 .productsNone {
   display: none;
 }
-
 // animatii
-.animate__animated.animate__bounceInDown {
-  // --animate-duration: 2s;
-}
+// .animate__animated.animate__bounceInDown {
+//   // --animate-duration: 2s;
+// }
 
 .animate__animated.animate__bounceInLeft {
   --animate-duration: 3s;
@@ -3126,14 +3125,30 @@ body {
   }
 }
 
-.back_to_top:hover {
-  background: #e9ebec;
-}
-
-.back_to_top-show {
+.back-to-top-show {
   display: block;
 
   @media only screen and (max-width: 950px) {
     display: none;
   }
 }
+
+.back-to-top{
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  z-index: 100;
+  height: 7rem;
+  width: 7rem;
+  cursor: pointer;
+  background-color: $white;
+  border-radius: 50%;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+ 
