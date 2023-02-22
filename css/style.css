@@ -174,7 +174,7 @@ body {
         color: #5a5a5a;
         cursor: pointer;
         text-decoration: none;
-        transition: all .2s; }
+        transition: all 0.2s; }
         @media only screen and (min-width: 1000px) {
           .heading .nav__links--link:not(:first-child):hover {
             transform: scale(1.3);
@@ -1944,7 +1944,9 @@ body {
   border-radius: 0 0 20px 20px; }
   @media only screen and (max-width: 960px) {
     .footer {
-      justify-content: center; } }
+      justify-content: center;
+      margin: 0;
+      border-radius: 0; } }
   @media only screen and (max-width: 400px) {
     .footer {
       padding: 0 0 2rem 0;
