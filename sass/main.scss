@@ -59,19 +59,16 @@ body {
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  right: 2rem;
+  top: 5rem;
+  right: 5rem;
 
-  @media only screen and (max-width: 1000px) {
-    top: 1vw;
-    right: 1vw;
-
-    width: 2rem;
-    height: 2rem;
+  @media only screen and (max-width: 950px) {
+    display: block;
   }
 
-  @media only screen and (max-width: 920px) {
-    top: 2rem;
-    right: 2rem;
+  @media only screen and (max-width: 630px) {
+    top: 3rem;
+    right: 3rem;
   }
 
   & > span {
@@ -203,14 +200,6 @@ body {
         @media only screen and (max-width: 630px) {
           width: 100%;
         }
-
-        @media only screen and (max-width: 350px) {
-          position: absolute;
-          width: 27%;
-          top: 0;
-          left: 50%;
-          transform: translateX(-50%);
-        }
       }
     }
 
@@ -283,22 +272,7 @@ body {
         padding: 1.5rem 2.5rem;
       }
 
-      @media only screen and (max-width: 600px) {
-        outline: 0.5rem solid $primary-dark;
-      }
-
-      @media only screen and (max-width: 400px) {
-        outline: 0.26rem solid $primary-dark;
-        font-size: 1.2rem;
-      }
-
-      @media only screen and (max-width: 370px) {
-        outline: 0.26rem solid $primary-dark;
-        font-size: 1.2rem;
-        padding: 1.5rem 1.5rem;
-      }
-
-      @media only screen and (max-width: 350px) {
+      @media only screen and (max-width: 950px) {
         display: none;
       }
     }

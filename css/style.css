@@ -40,17 +40,15 @@ body {
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  right: 2rem; }
-  @media only screen and (max-width: 1000px) {
+  top: 5rem;
+  right: 5rem; }
+  @media only screen and (max-width: 950px) {
     #nav-icon {
-      top: 1vw;
-      right: 1vw;
-      width: 2rem;
-      height: 2rem; } }
-  @media only screen and (max-width: 920px) {
+      display: block; } }
+  @media only screen and (max-width: 630px) {
     #nav-icon {
-      top: 2rem;
-      right: 2rem; } }
+      top: 3rem;
+      right: 3rem; } }
   #nav-icon > span {
     display: block;
     position: absolute;
@@ -147,13 +145,6 @@ body {
       @media only screen and (max-width: 630px) {
         .heading .nav__logo img {
           width: 100%; } }
-      @media only screen and (max-width: 350px) {
-        .heading .nav__logo img {
-          position: absolute;
-          width: 27%;
-          top: 0;
-          left: 50%;
-          transform: translateX(-50%); } }
     .heading .nav__links {
       display: flex;
       background-color: #fff;
@@ -204,19 +195,7 @@ body {
         .heading .nav__btn {
           font-size: 1.5rem;
           padding: 1.5rem 2.5rem; } }
-      @media only screen and (max-width: 600px) {
-        .heading .nav__btn {
-          outline: 0.5rem solid #132880; } }
-      @media only screen and (max-width: 400px) {
-        .heading .nav__btn {
-          outline: 0.26rem solid #132880;
-          font-size: 1.2rem; } }
-      @media only screen and (max-width: 370px) {
-        .heading .nav__btn {
-          outline: 0.26rem solid #132880;
-          font-size: 1.2rem;
-          padding: 1.5rem 1.5rem; } }
-      @media only screen and (max-width: 350px) {
+      @media only screen and (max-width: 950px) {
         .heading .nav__btn {
           display: none; } }
 

@@ -29,7 +29,7 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(triggerEl);
 
 
-// ////////////////////////////////////////
+/////////////////////////////////////////////////////  
 
 const menu = document.querySelector("#menu");
 const button = document.querySelector('#nav-icon');
@@ -56,20 +56,20 @@ menuLinks.forEach(link => {
 // /////////////////TRIGGER MENU SCROLL//////////////////
 
 
-const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-if(vw > 930){
-    window.addEventListener('scroll', ()=> {
-        const currentScroll = window.scrollY;
+// const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+// if(vw > 930){
+//     window.addEventListener('scroll', ()=> {
+//         const currentScroll = window.scrollY;
     
-        if(currentScroll <= 150){
-            button.style.display= "none"
-            menu.style.display = "none";
-            button.classList.remove('open');
-        } else {
-            button.style.display= "block"
+//         if(currentScroll <= 150){
+//             button.style.display= "none"
+//             menu.style.display = "none";
+//             button.classList.remove('open');
+//         } else {
+//             button.style.display= "block"
            
-        }
-    })
-} else {
-    button.style.display= "block"  
-}
+//         }
+//     })
+// } else {
+//     button.style.display= "block"  
+// }
