@@ -8,37 +8,37 @@ const countUp = setInterval(() => {
   let boxCount = box.dataset.count;
   if (count == boxCount) clearInterval(countUp);
   box.innerHTML = count + box.dataset.unit;
-  count = count + Math.floor(boxCount / 210);
+  count = count + Math.floor(boxCount / 110);
   if (count > boxCount) count = boxCount;
 }, 50);
 
 // Count-up-Ani
 
-// const boxAni = document.getElementById('count-up-ani');
+const boxAni = document.getElementById('count-up-ani');
 
-// let countAni = 0;
+let countAni = 0;
 
-// const countUpAni = setInterval(() => {
-//   let boxCountAni = boxAni.dataset.count;
-//   if (countAni == boxCountAni) clearInterval(countUpAni);
-//   boxAni.innerHTML = countAni + boxAni.dataset.unit;
-//   countAni = countAni + Math.floor(boxCountAni / 4);
-//   if (countAni > boxCountAni) countAni = boxCountAni;
-// }, 100);
+const countUpAni = setInterval(() => {
+  let boxCountAni = boxAni.dataset.count;
+  if (countAni == boxCountAni) clearInterval(countUpAni);
+  boxAni.innerHTML = countAni + boxAni.dataset.unit;
+  countAni = countAni + Math.floor(boxCountAni / 4);
+  if (countAni > boxCountAni) countAni = boxCountAni;
+}, 500);
 
 // // Count-up-Animale
 
-// const boxAnimale = document.getElementById('count-up-animale');
+const boxAnimale = document.getElementById('count-up-animale');
 
-// let countAnimale = 0;
+let countAnimale = 0;
 
-// const countUpAnimale = setInterval(() => {
-//   let boxCountAnimale = boxAnimale.dataset.count;
-//   if (countAnimale == boxCountAnimale) clearInterval(countUpAnimale);
-//   boxAnimale.innerHTML = countAnimale + boxAnimale.dataset.unit;
-//   countAnimale = countAnimale + Math.floor(boxCountAnimale / 210);
-//   if (countAnimale > boxCountAnimale) countAnimale = boxCountAnimale;
-// }, 40);
+const countUpAnimale = setInterval(() => {
+  let boxCountAnimale = boxAnimale.dataset.count;
+  if (countAnimale == boxCountAnimale) clearInterval(countUpAnimale);
+  boxAnimale.innerHTML = countAnimale + boxAnimale.dataset.unit;
+  countAnimale = countAnimale + Math.floor(boxCountAnimale / 110);
+  if (countAnimale > boxCountAnimale) countAnimale = boxCountAnimale;
+}, 20);
 
 // produse
 
@@ -46,6 +46,7 @@ const pisiciBtn = document.querySelector('#pisicibtn');
 const cainiBtn = document.querySelector('#cainibtn');
 const deratizareBtn = document.querySelector('#deratizarebtn');
 const pasariBtn = document.querySelector('#pasaribtn');
+
 const cainiBox = document.querySelector('#caini');
 const pisiciBox = document.querySelector('#pisici');
 const deratizareBox = document.querySelector('#deratizare');
@@ -319,9 +320,14 @@ var vw1 = Math.max(
 
 if (vw1 > 733) {
   const cainiCard = document.querySelectorAll('#cainicard');
+  const pisiciCard = document.querySelectorAll('#pisicicard');
   let slidesNone = document.querySelectorAll('.slide');
 
   cainiCard.forEach(el => {
+    el.classList.remove('slide');
+    // el.classList.add('animate__animated', 'animate__fadeIn');
+  });
+  pisiciCard.forEach(el => {
     el.classList.remove('slide');
     // el.classList.add('animate__animated', 'animate__fadeIn');
   });
