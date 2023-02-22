@@ -49,8 +49,8 @@ body {
 // //////////////////////////////////////////////////////
 #nav-icon {
   display: none;
-  width: 3rem;
-  height: 3rem;
+  width: 2.7rem;
+  height: 2.7rem;
   padding: 1.5rem;
   background-color: #132980b9;
   border-radius: 50%;
@@ -59,16 +59,22 @@ body {
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  top: 5rem;
+  top: 7rem;
   right: 5rem;
+  -webkit-tap-highlight-color: transparent;
 
   @media only screen and (max-width: 950px) {
     display: block;
   }
 
   @media only screen and (max-width: 630px) {
-    top: 3rem;
+    top: 4rem;
     right: 3rem;
+  }
+
+  @media only screen and (max-width: 360px) {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   & > span {
@@ -142,6 +148,7 @@ body {
     text-decoration: none;
     margin-bottom: 4rem;
     position: relative;
+    -webkit-tap-highlight-color: transparent;
 
     &:not(:last-child)::after {
       content: '';
@@ -978,7 +985,6 @@ body {
   visibility: hidden;
 }
 
-
 .products {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -1053,11 +1059,15 @@ body {
   }
 
   @media only screen and (max-width: 960px) {
-    top: 43%;
+    top: 30%;
   }
 
   @media only screen and (max-width: 780px) {
-    top: 38%;
+    top: 30%;
+  }
+
+  @media only screen and (max-width: 733px) {
+    top: 40%;
   }
 
   @media only screen and (max-width: 630px) {
@@ -1169,12 +1179,19 @@ body {
     margin: 0.5rem 0;
     cursor: pointer;
     color: rgba(35, 61, 77, 0.7);
+    -webkit-tap-highlight-color: transparent;
 
-    &:active,
-    :hover,
-    :focus {
+    &:active {
       background: rgba(0, 0, 0, 0);
+      -webkit-tap-highlight-color: transparent;
     }
+    &:focus {
+      background: rgba(0, 0, 0, 0);
+      -webkit-tap-highlight-color: transparent;
+    }
+    // &:hover {
+    //   background: rgba(0, 0, 0, 0);
+    // }
 
     @media only screen and (max-width: 1500px) {
       padding: 1rem 1.8rem;
@@ -1218,6 +1235,7 @@ body {
       margin-right: 1rem;
       height: 35px;
       width: 35px;
+      opacity: 0.7;
 
       @media only screen and (max-width: 1500px) {
         width: 30px;
@@ -1267,6 +1285,10 @@ body {
     width: 50%;
   }
 
+  @media only screen and (max-width: 1100px) {
+    width: 60%;
+  }
+
   @media only screen and (max-width: 960px) {
     width: 70%;
   }
@@ -1279,7 +1301,7 @@ body {
   }
 
   @media only screen and (max-width: 430px) {
-    padding: 0;
+    padding: 0 1rem;
   }
 
   & .card {
@@ -1306,13 +1328,13 @@ body {
     }
 
     &:nth-child(3) {
-      @media only screen and (max-width: 960px) {
+      @media only screen and (max-width: 733px) {
         display: none;
       }
     }
 
     &:nth-child(4) {
-      @media only screen and (max-width: 960px) {
+      @media only screen and (max-width: 733px) {
         display: none;
       }
     }
@@ -1955,7 +1977,7 @@ body {
     }
   }
 
-  .tagName1-mobile{
+  .tagName1-mobile {
     display: none;
     position: absolute;
     top: 75%;
@@ -1974,7 +1996,7 @@ body {
     }
   }
 
-  .tagName2-mobile{
+  .tagName2-mobile {
     display: none;
     position: absolute;
     top: 75%;
@@ -2214,6 +2236,18 @@ body {
     // flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+
+    .noDec {
+      text-decoration: none !important;
+      -webkit-tap-highlight-color: transparent;
+    }
+    a:link {
+      text-decoration: none !important;
+    }
+
+    a:visited {
+      text-decoration: none !important;
+    }
 
     &__program {
       display: flex;
@@ -2755,6 +2789,10 @@ body {
   @media only screen and (max-width: 780px) {
     border-radius: 15px;
   }
+
+  img {
+    opacity: 1;
+  }
 }
 
 .innAnimation {
@@ -2837,6 +2875,15 @@ body {
   border: none;
   background: none;
   z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+
+  @media only screen and (min-width: 734px) {
+    display: none;
+  }
+
+  @media only screen and (max-width: 430px) {
+    font-size: 34px;
+  }
 }
 .prev {
   position: absolute;
@@ -2863,6 +2910,15 @@ body {
   border: none;
   background: none;
   z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+
+  @media only screen and (min-width: 734px) {
+    display: none;
+  }
+
+  @media only screen and (max-width: 430px) {
+    font-size: 34px;
+  }
 }
 
 .prev2 {
@@ -2890,6 +2946,15 @@ body {
   border: none;
   background: none;
   z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+
+  @media only screen and (min-width: 734px) {
+    display: none;
+  }
+
+  @media only screen and (max-width: 430px) {
+    font-size: 34px;
+  }
 }
 
 .prev3 {
@@ -2917,6 +2982,15 @@ body {
   border: none;
   background: none;
   z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+
+  @media only screen and (min-width: 734px) {
+    display: none;
+  }
+
+  @media only screen and (max-width: 430px) {
+    font-size: 34px;
+  }
 }
 
 .prev4 {

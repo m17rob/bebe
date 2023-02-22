@@ -321,18 +321,41 @@ var vw1 = Math.max(
 if (vw1 > 733) {
   const cainiCard = document.querySelectorAll('#cainicard');
   const pisiciCard = document.querySelectorAll('#pisicicard');
+  const deratizareCard = document.querySelectorAll('#deratizarecard');
+  const pasariCard = document.querySelectorAll('#pasaricard');
   let slidesNone = document.querySelectorAll('.slide');
+  let slidesNone2 = document.querySelectorAll('.slide2');
+  let slidesNone3 = document.querySelectorAll('.slide3');
+  let slidesNone4 = document.querySelectorAll('.slide4');
 
   cainiCard.forEach(el => {
     el.classList.remove('slide');
     // el.classList.add('animate__animated', 'animate__fadeIn');
   });
   pisiciCard.forEach(el => {
-    el.classList.remove('slide');
+    el.classList.remove('slide2');
+    // el.classList.add('animate__animated', 'animate__fadeIn');
+  });
+  deratizareCard.forEach(el => {
+    el.classList.remove('slide3');
+    // el.classList.add('animate__animated', 'animate__fadeIn');
+  });
+  pasariCard.forEach(el => {
+    el.classList.remove('slide4');
     // el.classList.add('animate__animated', 'animate__fadeIn');
   });
 
   for (i = 0; i < slidesNone.length; i++) {
     slidesNone[i].style.display = '';
+  }
+  for (i = 0; i < slidesNone2.length; i++) {
+    slidesNone2[i].style.display = '';
+  }
+
+  for (i = 0; i < slidesNone3.length; i++) {
+    slidesNone3[i].style.display = '';
+  }
+  for (i = 0; i < slidesNone4.length; i++) {
+    slidesNone4[i].style.display = '';
   }
 }

@@ -30,8 +30,8 @@ body {
 
 #nav-icon {
   display: none;
-  width: 3rem;
-  height: 3rem;
+  width: 2.7rem;
+  height: 2.7rem;
   padding: 1.5rem;
   background-color: #132980b9;
   border-radius: 50%;
@@ -40,15 +40,20 @@ body {
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  top: 5rem;
-  right: 5rem; }
+  top: 7rem;
+  right: 5rem;
+  -webkit-tap-highlight-color: transparent; }
   @media only screen and (max-width: 950px) {
     #nav-icon {
       display: block; } }
   @media only screen and (max-width: 630px) {
     #nav-icon {
-      top: 3rem;
+      top: 4rem;
       right: 3rem; } }
+  @media only screen and (max-width: 360px) {
+    #nav-icon {
+      width: 2.5rem;
+      height: 2.5rem; } }
   #nav-icon > span {
     display: block;
     position: absolute;
@@ -102,7 +107,8 @@ body {
     color: #fff;
     text-decoration: none;
     margin-bottom: 4rem;
-    position: relative; }
+    position: relative;
+    -webkit-tap-highlight-color: transparent; }
     .menu__container--link:not(:last-child)::after {
       content: '';
       display: block;
@@ -779,10 +785,13 @@ body {
       top: 30%; } }
   @media only screen and (max-width: 960px) {
     .background {
-      top: 43%; } }
+      top: 30%; } }
   @media only screen and (max-width: 780px) {
     .background {
-      top: 38%; } }
+      top: 30%; } }
+  @media only screen and (max-width: 733px) {
+    .background {
+      top: 40%; } }
   @media only screen and (max-width: 630px) {
     .background {
       height: 35rem;
@@ -869,11 +878,14 @@ body {
     padding: 2rem;
     margin: 0.5rem 0;
     cursor: pointer;
-    color: rgba(35, 61, 77, 0.7); }
-    .categories__category:active,
-    .categories__category :hover,
-    .categories__category :focus {
-      background: rgba(0, 0, 0, 0); }
+    color: rgba(35, 61, 77, 0.7);
+    -webkit-tap-highlight-color: transparent; }
+    .categories__category:active {
+      background: rgba(0, 0, 0, 0);
+      -webkit-tap-highlight-color: transparent; }
+    .categories__category:focus {
+      background: rgba(0, 0, 0, 0);
+      -webkit-tap-highlight-color: transparent; }
     @media only screen and (max-width: 1500px) {
       .categories__category {
         padding: 1rem 1.8rem; } }
@@ -897,7 +909,8 @@ body {
     .categories__category img {
       margin-right: 1rem;
       height: 35px;
-      width: 35px; }
+      width: 35px;
+      opacity: 0.7; }
       @media only screen and (max-width: 1500px) {
         .categories__category img {
           width: 30px;
@@ -925,6 +938,9 @@ body {
   @media only screen and (max-width: 1303px) {
     .prices {
       width: 50%; } }
+  @media only screen and (max-width: 1100px) {
+    .prices {
+      width: 60%; } }
   @media only screen and (max-width: 960px) {
     .prices {
       width: 70%; } }
@@ -936,7 +952,7 @@ body {
       width: 65%; } }
   @media only screen and (max-width: 430px) {
     .prices {
-      padding: 0; } }
+      padding: 0 1rem; } }
   .prices .card {
     display: flex;
     flex-direction: column;
@@ -952,10 +968,10 @@ body {
     @media only screen and (max-width: 1420px) {
       .prices .card:nth-child(2) {
         margin-bottom: 2.4rem; } }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 733px) {
       .prices .card:nth-child(3) {
         display: none; } }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 733px) {
       .prices .card:nth-child(4) {
         display: none; } }
     @media only screen and (max-width: 733px) {
@@ -1631,6 +1647,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    .contact .right .noDec {
+      text-decoration: none !important;
+      -webkit-tap-highlight-color: transparent; }
+    .contact .right a:link {
+      text-decoration: none !important; }
+    .contact .right a:visited {
+      text-decoration: none !important; }
     .contact .right__program {
       display: flex;
       flex-direction: column;
@@ -2014,6 +2037,8 @@ body {
   @media only screen and (max-width: 780px) {
     .active {
       border-radius: 15px; } }
+  .active img {
+    opacity: 1; }
 
 .innAnimation {
   animation-name: innAnima;
@@ -2069,7 +2094,16 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent; }
+  @media only screen and (min-width: 734px) {
+    .next,
+    .prev {
+      display: none; } }
+  @media only screen and (max-width: 430px) {
+    .next,
+    .prev {
+      font-size: 34px; } }
 
 .prev {
   position: absolute;
@@ -2094,7 +2128,16 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent; }
+  @media only screen and (min-width: 734px) {
+    .next2,
+    .prev2 {
+      display: none; } }
+  @media only screen and (max-width: 430px) {
+    .next2,
+    .prev2 {
+      font-size: 34px; } }
 
 .prev2 {
   position: absolute;
@@ -2119,7 +2162,16 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent; }
+  @media only screen and (min-width: 734px) {
+    .next3,
+    .prev3 {
+      display: none; } }
+  @media only screen and (max-width: 430px) {
+    .next3,
+    .prev3 {
+      font-size: 34px; } }
 
 .prev3 {
   position: absolute;
@@ -2144,7 +2196,16 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent; }
+  @media only screen and (min-width: 734px) {
+    .next4,
+    .prev4 {
+      display: none; } }
+  @media only screen and (max-width: 430px) {
+    .next4,
+    .prev4 {
+      font-size: 34px; } }
 
 .prev4 {
   position: absolute;
