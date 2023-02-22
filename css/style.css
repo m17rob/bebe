@@ -30,8 +30,8 @@ body {
 
 #nav-icon {
   display: none;
-  width: 3rem;
-  height: 3rem;
+  width: 2.7rem;
+  height: 2.7rem;
   padding: 1.5rem;
   background-color: #132980b9;
   border-radius: 50%;
@@ -40,7 +40,7 @@ body {
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  top: 5rem;
+  top: 7rem;
   right: 5rem;
   -webkit-tap-highlight-color: transparent; }
   @media only screen and (max-width: 950px) {
@@ -48,8 +48,12 @@ body {
       display: block; } }
   @media only screen and (max-width: 630px) {
     #nav-icon {
-      top: 3rem;
+      top: 4rem;
       right: 3rem; } }
+  @media only screen and (max-width: 360px) {
+    #nav-icon {
+      width: 2.5rem;
+      height: 2.5rem; } }
   #nav-icon > span {
     display: block;
     position: absolute;
