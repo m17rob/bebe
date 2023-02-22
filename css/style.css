@@ -864,9 +864,9 @@ body {
     margin: 0.5rem 0;
     cursor: pointer;
     color: rgba(35, 61, 77, 0.7); }
-    .categories__category:active,
-    .categories__category :hover,
-    .categories__category :focus {
+    .categories__category:active {
+      background: rgba(0, 0, 0, 0); }
+    .categories__category:focus {
       background: rgba(0, 0, 0, 0); }
     @media only screen and (max-width: 1500px) {
       .categories__category {
@@ -891,7 +891,8 @@ body {
     .categories__category img {
       margin-right: 1rem;
       height: 35px;
-      width: 35px; }
+      width: 35px;
+      opacity: 0.7; }
       @media only screen and (max-width: 1500px) {
         .categories__category img {
           width: 30px;
@@ -1999,6 +2000,8 @@ body {
   @media only screen and (max-width: 780px) {
     .active {
       border-radius: 15px; } }
+  .active img {
+    opacity: 1; }
 
 .innAnimation {
   animation-name: innAnima;
