@@ -939,7 +939,7 @@ body {
       width: 65%; } }
   @media only screen and (max-width: 430px) {
     .prices {
-      padding: 0; } }
+      padding: 0 1rem; } }
   .prices .card {
     display: flex;
     flex-direction: column;
@@ -2071,7 +2071,7 @@ body {
   @media only screen and (max-width: 430px) {
     .next,
     .prev {
-      font-size: 40px; } }
+      font-size: 34px; } }
 
 .prev {
   position: absolute;
@@ -2105,7 +2105,7 @@ body {
   @media only screen and (max-width: 430px) {
     .next2,
     .prev2 {
-      font-size: 40px; } }
+      font-size: 34px; } }
 
 .prev2 {
   position: absolute;
@@ -2139,7 +2139,7 @@ body {
   @media only screen and (max-width: 430px) {
     .next3,
     .prev3 {
-      font-size: 40px; } }
+      font-size: 34px; } }
 
 .prev3 {
   position: absolute;
@@ -2173,7 +2173,7 @@ body {
   @media only screen and (max-width: 430px) {
     .next4,
     .prev4 {
-      font-size: 40px; } }
+      font-size: 34px; } }
 
 .prev4 {
   position: absolute;
