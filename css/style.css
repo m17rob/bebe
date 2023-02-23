@@ -221,7 +221,8 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content max-content;
   gap: 0px 0px;
-  grid-template-areas: 'txt img' 'numbs numbs';
+  grid-template-areas: 'txt img'
+ 'numbs numbs';
   padding: 7rem 0rem; }
   @media only screen and (max-width: 920px) {
     .content {
@@ -2330,6 +2331,9 @@ body {
   cursor: pointer;
   background-color: #fff;
   border-radius: 50%; }
+  @media only screen and (max-width: 960px) {
+    .back-to-top {
+      display: none; } }
   .back-to-top svg {
     position: absolute;
     top: 50%;
