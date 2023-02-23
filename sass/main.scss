@@ -3123,12 +3123,12 @@ body {
 .back-to-top-show {
   display: block;
 
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 960px) {
     display: none;
   }
 }
 
-.back-to-top{
+.back-to-top {
   position: fixed;
   right: 5rem;
   bottom: 5rem;
@@ -3138,6 +3138,9 @@ body {
   cursor: pointer;
   background-color: $white;
   border-radius: 50%;
+  @media only screen and (max-width: 960px) {
+    display: none;
+  }
 
   svg {
     position: absolute;
@@ -3146,4 +3149,3 @@ body {
     transform: translate(-50%, -50%);
   }
 }
- 

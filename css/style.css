@@ -2300,7 +2300,7 @@ body {
 
 .back-to-top-show {
   display: block; }
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 960px) {
     .back-to-top-show {
       display: none; } }
 
@@ -2314,6 +2314,9 @@ body {
   cursor: pointer;
   background-color: #fff;
   border-radius: 50%; }
+  @media only screen and (max-width: 960px) {
+    .back-to-top {
+      display: none; } }
   .back-to-top svg {
     position: absolute;
     top: 50%;
