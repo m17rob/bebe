@@ -1436,17 +1436,39 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .animation-inital__steto {
-    transform: translate(60%, 170%) scale(0.2);
-    z-index: -3; }
-  .animation-inital__hug {
-    transform: translate(-50%, 220%) scale(0.2);
-    z-index: -3; }
-  .animation-inital__heart {
-    transform: translate(60%, -180%) scale(0.2);
-    z-index: -3; }
-  .animation-inital__medal {
-    transform: translate(-50%, -150%) scale(0.2);
+    transform: translate(60%, 320%) scale(0);
     z-index: -3; } }
+
+@media screen and (min-width: 1420px) {
+  .animation-inital__steto {
+    transform: translate(120%, 200%) scale(0); } }
+
+@media only screen and (min-width: 1000px) {
+  .animation-inital__hug {
+    transform: translate(-60%, 450%) scale(0);
+    z-index: -3; } }
+
+@media screen and (min-width: 1420px) {
+  .animation-inital__hug {
+    transform: translate(120%, -160%) scale(0); } }
+
+@media only screen and (min-width: 1000px) {
+  .animation-inital__heart {
+    transform: translate(70%, -300%) scale(0);
+    z-index: -3; } }
+
+@media screen and (min-width: 1420px) {
+  .animation-inital__heart {
+    transform: translate(-110%, 210%) scale(0); } }
+
+@media only screen and (min-width: 1000px) {
+  .animation-inital__medal {
+    transform: translate(-60%, -230%) scale(0);
+    z-index: -3; } }
+
+@media screen and (min-width: 1420px) {
+  .animation-inital__medal {
+    transform: translate(-110%, -90%) scale(0); } }
 
 .centerCnt {
   height: max-content;
@@ -2298,12 +2320,6 @@ body {
       background: #000;
       transform: rotate(-50deg); }
 
-.back-to-top-show {
-  display: block; }
-  @media only screen and (max-width: 950px) {
-    .back-to-top-show {
-      display: none; } }
-
 .back-to-top {
   position: fixed;
   right: 5rem;
@@ -2319,3 +2335,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 950px) {
+    .back-to-top {
+      display: none; } }
