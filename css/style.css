@@ -221,8 +221,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content max-content;
   gap: 0px 0px;
-  grid-template-areas: 'txt img'
- 'numbs numbs';
+  grid-template-areas: 'txt img' 'numbs numbs';
   padding: 7rem 0rem; }
   @media only screen and (max-width: 920px) {
     .content {
@@ -1434,42 +1433,6 @@ body {
             .contentTeam .right__medal--icon img {
               width: 3.5rem;
               height: 3.5rem; } }
-
-@media only screen and (min-width: 1000px) {
-  .animation-inital__steto {
-    transform: translate(60%, 320%) scale(0);
-    z-index: -3; } }
-
-@media screen and (min-width: 1420px) {
-  .animation-inital__steto {
-    transform: translate(120%, 200%) scale(0); } }
-
-@media only screen and (min-width: 1000px) {
-  .animation-inital__hug {
-    transform: translate(-60%, 450%) scale(0);
-    z-index: -3; } }
-
-@media screen and (min-width: 1420px) {
-  .animation-inital__hug {
-    transform: translate(120%, -160%) scale(0); } }
-
-@media only screen and (min-width: 1000px) {
-  .animation-inital__heart {
-    transform: translate(70%, -300%) scale(0);
-    z-index: -3; } }
-
-@media screen and (min-width: 1420px) {
-  .animation-inital__heart {
-    transform: translate(-110%, 210%) scale(0); } }
-
-@media only screen and (min-width: 1000px) {
-  .animation-inital__medal {
-    transform: translate(-60%, -230%) scale(0);
-    z-index: -3; } }
-
-@media screen and (min-width: 1420px) {
-  .animation-inital__medal {
-    transform: translate(-110%, -90%) scale(0); } }
 
 .centerCnt {
   height: max-content;

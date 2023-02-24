@@ -1953,49 +1953,49 @@ body {
     }
   }
 }
-.animation-inital__steto {
-  @media only screen and (min-width: 1000px) {
-  transform: translate(60%, 320%) scale(0);
-  z-index: -3;
-  }
+// .animation-inital__steto {
+//   @media only screen and (min-width: 1000px) {
+//   transform: translate(60%, 320%) scale(0);
+//   z-index: -3;
+//   }
 
-  @media screen and (min-width:1420px) {
-    transform: translate(120%, 200%) scale(0);
-  }
-}
+//   @media screen and (min-width:1420px) {
+//     transform: translate(120%, 200%) scale(0);
+//   }
+// }
 
-.animation-inital__hug {
-  @media only screen and (min-width: 1000px) {
-  transform: translate(-60%, 450%) scale(0);
-  z-index: -3;
-  }
+// .animation-inital__hug {
+//   @media only screen and (min-width: 1000px) {
+//   transform: translate(-60%, 450%) scale(0);
+//   z-index: -3;
+//   }
 
-  @media screen and (min-width:1420px) {
-    transform: translate(120%, -160%) scale(0);
-  }
-}
+//   @media screen and (min-width:1420px) {
+//     transform: translate(120%, -160%) scale(0);
+//   }
+// }
 
-.animation-inital__heart {
-  @media only screen and (min-width: 1000px) {
-  transform:translate(70%, -300%) scale(0);
-  z-index: -3;
-  }
+// .animation-inital__heart {
+//   @media only screen and (min-width: 1000px) {
+//   transform:translate(70%, -300%) scale(0);
+//   z-index: -3;
+//   }
 
-  @media screen and (min-width:1420px) {
-    transform: translate(-110%, 210%) scale(0);
-  }
-}
+//   @media screen and (min-width:1420px) {
+//     transform: translate(-110%, 210%) scale(0);
+//   }
+// }
 
-.animation-inital__medal {
-  @media only screen and (min-width: 1000px) {
-  transform: translate(-60%, -230%) scale(0);
-  z-index: -3;
-  }
+// .animation-inital__medal {
+//   @media only screen and (min-width: 1000px) {
+//   transform: translate(-60%, -230%) scale(0);
+//   z-index: -3;
+//   }
 
-  @media screen and (min-width:1420px) {
-    transform:translate(-110%, -90%) scale(0);  
-  }
-}
+//   @media screen and (min-width:1420px) {
+//     transform:translate(-110%, -90%) scale(0);  
+//   }
+// }
 
 .centerCnt {
   height: max-content;

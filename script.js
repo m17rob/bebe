@@ -28,29 +28,29 @@ const observerService = new IntersectionObserver((entries) => {
 
 observerService.observe(triggerElService);
 
-const steto = document.querySelector('.animation-inital__steto');
-const hug = document.querySelector('.animation-inital__hug');
-const heart = document.querySelector('.animation-inital__heart');
-const medal = document.querySelector('.animation-inital__medal');
-const triggerElTeam = document.querySelector('.center');
+// const steto = document.querySelector('.animation-inital__steto');
+// const hug = document.querySelector('.animation-inital__hug');
+// const heart = document.querySelector('.animation-inital__heart');
+// const medal = document.querySelector('.animation-inital__medal');
+// const triggerElTeam = document.querySelector('.center');
 
 
-const observerTeam = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-		if (entry.isIntersecting) {
-                steto.style.transform = "none";
-                hug.style.transform = "none";
-                heart.style.transform = "none";
-                medal.style.transform = "none";
-        } else {
-            return;
-        }
-	})
-}, {
-	threshold: .7
-});
+// const observerTeam = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+// 		if (entry.isIntersecting) {
+//                 steto.style.transform = "none";
+//                 hug.style.transform = "none";
+//                 heart.style.transform = "none";
+//                 medal.style.transform = "none";
+//         } else {
+//             return;
+//         }
+// 	})
+// }, {
+// 	threshold: .7
+// });
 
-observerTeam.observe(triggerElTeam);
+// observerTeam.observe(triggerElTeam);
 /////////////////////////////////////////////////////  
 
 const menu = document.querySelector("#menu");
