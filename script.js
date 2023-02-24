@@ -1,32 +1,32 @@
 /////////////////////////////////////////////////
-const animationCardsLeft = document.querySelectorAll('.animateEl--left');
-const animationCardsRight = document.querySelectorAll('.animateEl--right');
-const animationCards = [...animationCardsLeft, ...animationCardsRight];
-const triggerElService = document.querySelector(".animation__trigger");
+// const animationCardsLeft = document.querySelectorAll('.animateEl--left');
+// const animationCardsRight = document.querySelectorAll('.animateEl--right');
+// const animationCards = [...animationCardsLeft, ...animationCardsRight];
+// const triggerElService = document.querySelector(".animation__trigger");
 
 
-const observerService = new IntersectionObserver((entries) => {
+// const observerService = new IntersectionObserver((entries) => {
 
-    entries.forEach((entry) => {
-		if (entry.isIntersecting) {
-			animationCardsLeft.forEach(el => {
-                el.classList.add('animate__bounceInLeft')
-            });
-            animationCardsRight.forEach(el => {
-                el.classList.add('animate__bounceInRight')
-            });	
-            animationCards.forEach(card => {
-                card.classList.remove('hide')
-            })	
-        } else {
-            return;
-        }
-	})
-}, {
-	threshold: .1
-});
+//     entries.forEach((entry) => {
+// 		if (entry.isIntersecting) {
+// 			animationCardsLeft.forEach(el => {
+//                 el.classList.add('animate__bounceInLeft')
+//             });
+//             animationCardsRight.forEach(el => {
+//                 el.classList.add('animate__bounceInRight')
+//             });	
+//             animationCards.forEach(card => {
+//                 card.classList.remove('hide')
+//             })	
+//         } else {
+//             return;
+//         }
+// 	})
+// }, {
+// 	threshold: .1
+// });
 
-observerService.observe(triggerElService);
+// observerService.observe(triggerElService);
 
 // const steto = document.querySelector('.animation-inital__steto');
 // const hug = document.querySelector('.animation-inital__hug');
