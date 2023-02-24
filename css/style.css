@@ -43,9 +43,6 @@ body {
   top: 7rem;
   right: 5rem;
   -webkit-tap-highlight-color: transparent; }
-  @media only screen and (max-width: 950px) {
-    #nav-icon {
-      display: block; } }
   @media only screen and (max-width: 630px) {
     #nav-icon {
       top: 4rem;
@@ -1100,7 +1097,7 @@ body {
   flex-wrap: wrap;
   height: max-content;
   position: relative;
-  z-index: 1000;
+  z-index: 0;
   height: 100%; }
   @media only screen and (max-width: 1420px) {
     .contentTeam {
@@ -1433,42 +1430,6 @@ body {
             .contentTeam .right__medal--icon img {
               width: 3.5rem;
               height: 3.5rem; } }
-
-@media only screen and (min-width: 1000px) {
-  .animation-inital__steto {
-    transform: translate(60%, 320%) scale(0);
-    z-index: -3; } }
-
-@media screen and (min-width: 1420px) {
-  .animation-inital__steto {
-    transform: translate(120%, 200%) scale(0); } }
-
-@media only screen and (min-width: 1000px) {
-  .animation-inital__hug {
-    transform: translate(-60%, 450%) scale(0);
-    z-index: -3; } }
-
-@media screen and (min-width: 1420px) {
-  .animation-inital__hug {
-    transform: translate(120%, -160%) scale(0); } }
-
-@media only screen and (min-width: 1000px) {
-  .animation-inital__heart {
-    transform: translate(70%, -300%) scale(0);
-    z-index: -3; } }
-
-@media screen and (min-width: 1420px) {
-  .animation-inital__heart {
-    transform: translate(-110%, 210%) scale(0); } }
-
-@media only screen and (min-width: 1000px) {
-  .animation-inital__medal {
-    transform: translate(-60%, -230%) scale(0);
-    z-index: -3; } }
-
-@media screen and (min-width: 1420px) {
-  .animation-inital__medal {
-    transform: translate(-110%, -90%) scale(0); } }
 
 .centerCnt {
   height: max-content;
