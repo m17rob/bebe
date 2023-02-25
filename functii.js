@@ -370,7 +370,7 @@ if (vw1 < 781) {
 
   pinMap.forEach(el => {
     el.innerHTML =
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91166.58751287077!2d26.02895429936008!3d44.43406764956789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4e5c701411%3A0xb00428ccc43917e9!2sMy%20Private%20Sex%20Shop!5e0!3m2!1sro!2sro!4v1677360402313!5m2!1sro!2sro" width="430" height="350" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.854765274795!2d23.189407568478902!3d44.623413454855815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1677363910997!5m2!1sro!2sro" width="430" height="350" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
   });
 }
 
@@ -379,7 +379,7 @@ if (vw1 < 501) {
 
   pinMap.forEach(el => {
     el.innerHTML =
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91166.58751287077!2d26.02895429936008!3d44.43406764956789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4e5c701411%3A0xb00428ccc43917e9!2sMy%20Private%20Sex%20Shop!5e0!3m2!1sro!2sro!4v1677360402313!5m2!1sro!2sro" width="340" height="250" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.854765274795!2d23.189407568478902!3d44.623413454855815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1677363910997!5m2!1sro!2sro" width="340" height="250" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
   });
 }
 
@@ -388,7 +388,7 @@ if (vw1 < 401) {
 
   pinMap.forEach(el => {
     el.innerHTML =
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91166.58751287077!2d26.02895429936008!3d44.43406764956789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4e5c701411%3A0xb00428ccc43917e9!2sMy%20Private%20Sex%20Shop!5e0!3m2!1sro!2sro!4v1677360402313!5m2!1sro!2sro" width="290" height="260" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.854765274795!2d23.189407568478902!3d44.623413454855815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1677363910997!5m2!1sro!2sro" width="290" height="260" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
   });
 }
 
