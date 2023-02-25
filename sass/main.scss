@@ -1159,57 +1159,87 @@ body {
     padding: 1rem 0.7rem;
   }
 
+  @media only screen and (max-width: 729px) {
+    width: 52%;
+  }
+
   @media only screen and (max-width: 716px) {
     width: 54%;
   }
 
-  @media only screen and (max-width: 630px) {
-    width: 50%;
-  }
+  // @media only screen and (max-width: 678px) {
+  //   width: 75%;
+  // }
 
   @media only screen and (max-width: 700px) {
     width: 55%;
   }
 
+  @media only screen and (max-width: 678px) {
+    width: 57%;
+  }
+
   @media only screen and (max-width: 665px) {
     width: 58%;
   }
-  @media only screen and (max-width: 639px) {
+
+  @media only screen and (max-width: 651px) {
     width: 60%;
+  }
+
+  @media only screen and (max-width: 634px) {
+    width: 64%;
   }
 
   @media only screen and (max-width: 630px) {
     width: 50%;
   }
 
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 577px) {
+    width: 54%;
+  }
+
+  @media only screen and (max-width: 542px) {
     width: 58%;
   }
 
-  @media only screen and (max-width: 486px) {
-    width: 64%;
+  @media only screen and (max-width: 512px) {
+    width: 62%;
   }
 
-  @media only screen and (max-width: 449px) {
-    width: 73%;
+  @media only screen and (max-width: 485px) {
+    width: 65%;
   }
 
-  @media only screen and (max-width: 430px) {
+  @media only screen and (max-width: 473px) {
+    width: 66%;
+  }
+
+  @media only screen and (max-width: 462px) {
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 441px) {
     width: 75%;
     // margin: 0;
   }
 
-  @media only screen and (max-width: 399px) {
+  @media only screen and (max-width: 418px) {
     width: 83%;
     // margin: 0;
   }
 
-  @media only screen and (max-width: 371px) {
+  @media only screen and (max-width: 387px) {
     width: 90%;
     // margin: 0;
   }
 
-  @media only screen and (max-width: 349px) {
+  @media only screen and (max-width: 365px) {
+    width: 95%;
+    // margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 351px) {
     width: 100%;
     // margin: 0 auto;
   }
