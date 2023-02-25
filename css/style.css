@@ -2002,7 +2002,6 @@ body {
       width: 100%;
       height: 5rem;
       display: flex;
-      overflow: visible;
       justify-content: space-around;
       align-items: center;
       margin-top: 0.5rem; }
@@ -2010,7 +2009,6 @@ body {
         .footer__logo--icons {
           display: none; } }
       .footer__logo--icons a > svg {
-        overflow: visible;
         fill: #5a5a5a; }
       .footer__logo--icons a > svg:hover {
         fill: #132880; }
