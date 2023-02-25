@@ -3154,6 +3154,7 @@ body {
   cursor: pointer;
   background-color: $white;
   border-radius: 50%;
+  display: none;
   @media only screen and (max-width: 960px) {
     display: none;
   }

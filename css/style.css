@@ -2290,7 +2290,8 @@ body {
   width: 7rem;
   cursor: pointer;
   background-color: #fff;
-  border-radius: 50%; }
+  border-radius: 50%;
+  display: none; }
   @media only screen and (max-width: 960px) {
     .back-to-top {
       display: none; } }
