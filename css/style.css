@@ -250,7 +250,11 @@ body {
           font-size: 5rem; } }
       @media only screen and (max-width: 920px) {
         .content__txt--title {
-          width: 60%; } }
+          width: 60%;
+          align-self: center; } }
+      @media only screen and (max-width: 700px) {
+        .content__txt--title {
+          align-self: start; } }
       @media only screen and (max-width: 630px) {
         .content__txt--title {
           width: max-content;
@@ -260,12 +264,21 @@ body {
         .content__txt--title__t1 h1 {
           font-weight: 400;
           color: #132880; }
+        @media only screen and (max-width: 920px) {
+          .content__txt--title__t1 {
+            text-align: center; } }
+        @media only screen and (max-width: 700px) {
+          .content__txt--title__t1 {
+            text-align: start; } }
       .content__txt--title__t2 {
         width: 100%;
         text-align: end; }
         .content__txt--title__t2 h1 {
           font-weight: 400;
           color: #2685f0; }
+        @media only screen and (max-width: 920px) {
+          .content__txt--title__t2 {
+            text-align: center; } }
     .content__txt--p {
       font-family: 'Poppins', sans-serif;
       font-size: 2.4rem;
@@ -283,6 +296,9 @@ body {
       @media only screen and (max-width: 920px) {
         .content__txt--p {
           width: 79%; } }
+      @media only screen and (max-width: 700px) {
+        .content__txt--p {
+          align-self: start; } }
       @media only screen and (max-width: 630px) {
         .content__txt--p {
           font-size: 1rem;
@@ -1668,13 +1684,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    .contact .right .noDec {
-      text-decoration: none !important;
-      -webkit-tap-highlight-color: transparent; }
-    .contact .right a:link {
-      text-decoration: none !important; }
-    .contact .right a:visited {
-      text-decoration: none !important; }
     .contact .right__program {
       display: flex;
       flex-direction: column;
@@ -2277,3 +2286,17 @@ body {
 
 .cl {
   color: #b73e3e; }
+
+.noDec {
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent; }
+
+a:link {
+  text-decoration: none !important; }
+
+a:visited {
+  text-decoration: none !important; }
+
+@media only screen and (max-width: 920px) {
+  .align {
+    align-self: end; } }

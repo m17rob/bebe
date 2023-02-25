@@ -352,6 +352,11 @@ body {
 
       @media only screen and (max-width: 920px) {
         width: 60%;
+        align-self: center;
+      }
+
+      @media only screen and (max-width: 700px) {
+        align-self: start;
       }
 
       @media only screen and (max-width: 630px) {
@@ -369,6 +374,14 @@ body {
           font-weight: 400;
           color: $primary-dark;
         }
+
+        @media only screen and (max-width: 920px) {
+          text-align: center;
+        }
+
+        @media only screen and (max-width: 700px) {
+          text-align: start;
+        }
       }
 
       &__t2 {
@@ -378,6 +391,10 @@ body {
         & h1 {
           font-weight: 400;
           color: $primary;
+        }
+
+        @media only screen and (max-width: 920px) {
+          text-align: center;
         }
       }
     }
@@ -402,6 +419,10 @@ body {
         width: 79%;
       }
 
+      @media only screen and (max-width: 700px) {
+        align-self: start;
+      }
+
       @media only screen and (max-width: 630px) {
         font-size: 1rem;
         line-height: 2rem;
@@ -423,6 +444,7 @@ body {
       font-weight: 800;
       margin-top: 8rem;
       transition: all 0.2s;
+      // align-self: end;
 
       @media only screen and (min-width: 1000px) {
         &:hover {
@@ -2308,18 +2330,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    .noDec {
-      text-decoration: none !important;
-      -webkit-tap-highlight-color: transparent;
-    }
-    a:link {
-      text-decoration: none !important;
-    }
-
-    a:visited {
-      text-decoration: none !important;
-    }
-
     &__program {
       display: flex;
       flex-direction: column;
@@ -3105,6 +3115,7 @@ body {
   cursor: pointer;
   background-color: $white;
   border-radius: 50%;
+  // display: none;
   @media only screen and (max-width: 960px) {
     display: none;
   }
@@ -3129,4 +3140,22 @@ body {
 
 .cl {
   color: #b73e3e;
+}
+
+.noDec {
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+a:link {
+  text-decoration: none !important;
+}
+
+a:visited {
+  text-decoration: none !important;
+}
+
+.align {
+  @media only screen and (max-width: 920px) {
+    align-self: end;
+  }
 }
