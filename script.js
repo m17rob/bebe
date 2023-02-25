@@ -53,27 +53,27 @@
 // observerTeam.observe(triggerElTeam);
 /////////////////////////////////////////////////////  
 
-// const menu = document.querySelector("#menu");
-// const button = document.querySelector('#nav-icon');
-// const menuLinks = document.querySelectorAll(".menu__container--link")
+const menu = document.querySelector("#menu");
+const button = document.querySelector('#nav-icon');
+const menuLinks = document.querySelectorAll(".menu__container--link")
 
 
-// button.addEventListener('click', function(){
-//     this.classList.toggle('open');
-//     if(this.classList.contains('open')){
-//         menu.style.display = "block";
-//     } else {
-//         menu.style.display = "none";
-//     }
-// });
+button.addEventListener('click', function(){
+    this.classList.toggle('open');
+    if(this.classList.contains('open')){
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+});
 
-// menuLinks.forEach(link => {
-//     link.addEventListener("click", function(){
-//         menu.style.display = "none";
-//         button.classList.toggle('open');
+menuLinks.forEach(link => {
+    link.addEventListener("click", function(){
+        menu.style.display = "none";
+        button.classList.toggle('open');
 
-//     })
-// })
+    })
+})
 
 // /////////////////TRIGGER MENU SCROLL//////////////////
 
