@@ -1665,13 +1665,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    .contact .right .noDec {
-      text-decoration: none !important;
-      -webkit-tap-highlight-color: transparent; }
-    .contact .right a:link {
-      text-decoration: none !important; }
-    .contact .right a:visited {
-      text-decoration: none !important; }
     .contact .right__program {
       display: flex;
       flex-direction: column;
@@ -2305,3 +2298,13 @@ body {
 
 .cl {
   color: #b73e3e; }
+
+.noDec {
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent; }
+
+a:link {
+  text-decoration: none !important; }
+
+a:visited {
+  text-decoration: none !important; }

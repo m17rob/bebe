@@ -2308,18 +2308,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    .noDec {
-      text-decoration: none !important;
-      -webkit-tap-highlight-color: transparent;
-    }
-    a:link {
-      text-decoration: none !important;
-    }
-
-    a:visited {
-      text-decoration: none !important;
-    }
-
     &__program {
       display: flex;
       flex-direction: column;
@@ -3172,4 +3160,16 @@ body {
 
 .cl {
   color: #b73e3e;
+}
+
+.noDec {
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+a:link {
+  text-decoration: none !important;
+}
+
+a:visited {
+  text-decoration: none !important;
 }
