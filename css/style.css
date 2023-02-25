@@ -859,43 +859,61 @@ body {
       width: 50%;
       border-radius: 15px;
       padding: 1rem 0.7rem; } }
+  @media only screen and (max-width: 729px) {
+    .categories {
+      width: 52%; } }
   @media only screen and (max-width: 716px) {
     .categories {
       width: 54%; } }
-  @media only screen and (max-width: 630px) {
-    .categories {
-      width: 50%; } }
   @media only screen and (max-width: 700px) {
     .categories {
       width: 55%; } }
+  @media only screen and (max-width: 678px) {
+    .categories {
+      width: 57%; } }
   @media only screen and (max-width: 665px) {
     .categories {
       width: 58%; } }
-  @media only screen and (max-width: 639px) {
+  @media only screen and (max-width: 651px) {
     .categories {
       width: 60%; } }
+  @media only screen and (max-width: 634px) {
+    .categories {
+      width: 64%; } }
   @media only screen and (max-width: 630px) {
     .categories {
       width: 50%; } }
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 577px) {
+    .categories {
+      width: 54%; } }
+  @media only screen and (max-width: 542px) {
     .categories {
       width: 58%; } }
-  @media only screen and (max-width: 486px) {
+  @media only screen and (max-width: 512px) {
     .categories {
-      width: 64%; } }
-  @media only screen and (max-width: 449px) {
+      width: 62%; } }
+  @media only screen and (max-width: 485px) {
     .categories {
-      width: 73%; } }
-  @media only screen and (max-width: 430px) {
+      width: 65%; } }
+  @media only screen and (max-width: 473px) {
+    .categories {
+      width: 66%; } }
+  @media only screen and (max-width: 462px) {
+    .categories {
+      width: 70%; } }
+  @media only screen and (max-width: 441px) {
     .categories {
       width: 75%; } }
-  @media only screen and (max-width: 399px) {
+  @media only screen and (max-width: 418px) {
     .categories {
       width: 83%; } }
-  @media only screen and (max-width: 371px) {
+  @media only screen and (max-width: 387px) {
     .categories {
       width: 90%; } }
-  @media only screen and (max-width: 349px) {
+  @media only screen and (max-width: 365px) {
+    .categories {
+      width: 95%; } }
+  @media only screen and (max-width: 351px) {
     .categories {
       width: 100%; } }
   .categories__category {
