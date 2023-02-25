@@ -1584,7 +1584,8 @@ body {
         transform: translateX(-50%);
         z-index: -1; }
       .contact .left__bg .adresa {
-        width: 445px;
+        width: max-content;
+        padding: 0 5rem 0 5rem;
         height: 49px;
         background: #ffffff;
         border-radius: 20px;
@@ -1603,12 +1604,10 @@ body {
         @media only screen and (max-width: 1500px) {
           .contact .left__bg .adresa {
             font-size: 1.8rem;
-            width: 345px;
             height: 39px; } }
         @media only screen and (max-width: 630px) {
           .contact .left__bg .adresa {
-            font-size: 1.4rem;
-            width: 245px; } }
+            font-size: 1.4rem; } }
         @media only screen and (max-width: 500px) {
           .contact .left__bg .adresa {
             bottom: -20%; } }
@@ -2303,3 +2302,6 @@ body {
   @media only screen and (max-width: 950px) {
     .back-to-top {
       display: none; } }
+
+.cl {
+  color: #b73e3e; }

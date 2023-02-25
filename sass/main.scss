@@ -2195,7 +2195,8 @@ body {
       }
 
       .adresa {
-        width: 445px;
+        width: max-content;
+        padding: 0 5rem 0 5rem;
         height: 49px;
         background: #ffffff;
         border-radius: 20px;
@@ -2215,13 +2216,13 @@ body {
 
         @media only screen and (max-width: 1500px) {
           font-size: 1.8rem;
-          width: 345px;
+          // width: 345px;
           height: 39px;
         }
 
         @media only screen and (max-width: 630px) {
           font-size: 1.4rem;
-          width: 245px;
+          // width: 245px;
         }
 
         @media only screen and (max-width: 500px) {
@@ -3166,4 +3167,8 @@ body {
   @media only screen and (max-width: 950px) {
     display: none;
   }
+}
+
+.cl {
+  color: #b73e3e;
 }
