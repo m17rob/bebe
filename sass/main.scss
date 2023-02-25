@@ -1444,6 +1444,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 2rem 0 1rem 0;
 
       @media only screen and (max-width: 630px) {
         width: 15rem;
@@ -1993,7 +1994,7 @@ body {
 //   }
 
 //   @media screen and (min-width:1420px) {
-//     transform:translate(-110%, -90%) scale(0);  
+//     transform:translate(-110%, -90%) scale(0);
 //   }
 // }
 
@@ -3142,8 +3143,7 @@ body {
   }
 }
 
-
-.back-to-top{
+.back-to-top {
   position: fixed;
   right: 5rem;
   bottom: 5rem;
