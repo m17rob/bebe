@@ -426,12 +426,14 @@ const bubbleBtn = document.querySelector('#bubble');
 const playVideo = document.querySelector('#play-video');
 
 playVideo.addEventListener('click', function () {
-  bubbleBtn.classList.add('animate__animated', 'animate__fadeOut');
-  // bubbleBtn.style.display ="block";
+  bubbleBtn.classList.add('animate__animated', 'animate__bounceIn');
+  bubbleBtn.style.display ="block"
   setTimeout(function(){
     if(bubbleBtn.classList.contains('animate__animated')) {
-      bubbleBtn.classList.remove('animate__animated', 'animate__fadeOut');
-      // bubbleBtn.style.display ="none";
+      bubbleBtn.classList.add('animate__animated', 'animate__fadeOut');
+      bubbleBtn.classList.remove('animate__animated', 'animate__fadeOut', 'animate__bounceIn');
+      bubbleBtn.style.display ="none"
+
     } else {
       return;
     }
