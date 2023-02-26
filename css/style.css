@@ -2376,6 +2376,7 @@ a:visited {
       width: 54%; } }
 
 .bubble-parent {
+  display: none;
   position: fixed;
   z-index: 20;
   bottom: 1rem;
@@ -2417,6 +2418,7 @@ a:visited {
   align-items: center;
   width: 40rem;
   height: 5rem;
+  cursor: pointer;
   /* background: #fa183d; */
   border-radius: 20px;
   color: #132880;
