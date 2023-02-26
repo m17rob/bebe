@@ -427,6 +427,11 @@ const playVideo = document.querySelector('#play-video');
 
 playVideo.addEventListener('click', function () {
   bubbleBtn.classList.add('animate__animated', 'animate__fadeOut');
-  setTimeout('', 5000);
-  bubbleBtn.classList.remove('animate__animated', 'animate__fadeOut');
+  setTimeout(function(){
+    if(bubbleBtn.classList.contains('animate__animated')) {
+      bubbleBtn.classList.remove('animate__animated', 'animate__fadeOut');
+    } else {
+      return
+    }
+  }, 5000);
 });

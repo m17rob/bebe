@@ -75,7 +75,7 @@ body {
     transform: rotate(45deg) translate(30%, 150%); }
     @media only screen and (max-width: 1000px) {
       #nav-icon.open span:nth-child(1) {
-        transform: rotate(45deg) translate(25%, 120%); } }
+        transform: rotate(45deg) translate(30%, 150%); } }
   #nav-icon.open span:nth-child(2) {
     width: 0%;
     left: 50%; }
@@ -83,7 +83,7 @@ body {
     transform: rotate(-45deg) translate(30%, -180%); }
     @media only screen and (max-width: 1000px) {
       #nav-icon.open span:nth-child(3) {
-        transform: rotate(-45deg) translate(30%, -190%); } }
+        transform: rotate(-45deg) translate(30%, -170%); } }
 
 #menu {
   display: none;
@@ -793,49 +793,6 @@ body {
     @media only screen and (max-width: 700px) {
       .products h2 {
         text-shadow: 0px 2px 5px rgba(19, 40, 128, 0.2), 0px 0px 0px rgba(19, 40, 128, 0.2); } }
-  .products__btn .tooltip {
-    display: inline-block;
-    position: relative;
-    border-bottom: 1px dotted #666;
-    text-align: left; }
-    .products__btn .tooltip__content {
-      min-width: 200px;
-      top: -20px;
-      left: 50%;
-      transform: translate(-50%, -100%);
-      padding: 10px 20px;
-      color: #444444;
-      background-color: #eeeeee;
-      font-weight: normal;
-      font-size: 13px;
-      border-radius: 8px;
-      position: absolute;
-      z-index: 99999999;
-      box-sizing: border-box;
-      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity 0.8s; }
-    .products__btn .tooltip .tooltip:hover .tooltip__content {
-      visibility: visible;
-      opacity: 1; }
-    .products__btn .tooltip__content i {
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      margin-left: -12px;
-      width: 24px;
-      height: 12px;
-      overflow: hidden; }
-    .products__btn .tooltip .tooltip__content i::after {
-      content: '';
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(45deg);
-      background-color: #eeeeee;
-      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
 
 .background {
   width: 100%;
@@ -2419,6 +2376,7 @@ a:visited {
       width: 54%; } }
 
 .bubble-parent {
+  display: none;
   position: fixed;
   z-index: 20;
   bottom: 1rem;
@@ -2436,6 +2394,16 @@ a:visited {
   color: #fff;
   font-size: 1.875rem;
   box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01), 0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04), 0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05); }
+  @media screen and (max-width: 1500px) {
+    .bubble {
+      font-size: 2rem; } }
+  @media screen and (max-width: 1000px) {
+    .bubble {
+      font-size: 1.8rem;
+      width: 20rem; } }
+  @media screen and (max-width: 600px) {
+    .bubble {
+      font-size: 1.5rem; } }
 
 .video-play-button {
   position: absolute;
@@ -2449,6 +2417,7 @@ a:visited {
   align-items: center;
   width: 40rem;
   height: 5rem;
+  cursor: pointer;
   /* background: #fa183d; */
   border-radius: 20px;
   color: #132880;
