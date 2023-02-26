@@ -2404,6 +2404,16 @@ a:visited {
   @media screen and (max-width: 600px) {
     .bubble {
       font-size: 1.5rem; } }
+  @media screen and (max-width: 1500px) {
+    .bubble {
+      font-size: 2rem; } }
+  @media screen and (max-width: 1000px) {
+    .bubble {
+      font-size: 1.8rem;
+      width: 20rem; } }
+  @media screen and (max-width: 600px) {
+    .bubble {
+      font-size: 1.5rem; } }
 
 .video-play-button {
   position: absolute;
