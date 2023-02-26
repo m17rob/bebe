@@ -2376,7 +2376,6 @@ a:visited {
       width: 54%; } }
 
 .bubble-parent {
-  display: none;
   position: fixed;
   z-index: 20;
   bottom: 1rem;

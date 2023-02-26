@@ -427,11 +427,13 @@ const playVideo = document.querySelector('#play-video');
 
 playVideo.addEventListener('click', function () {
   bubbleBtn.classList.add('animate__animated', 'animate__fadeOut');
+  // bubbleBtn.style.display ="block";
   setTimeout(function(){
     if(bubbleBtn.classList.contains('animate__animated')) {
       bubbleBtn.classList.remove('animate__animated', 'animate__fadeOut');
+      // bubbleBtn.style.display ="none";
     } else {
-      return
+      return;
     }
   }, 5000);
 });
