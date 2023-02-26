@@ -2451,10 +2451,26 @@ a:visited {
   border-radius: 20px;
   color: #132880;
   font-size: 2.4rem; }
+  @media only screen and (max-width: 1100px) {
+    .video-play-button {
+      font-size: 2rem;
+      width: 30rem; } }
+  @media only screen and (max-width: 630px) {
+    .video-play-button {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 450px) {
+    .video-play-button {
+      width: 25rem; } }
   .video-play-button img {
     z-index: 10;
     width: 3.5%;
     margin-left: 2rem; }
+    @media only screen and (max-width: 1100px) {
+      .video-play-button img {
+        width: 2.8%; } }
+    @media only screen and (max-width: 630px) {
+      .video-play-button img {
+        width: 2.5%; } }
 
 .video-play-button:before {
   content: '';
@@ -2469,6 +2485,12 @@ a:visited {
   background: #ffffff;
   border-radius: 20px;
   animation: pulse-border 1500ms ease-out infinite; }
+  @media only screen and (max-width: 1100px) {
+    .video-play-button:before {
+      width: 25rem; } }
+  @media only screen and (max-width: 450px) {
+    .video-play-button:before {
+      width: 21rem; } }
 
 .video-play-button:after {
   content: '';
@@ -2486,6 +2508,12 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 1100px) {
+    .video-play-button:after {
+      width: 30rem; } }
+  @media only screen and (max-width: 450px) {
+    .video-play-button:after {
+      width: 25rem; } }
 
 .video-play-button span {
   display: block;
