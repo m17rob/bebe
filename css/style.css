@@ -2381,6 +2381,9 @@ a:visited {
   bottom: 1rem;
   left: 1rem; }
 
+.animate__animated.animate__fadeOut {
+  --animate-duration: 5s; }
+
 .bubble {
   font-family: 'Poppins', sans-serif;
   width: 25rem;
