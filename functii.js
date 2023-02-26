@@ -421,3 +421,12 @@ if (vw1 < 401) {
   goTopBtn.addEventListener('click', backToTop);
 })();
 // /* end begin Back to Top button  */
+
+const bubbleBtn = document.querySelector('#bubble');
+const playVideo = document.querySelector('#play-video');
+
+playVideo.addEventListener('click', function () {
+  bubbleBtn.classList.add('animate__animated', 'animate__fadeOut');
+  setTimeout('', 5000);
+  bubbleBtn.classList.remove('animate__animated', 'animate__fadeOut');
+});
