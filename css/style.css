@@ -139,7 +139,7 @@ body {
       align-items: center; }
     @media only screen and (max-width: 630px) {
       .heading .nav__logo {
-        width: 7rem; } }
+        width: 10rem; } }
     @media only screen and (max-width: 1500px) {
       .heading .nav__logo img {
         width: 65%; } }
@@ -2018,8 +2018,8 @@ body {
       align-items: center; }
       @media only screen and (max-width: 630px) {
         .footer__logo--img {
-          width: 5.5rem;
-          height: 5.5rem; } }
+          width: 8rem;
+          height: 8rem; } }
       @media only screen and (max-width: 630px) {
         .footer__logo--img img {
           width: 100%; } }
