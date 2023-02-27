@@ -140,17 +140,15 @@ body {
     @media only screen and (max-width: 630px) {
       .heading .nav__logo {
         width: 7rem; } }
-    .heading .nav__logo img {
-      width: 80%; }
-      @media only screen and (max-width: 1500px) {
-        .heading .nav__logo img {
-          width: 65%; } }
-      @media only screen and (max-width: 1200px) {
-        .heading .nav__logo img {
-          width: 52%; } }
-      @media only screen and (max-width: 630px) {
-        .heading .nav__logo img {
-          width: 100%; } }
+    @media only screen and (max-width: 1500px) {
+      .heading .nav__logo img {
+        width: 65%; } }
+    @media only screen and (max-width: 1200px) {
+      .heading .nav__logo img {
+        width: 52%; } }
+    @media only screen and (max-width: 630px) {
+      .heading .nav__logo img {
+        width: 100%; } }
     .heading .nav__links {
       display: flex;
       background-color: #fff;
@@ -2012,13 +2010,8 @@ body {
         left: 0;
         transform: translate(0, 0); } }
     .footer__logo--img {
-      background: rgba(255, 244, 244, 0.5);
-      box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01), 0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04), 0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-      backdrop-filter: blur(2.5px);
       /* Note: backdrop-filter has minimal browser support */
       border-radius: 100px;
-      width: 6.6rem;
-      height: 6.6rem;
       border-radius: 50px;
       display: flex;
       justify-content: center;
