@@ -139,7 +139,7 @@ body {
       align-items: center; }
     @media only screen and (max-width: 630px) {
       .heading .nav__logo {
-        width: 10rem; } }
+        width: 14rem; } }
     @media only screen and (max-width: 1500px) {
       .heading .nav__logo img {
         width: 65%; } }
