@@ -392,48 +392,51 @@ if (vw1 < 401) {
   });
 }
 
-/* begin begin Back to Top button  */
-(function () {
-  'use strict';
+// /* begin begin Back to Top button  */
+// (function () {
+//   'use strict';
 
-  function trackScroll() {
-    var scrolled = window.pageYOffset;
-    var coords = document.documentElement.clientHeight;
+//   function trackScroll() {
+//     var scrolled = window.pageYOffset;
+//     var coords = document.documentElement.clientHeight;
 
-    if (scrolled > coords) {
-      goTopBtn.classList.add('back-to-top-show');
-    }
-    if (scrolled < coords) {
-      goTopBtn.classList.remove('back-to-top-show');
-    }
-  }
+//     if (scrolled > coords) {
+//       goTopBtn.classList.add('back-to-top-show');
+//     }
+//     if (scrolled < coords) {
+//       goTopBtn.classList.remove('back-to-top-show');
+//     }
+//   }
 
-  function backToTop() {
-    if (window.pageYOffset > 0) {
-      window.scrollBy(0, -1500);
-      setTimeout(backToTop, 0);
-    }
-  }
+//   function backToTop() {
+//     if (window.pageYOffset > 0) {
+//       window.scrollBy(0, -1500);
+//       setTimeout(backToTop, 0);
+//     }
+//   }
 
-  var goTopBtn = document.querySelector('.back-to-top');
+//   var goTopBtn = document.querySelector('.back-to-top');
 
-  window.addEventListener('scroll', trackScroll);
-  goTopBtn.addEventListener('click', backToTop);
-})();
-// /* end begin Back to Top button  */
+//   window.addEventListener('scroll', trackScroll);
+//   goTopBtn.addEventListener('click', backToTop);
+// })();
+// // /* end begin Back to Top button  */
 
 const bubbleBtn = document.querySelector('#bubble');
 const playVideo = document.querySelector('#play-video');
 
 playVideo.addEventListener('click', function () {
   bubbleBtn.classList.add('animate__animated', 'animate__bounceIn');
-  bubbleBtn.style.display ="block";
-  setTimeout(function(){
-    if(bubbleBtn.classList.contains('animate__animated')) {
+  bubbleBtn.style.display = 'block';
+  setTimeout(function () {
+    if (bubbleBtn.classList.contains('animate__animated')) {
       bubbleBtn.classList.add('animate__animated', 'animate__fadeOut');
-      bubbleBtn.classList.remove('animate__animated', 'animate__fadeOut', 'animate__bounceIn');
-      bubbleBtn.style.display ="none"
-
+      bubbleBtn.classList.remove(
+        'animate__animated',
+        'animate__fadeOut',
+        'animate__bounceIn'
+      );
+      bubbleBtn.style.display = 'none';
     } else {
       return;
     }
