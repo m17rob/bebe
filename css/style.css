@@ -1777,10 +1777,10 @@ body {
         color: rgba(35, 61, 77, 0.7); }
         @media only screen and (max-width: 1500px) {
           .contact .right .orar .zile {
-            font-size: 1.4rem; } }
+            font-size: 1.5rem; } }
         @media only screen and (max-width: 630px) {
           .contact .right .orar .zile {
-            font-size: 1rem; } }
+            font-size: 1.3rem; } }
         .contact .right .orar .zile .ziua:not(:last-child) {
           margin-bottom: 0.6rem; }
       .contact .right .orar .ore {
@@ -1797,10 +1797,10 @@ body {
         color: rgba(35, 61, 77, 0.7); }
         @media only screen and (max-width: 1500px) {
           .contact .right .orar .ore {
-            font-size: 1.4rem; } }
+            font-size: 1.5rem; } }
         @media only screen and (max-width: 630px) {
           .contact .right .orar .ore {
-            font-size: 1rem; } }
+            font-size: 1.3rem; } }
         .contact .right .orar .ore .ora:not(:last-child) {
           margin-bottom: 0.6rem; }
     .contact .right__phone {
@@ -1968,7 +1968,7 @@ body {
       height: 10rem; } }
   .footer__nav {
     display: flex; }
-    @media only screen and (max-width: 970px) {
+    @media only screen and (max-width: 1200px) {
       .footer__nav {
         display: none; } }
     .footer__nav--a {
@@ -1983,7 +1983,7 @@ body {
       @media only screen and (max-width: 1000px) {
         .footer__nav--a:hover {
           color: #132880; } }
-      @media only screen and (max-width: 1500px) {
+      @media only screen and (max-width: 1600px) {
         .footer__nav--a {
           font-size: 1.6rem; } }
       .footer__nav--a:not(:last-child) {
@@ -2010,7 +2010,6 @@ body {
         left: 0;
         transform: translate(0, 0); } }
     .footer__logo--img {
-      /* Note: backdrop-filter has minimal browser support */
       border-radius: 100px;
       border-radius: 50px;
       display: flex;
@@ -2028,7 +2027,8 @@ body {
       height: 5rem;
       display: flex;
       overflow: visible;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 1.5rem;
       align-items: center;
       margin-top: 0.5rem; }
       @media only screen and (max-width: 630px) {
