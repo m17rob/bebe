@@ -360,37 +360,37 @@ if (vw1 > 733) {
   }
 }
 
-var vwMap = Math.max(
-  document.documentElement.clientWidth || 0,
-  window.innerWidth || 0
-);
+// var vwMap = Math.max(
+//   document.documentElement.clientWidth || 0,
+//   window.innerWidth || 0
+// );
 
-if (vw1 < 781) {
-  const pinMap = document.querySelectorAll('#bglocale');
+// if (vw1 < 781) {
+//   const pinMap = document.querySelectorAll('#bglocale');
 
-  pinMap.forEach(el => {
-    el.innerHTML =
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.854765274795!2d23.189407568478902!3d44.623413454855815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1677363910997!5m2!1sro!2sro" width="430" height="350" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-  });
-}
+//   pinMap.forEach(el => {
+//     el.innerHTML =
+//       '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.854765274795!2d23.189407568478902!3d44.623413454855815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1677363910997!5m2!1sro!2sro" width="430" height="350" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+//   });
+// }
 
-if (vw1 < 501) {
-  const pinMap = document.querySelectorAll('#bglocale');
+// if (vw1 < 501) {
+//   const pinMap = document.querySelectorAll('#bglocale');
 
-  pinMap.forEach(el => {
-    el.innerHTML =
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.854765274795!2d23.189407568478902!3d44.623413454855815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1677363910997!5m2!1sro!2sro" width="340" height="250" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-  });
-}
+//   pinMap.forEach(el => {
+//     el.innerHTML =
+//       '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.854765274795!2d23.189407568478902!3d44.623413454855815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1677363910997!5m2!1sro!2sro" width="340" height="250" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+//   });
+// }
 
-if (vw1 < 401) {
-  const pinMap = document.querySelectorAll('#bglocale');
+// if (vw1 < 401) {
+//   const pinMap = document.querySelectorAll('#bglocale');
 
-  pinMap.forEach(el => {
-    el.innerHTML =
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.854765274795!2d23.189407568478902!3d44.623413454855815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1677363910997!5m2!1sro!2sro" width="290" height="260" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-  });
-}
+//   pinMap.forEach(el => {
+//     el.innerHTML =
+//       '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1419.854765274795!2d23.189407568478902!3d44.623413454855815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1677363910997!5m2!1sro!2sro" width="290" height="260" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+//   });
+// }
 
 /* begin begin Back to Top button  */
 (function () {
@@ -428,13 +428,16 @@ const playVideo = document.querySelector('#play-video');
 
 playVideo.addEventListener('click', function () {
   bubbleBtn.classList.add('animate__animated', 'animate__bounceIn');
-  bubbleBtn.style.display ="block";
-  setTimeout(function(){
-    if(bubbleBtn.classList.contains('animate__animated')) {
+  bubbleBtn.style.display = 'block';
+  setTimeout(function () {
+    if (bubbleBtn.classList.contains('animate__animated')) {
       bubbleBtn.classList.add('animate__animated', 'animate__fadeOut');
-      bubbleBtn.classList.remove('animate__animated', 'animate__fadeOut', 'animate__bounceIn');
-      bubbleBtn.style.display ="none"
-
+      bubbleBtn.classList.remove(
+        'animate__animated',
+        'animate__fadeOut',
+        'animate__bounceIn'
+      );
+      bubbleBtn.style.display = 'none';
     } else {
       return;
     }
