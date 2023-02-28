@@ -1614,9 +1614,21 @@ body {
         .contact .left__bg {
           width: 33rem; } }
       .contact .left__bg #map {
-        height: 90%;
-        width: 90%;
+        width: 62rem;
+        height: 46rem;
         border-radius: 1rem; }
+        @media only screen and (max-width: 780px) {
+          .contact .left__bg #map {
+            width: 45rem;
+            height: 36rem; } }
+        @media only screen and (max-width: 500px) {
+          .contact .left__bg #map {
+            width: 34rem;
+            height: 25rem; } }
+        @media only screen and (max-width: 400px) {
+          .contact .left__bg #map {
+            width: 28rem;
+            enable-background: 25rem; } }
       .contact .left__bg .leaflet-popup-content {
         font-size: 1.5rem; }
       .contact .left__bg img {

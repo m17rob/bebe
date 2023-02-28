@@ -2240,9 +2240,24 @@ body {
       }
 
       #map {
-        height: 90%;
-        width: 90%;
-        // border-radius: 1rem;
+        width: 62rem;
+        height: 46rem;
+        border-radius: 1rem;
+
+        @media only screen and (max-width: 780px) {
+          width: 45rem;
+          height: 36rem;
+        }
+  
+        @media only screen and (max-width: 500px) {
+          width: 34rem;
+          height: 25rem;
+        }
+  
+        @media only screen and (max-width: 400px) {
+          width: 28rem;
+          enable-background: 25rem;
+        }
       }
 
       .leaflet-popup-content {
