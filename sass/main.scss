@@ -2216,7 +2216,7 @@ body {
       backdrop-filter: blur(2.5px);
       /* Note: backdrop-filter has minimal browser support */
 
-      border-radius: 20px;
+      border-radius: 2rem;
       width: 67rem;
       height: 51rem;
       display: flex;
@@ -2237,6 +2237,16 @@ body {
 
       @media only screen and (max-width: 400px) {
         width: 33rem;
+      }
+
+      #map {
+        height: 90%;
+        width: 90%;
+        border-radius: 1rem;
+      }
+
+      .leaflet-popup-content {
+        font-size: 1.5rem;
       }
 
       & img {

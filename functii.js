@@ -1,4 +1,4 @@
-// Count-up-Clienti
+// Count-up-Clienti 
 
 const box = document.getElementById('count-up');
 
