@@ -1595,12 +1595,11 @@ body {
       backdrop-filter: blur(2.5px);
       /* Note: backdrop-filter has minimal browser support */
       border-radius: 2rem;
-      width: 67rem;
-      height: 51rem;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
+      padding: 2.5rem;
       z-index: 2; }
       @media only screen and (max-width: 780px) {
         .contact .left__bg {
