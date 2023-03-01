@@ -2210,6 +2210,7 @@ body {
     }
 
     &__bg {
+      position: relative;
       border-radius: 2rem;
       display: flex;
       justify-content: center;
