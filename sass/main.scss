@@ -2208,20 +2208,41 @@ body {
     @media only screen and (max-width: 1140px) {
       margin-bottom: 17rem;
     }
-
     &__bg {
       background: rgba(255, 244, 244, 0.5);
-      position: relative;
+      box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01),
+        0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04),
+        0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(2.5px);
+      /* Note: backdrop-filter has minimal browser support */
+
       border-radius: 2rem;
+      width: 67rem;
+      height: 51rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 3rem;
+      position: relative;
+      z-index: 2;
+
+      @media only screen and (max-width: 780px) {
+        width: 50rem;
+        height: 41rem;
+      }
+
+      @media only screen and (max-width: 500px) {
+        width: 39rem;
+        height: 30rem;
+      }
+
+      @media only screen and (max-width: 400px) {
+        width: 33rem;
+      }
 
       #map {
         width: 62rem;
         height: 46rem;
-        border-radius: 1rem; 
+        border-radius: 1rem;
 
         @media only screen and (max-width: 780px) {
           width: 45rem;
@@ -2235,165 +2256,128 @@ body {
   
         @media only screen and (max-width: 400px) {
           width: 28rem;
+          enable-background: 25rem;
+        }
+      }
+
+      .leaflet-popup-content {
+        font-size: 1.5rem;
+      }
+
+      & img {
+        position: absolute;
+        bottom: -14%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+
+      .adresa {
+        width: max-content;
+        padding: 0 5rem 0 5rem;
+        height: 49px;
+        background: #ffffff;
+        border-radius: 20px;
+        position: absolute;
+        bottom: -14%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        color: rgba(35, 61, 77, 0.65);
+        font-family: gobold, sans-serif;
+        font-size: 2.4rem;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: 1500px) {
+          font-size: 1.8rem;
+          // width: 345px;
+          height: 39px;
+        }
+
+        @media only screen and (max-width: 630px) {
+          font-size: 1.4rem;
+          // width: 245px;
+        }
+
+        @media only screen and (max-width: 500px) {
+          bottom: -20%;
+        }
+
+        // @media only screen and (max-width: 780px) {
+        //   width: 25rem;
+        //   height: 30rem;
+        // }
+      }
+
+      &--locale {
+        background: #ffffff;
+        border-radius: 20px;
+        width: 60rem;
+        height: 45rem;
+
+        @media only screen and (max-width: 780px) {
+          width: 43rem;
+          height: 35rem;
+        }
+
+        @media only screen and (max-width: 500px) {
+          width: 34rem;
           height: 25rem;
+        }
+
+        @media only screen and (max-width: 400px) {
+          width: 29rem;
+          height: 26rem;
         }
       }
     }
 
-    // &__bg {
-    //   background: rgba(255, 244, 244, 0.5);
-    //   box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01),
-    //     0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04),
-    //     0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
-    //   // backdrop-filter: blur(2.5px);
-    //   /* Note: backdrop-filter has minimal browser support */
+    &__icon {
+      background: #d9d9d9;
+      width: 6.6rem;
+      height: 6.6rem;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -12%;
+      left: 50%;
+      transform: translate(-50%, 12%);
+      z-index: 10;
 
-    //   border-radius: 2rem;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   position: relative;
-    //   padding: 3rem;
+      @media only screen and (max-width: 1500px) {
+        width: 5.5rem;
+        height: 5.5rem;
+        top: -9%;
+      }
 
-    //   #map {
-    //     width: 62rem;
-    //     height: 46rem;
-    //     border-radius: 1rem;
+      @media only screen and (max-width: 780px) {
+        top: -11%;
+      }
 
-    //     @media only screen and (max-width: 780px) {
-    //       width: 45rem;
-    //       height: 36rem;
-    //     }
-  
-    //     @media only screen and (max-width: 500px) {
-    //       width: 34rem;
-    //       height: 25rem;
-    //     }
-  
-    //     @media only screen and (max-width: 400px) {
-    //       width: 28rem;
-    //       height: 25rem;
-    //     }
-    //   }
+      @media only screen and (max-width: 630px) {
+        width: 4.5rem;
+        height: 4.5rem;
+        top: -9%;
+      }
 
-    //   .leaflet-popup-content {
-    //     font-size: 1.5rem;
-    //   }
+      @media only screen and (max-width: 500px) {
+        top: -13%;
+      }
 
-    //   & img {
-    //     position: absolute;
-    //     bottom: -14%;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     z-index: -1;
-    //   }
+      &--img {
+        width: 100%;
+      }
+    }
 
-    //   .adresa {
-    //     width: max-content;
-    //     padding: 0 5rem 0 5rem;
-    //     height: 49px;
-    //     background: #ffffff;
-    //     border-radius: 20px;
-    //     position: absolute;
-    //     bottom: -14%;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-
-    //     color: rgba(35, 61, 77, 0.65);
-    //     font-family: gobold, sans-serif;
-    //     font-size: 2.4rem;
-    //     font-weight: 400;
-    //     letter-spacing: 0.02em;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-
-    //     @media only screen and (max-width: 1500px) {
-    //       font-size: 1.8rem;
-    //       // width: 345px;
-    //       height: 39px;
-    //     }
-
-    //     @media only screen and (max-width: 630px) {
-    //       font-size: 1.4rem;
-    //       // width: 245px;
-    //     }
-
-    //     @media only screen and (max-width: 500px) {
-    //       bottom: -20%;
-    //     }
-
-    //     // @media only screen and (max-width: 780px) {
-    //     //   width: 25rem;
-    //     //   height: 30rem;
-    //     // }
-    //   }
-
-    //   &--locale {
-    //     background: #ffffff;
-    //     border-radius: 20px;
-    //     width: 60rem;
-    //     height: 45rem;
-
-    //     @media only screen and (max-width: 780px) {
-    //       width: 43rem;
-    //       height: 35rem;
-    //     }
-
-    //     @media only screen and (max-width: 500px) {
-    //       width: 34rem;
-    //       height: 25rem;
-    //     }
-
-    //     @media only screen and (max-width: 400px) {
-    //       width: 29rem;
-    //       height: 26rem;
-    //     }
-    //   }
-    // }
-
-    // &__icon {
-    //   background: #d9d9d9;
-    //   width: 6.6rem;
-    //   height: 6.6rem;
-    //   border-radius: 50px;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   position: absolute;
-    //   top: -12%;
-    //   left: 50%;
-    //   transform: translate(-50%, 12%);
-    //   z-index: 10;
-
-    //   @media only screen and (max-width: 1500px) {
-    //     width: 5.5rem;
-    //     height: 5.5rem;
-    //     top: -9%;
-    //   }
-
-    //   @media only screen and (max-width: 780px) {
-    //     top: -11%;
-    //   }
-
-    //   @media only screen and (max-width: 630px) {
-    //     width: 4.5rem;
-    //     height: 4.5rem;
-    //     top: -9%;
-    //   }
-
-    //   @media only screen and (max-width: 500px) {
-    //     top: -13%;
-    //   }
-
-    //   &--img {
-    //     width: 100%;
-    //   }
-    // }
-
-    // &__address {
-    //   position: absolute;
-    // }
+    &__address {
+      position: absolute;
+    }
   }
 
   .right {

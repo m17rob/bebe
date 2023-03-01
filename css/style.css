@@ -1591,12 +1591,28 @@ body {
         margin-bottom: 17rem; } }
     .contact .left__bg {
       background: rgba(255, 244, 244, 0.5);
-      position: relative;
+      box-shadow: 0px 85px 34px rgba(0, 0, 0, 0.01), 0px 48px 29px rgba(0, 0, 0, 0.03), 0px 21px 21px rgba(0, 0, 0, 0.04), 0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(2.5px);
+      /* Note: backdrop-filter has minimal browser support */
       border-radius: 2rem;
+      width: 67rem;
+      height: 51rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 3rem; }
+      position: relative;
+      z-index: 2; }
+      @media only screen and (max-width: 780px) {
+        .contact .left__bg {
+          width: 50rem;
+          height: 41rem; } }
+      @media only screen and (max-width: 500px) {
+        .contact .left__bg {
+          width: 39rem;
+          height: 30rem; } }
+      @media only screen and (max-width: 400px) {
+        .contact .left__bg {
+          width: 33rem; } }
       .contact .left__bg #map {
         width: 62rem;
         height: 46rem;
@@ -1612,7 +1628,93 @@ body {
         @media only screen and (max-width: 400px) {
           .contact .left__bg #map {
             width: 28rem;
+            enable-background: 25rem; } }
+      .contact .left__bg .leaflet-popup-content {
+        font-size: 1.5rem; }
+      .contact .left__bg img {
+        position: absolute;
+        bottom: -14%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1; }
+      .contact .left__bg .adresa {
+        width: max-content;
+        padding: 0 5rem 0 5rem;
+        height: 49px;
+        background: #ffffff;
+        border-radius: 20px;
+        position: absolute;
+        bottom: -14%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgba(35, 61, 77, 0.65);
+        font-family: gobold, sans-serif;
+        font-size: 2.4rem;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media only screen and (max-width: 1500px) {
+          .contact .left__bg .adresa {
+            font-size: 1.8rem;
+            height: 39px; } }
+        @media only screen and (max-width: 630px) {
+          .contact .left__bg .adresa {
+            font-size: 1.4rem; } }
+        @media only screen and (max-width: 500px) {
+          .contact .left__bg .adresa {
+            bottom: -20%; } }
+      .contact .left__bg--locale {
+        background: #ffffff;
+        border-radius: 20px;
+        width: 60rem;
+        height: 45rem; }
+        @media only screen and (max-width: 780px) {
+          .contact .left__bg--locale {
+            width: 43rem;
+            height: 35rem; } }
+        @media only screen and (max-width: 500px) {
+          .contact .left__bg--locale {
+            width: 34rem;
             height: 25rem; } }
+        @media only screen and (max-width: 400px) {
+          .contact .left__bg--locale {
+            width: 29rem;
+            height: 26rem; } }
+    .contact .left__icon {
+      background: #d9d9d9;
+      width: 6.6rem;
+      height: 6.6rem;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -12%;
+      left: 50%;
+      transform: translate(-50%, 12%);
+      z-index: 10; }
+      @media only screen and (max-width: 1500px) {
+        .contact .left__icon {
+          width: 5.5rem;
+          height: 5.5rem;
+          top: -9%; } }
+      @media only screen and (max-width: 780px) {
+        .contact .left__icon {
+          top: -11%; } }
+      @media only screen and (max-width: 630px) {
+        .contact .left__icon {
+          width: 4.5rem;
+          height: 4.5rem;
+          top: -9%; } }
+      @media only screen and (max-width: 500px) {
+        .contact .left__icon {
+          top: -13%; } }
+      .contact .left__icon--img {
+        width: 100%; }
+    .contact .left__address {
+      position: absolute; }
   .contact .right {
     display: flex;
     flex-direction: column;
