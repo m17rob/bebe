@@ -1595,40 +1595,27 @@ body {
       backdrop-filter: blur(2.5px);
       /* Note: backdrop-filter has minimal browser support */
       border-radius: 2rem;
-      width: 67rem;
-      height: 51rem;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
-      z-index: 2; }
-      @media only screen and (max-width: 780px) {
-        .contact .left__bg {
-          width: 50rem;
-          height: 41rem; } }
-      @media only screen and (max-width: 500px) {
-        .contact .left__bg {
-          width: 39rem;
-          height: 30rem; } }
-      @media only screen and (max-width: 400px) {
-        .contact .left__bg {
-          width: 33rem; } }
+      padding: 3rem; }
       .contact .left__bg #map {
-        width: 620px;
-        height: 460px;
+        width: 62rem;
+        height: 46rem;
         border-radius: 1rem; }
         @media only screen and (max-width: 780px) {
           .contact .left__bg #map {
-            width: 450px;
-            height: 360px; } }
+            width: 45rem;
+            height: 36rem; } }
         @media only screen and (max-width: 500px) {
           .contact .left__bg #map {
-            width: 340px;
-            height: 250px; } }
+            width: 34rem;
+            height: 25rem; } }
         @media only screen and (max-width: 400px) {
           .contact .left__bg #map {
-            width: 280px;
-            height: 250px; } }
+            width: 28rem;
+            height: 25rem; } }
       .contact .left__bg .leaflet-popup-content {
         font-size: 1.5rem; }
       .contact .left__bg img {
