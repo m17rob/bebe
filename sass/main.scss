@@ -2240,23 +2240,23 @@ body {
       }
 
       #map {
-        width: 62rem;
-        height: 46rem;
+        width: 620px;
+        height: 460px;
         border-radius: 1rem;
 
         @media only screen and (max-width: 780px) {
-          width: 45rem;
-          height: 36rem;
+          width: 450px;
+          height: 360px;
         }
   
         @media only screen and (max-width: 500px) {
-          width: 34rem;
-          height: 25rem;
+          width: 340px;
+          height: 250px;
         }
   
         @media only screen and (max-width: 400px) {
-          width: 28rem;
-          enable-background: 25rem;
+          width: 280px;
+          height: 250px;
         }
       }
 
