@@ -2210,6 +2210,7 @@ body {
     }
 
     &__bg {
+      background: rgba(255, 244, 244, 0.5);
       position: relative;
       border-radius: 2rem;
       display: flex;
@@ -2218,9 +2219,24 @@ body {
       padding: 3rem;
 
       #map {
-        width: 30rem;
-        height: 35rem;
+        width: 62rem;
+        height: 46rem;
         border-radius: 1rem; 
+
+        @media only screen and (max-width: 780px) {
+          width: 45rem;
+          height: 36rem;
+        }
+  
+        @media only screen and (max-width: 500px) {
+          width: 34rem;
+          height: 25rem;
+        }
+  
+        @media only screen and (max-width: 400px) {
+          width: 28rem;
+          height: 25rem;
+        }
       }
     }
 

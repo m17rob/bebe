@@ -1590,6 +1590,7 @@ body {
       .contact .left {
         margin-bottom: 17rem; } }
     .contact .left__bg {
+      background: rgba(255, 244, 244, 0.5);
       position: relative;
       border-radius: 2rem;
       display: flex;
@@ -1597,9 +1598,21 @@ body {
       align-items: center;
       padding: 3rem; }
       .contact .left__bg #map {
-        width: 30rem;
-        height: 35rem;
+        width: 62rem;
+        height: 46rem;
         border-radius: 1rem; }
+        @media only screen and (max-width: 780px) {
+          .contact .left__bg #map {
+            width: 45rem;
+            height: 36rem; } }
+        @media only screen and (max-width: 500px) {
+          .contact .left__bg #map {
+            width: 34rem;
+            height: 25rem; } }
+        @media only screen and (max-width: 400px) {
+          .contact .left__bg #map {
+            width: 28rem;
+            height: 25rem; } }
   .contact .right {
     display: flex;
     flex-direction: column;
