@@ -2216,7 +2216,9 @@ body {
       backdrop-filter: blur(2.5px);
       /* Note: backdrop-filter has minimal browser support */
 
-      border-radius: 2rem;
+      border-radius: 20px;
+      width: 67rem;
+      height: 51rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -2224,17 +2226,17 @@ body {
       z-index: 2;
 
       @media only screen and (max-width: 780px) {
-        width: 45rem;
-        height: 36rem;
+        width: 50rem;
+        height: 41rem;
       }
 
       @media only screen and (max-width: 500px) {
-        width: 34rem;
-        height: 25rem;
+        width: 39rem;
+        height: 30rem;
       }
 
       @media only screen and (max-width: 400px) {
-        width: 20rem;
+        width: 33rem;
       }
 
       & img {

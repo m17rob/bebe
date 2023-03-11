@@ -443,3 +443,38 @@ playVideo.addEventListener('click', function () {
     }
   }, 4000);
 });
+
+
+
+
+var vwMap = Math.max(
+  document.documentElement.clientWidth || 0,
+  window.innerWidth || 0
+);
+
+if (vw1 < 781) {
+  const pinMap = document.querySelectorAll('#bglocale');
+
+  pinMap.forEach(el => {
+    el.innerHTML =
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2839.6912840038312!2d23.18692741552949!3d44.6237864791001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47525b8f0b1c6589%3A0x8c187dfe7eac1ac0!2sClin%20Med%20Moso%20SRL!5e0!3m2!1sro!2sro!4v1678551001987!5m2!1sro!2sro" width="430" height="350" style="border-radius:20px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+  });
+}
+
+if (vw1 < 501) {
+  const pinMap = document.querySelectorAll('#bglocale');
+
+  pinMap.forEach(el => {
+    el.innerHTML =
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2839.6912840038312!2d23.18692741552949!3d44.6237864791001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47525b8f0b1c6589%3A0x8c187dfe7eac1ac0!2sClin%20Med%20Moso%20SRL!5e0!3m2!1sro!2sro!4v1678551001987!5m2!1sro!2sro" width="340" height="250" style="border:0; border-radius:20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+  });
+}
+
+if (vw1 < 401) {
+  const pinMap = document.querySelectorAll('#bglocale');
+
+  pinMap.forEach(el => {
+    el.innerHTML =
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2839.6912840038312!2d23.18692741552949!3d44.6237864791001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47525b8f0b1c6589%3A0x8c187dfe7eac1ac0!2sClin%20Med%20Moso%20SRL!5e0!3m2!1sro!2sro!4v1678551001987!5m2!1sro!2sro" width="290" height="260" style="border:0; border-radius:20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+  });
+}
